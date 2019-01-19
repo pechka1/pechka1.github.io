@@ -270,6 +270,7 @@ header .block_form{
 	-webkit-box-pack:right;
 	    -ms-flex-pack:right;
 	        justify-content:right;
+	float: right;
 }
 header .cross{
 	display: none;
@@ -846,6 +847,9 @@ footer .footer_block_inner h3{
 		bottom: -430px;
 		-webkit-transition:.4s ease all;
 		transition: .4s ease all;
+	}
+	header .navbar_header li a{
+		line-height: 45px;
 	}
 	.navbar-default .navbar-toggle,
 	header .navbar_header li a,
