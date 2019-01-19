@@ -1091,12 +1091,14 @@ footer .footer_block_inner h3{
 	header .mask_background_nav.open{
 		bottom: -375px;
 	}
+
 	header .navbar_header li a{
 		font-size:18px;
 	}
 	header .navbar_header li{
 		line-height: 45px;
 		margin-right: 0;
+		padding:0 25px;
 	}
 	header .social_block_in_nav li a img{
 		width: 29px;
