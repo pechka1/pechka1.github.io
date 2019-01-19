@@ -19,6 +19,9 @@ button{
 	background: none;
 	border: none;
 }
+:focus{
+	outline: none;
+}
 /* %%% Social Fixed %%% */
 .social_fixed{
 	position:fixed;
