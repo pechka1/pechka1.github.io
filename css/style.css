@@ -852,10 +852,11 @@ footer .footer_block_inner h3{
 		line-height: 45px;
 	}
 	.navbar-default .navbar-toggle,
-	header .navbar_header li a,
-	header .social_block_in_nav li a img,
-	header .social_block_in_nav ul li:hover{
+	header .navbar_header li a{
 		z-index: 3;
+	}
+	header .social_block_in_nav ul li:hover{
+		
 	}
 	header .social_block_in_nav{
 		margin-top:130px;
@@ -933,7 +934,7 @@ footer .footer_block_inner h3{
 	header .social_block_in_nav li{
 		display:inline-block;
 	}
-	header .social_block_in_nav ul li:hover{
+	header .social_block_in_nav ul li:hover img{
 		-webkit-transform: scale(1.2);
 		        transform: scale(1.2);
 	}
