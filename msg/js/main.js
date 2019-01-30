@@ -18,6 +18,8 @@ $('.owl-carousel').owlCarousel({
     // nav:true,
     // navText:['&#x27;next&#x27;','&#x27;prev&#x27;'],
     dots:false,
+    autoplay:true,
+    autoplayTimeout:5000,
     responsive:{
         1000:{
             items:1
