@@ -292,7 +292,6 @@ header {
 		display: block;
 		margin-left:244px;//Одинаково з шириною sidebar
 		& .block_one{
-			margin-top: 50px;
 			position:relative;
 			&:before{
 				content:'';
@@ -368,6 +367,7 @@ header {
 			& .block_three_wrappe{	
 				display:flex;
 				justify-content:space-between;
+				margin-bottom:35px;
 				& .wrappe_img_three img{
 					height: 350px;
 					max-width: 350px;

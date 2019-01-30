@@ -311,7 +311,6 @@ header .header_line .telephon_number p {
   margin-left: 244px;
 }
 .conten_block_sidebar section .block_one {
-  margin-top: 50px;
   position: relative;
 }
 .conten_block_sidebar section .block_one:before {
@@ -388,6 +387,7 @@ header .header_line .telephon_number p {
 .conten_block_sidebar section .block_three .block_three_wrappe {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_img_three img {
   height: 350px;
