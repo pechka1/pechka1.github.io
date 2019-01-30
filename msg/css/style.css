@@ -602,6 +602,7 @@ header .header_line .telephon_number p {
   font-size: 12px;
   color: #ccc;
   margin-bottom: 15px;
+  margin-left: 15px;
 }
 .conten_block_sidebar section .block_five_form form .necessarily_line span {
   color: #ff0000;
