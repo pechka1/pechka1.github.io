@@ -20,6 +20,7 @@ $('.owl-carousel').owlCarousel({
     dots:false,
     autoplay:true,
     autoplayTimeout:5000,
+    autoplayHoverPause:true,
     responsive:{
         1000:{
             items:1
