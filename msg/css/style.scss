@@ -3,6 +3,7 @@ body{
 	-webkit-font-smoothing:antialiased;
 	-webkit-overflow-scrolling:touch;
 	min-width: 320px;
+	background:#edf2f1;
 }
 * {
     margin: 0;
@@ -69,6 +70,10 @@ header {
 	 height: 35px;
 	 display: flex;
 	 align-items: center;
+	 position:fixed;
+	 left: 0;
+	 right:0;
+	 z-index: 10;
 		& .header_line{
 		 display: flex;
 		 justify-content: space-between;
@@ -212,11 +217,15 @@ header {
 		vertical-align:top;
 		position:fixed;
 		top:35px;
+		bottom:0;
 		& .sidebar_menu{
 			  font-family: "proximanovasemibold";
 			& .social_block{
-				margin-top: 60px;
 				text-align: center;
+				vertical-align:bottom;
+				position:absolute;
+				left: 15%;
+				bottom:50px;
 				& a{
 					margin:0 6px;
 					& img{
@@ -249,8 +258,18 @@ header {
 				& .dropdown_sidebar ul{
 					display: none;
 					padding-left:0;
+					margin-top: 10px;
 					& li{
 						padding-left:17px;
+						&:first-of-type:after{
+							content:'';
+							width: 100%;
+							height: 1px;
+							background:#ccd0d0;
+							position:absolute;
+							top:0;
+							left: -7px;
+						}
 					}
 				}
 				& .dropdown_sidebar.open ul{
@@ -294,6 +313,7 @@ header {
 		margin-left:244px;//Одинаково з шириною sidebar
 		border-left: 1px solid #cfd4d3;
 		& .block_one{
+			margin-top:35px;
 			position:relative;
 			&:before{
 				content:'';
@@ -351,38 +371,52 @@ header {
 			max-width: 515px;
 			width: 100%;
 			margin:0 auto;
-			& .our_work{
-				font-family: 'ProximaNovaSemibold';
-				margin-top: 50px;
-				& h2{
-					font-size:26px;
-					text-transform: uppercase;
-				}
-				& p{
-					font-size:22px;
-					margin-top: 40px;
-				}
-			}
-			& .image_block_two{
-				margin-top: 40px;
-				display:flex;
-				justify-content:space-between;
-				max-width: 515px;
-				width: 100%;		
-					&>div{
-					width: 112px;
-					height: 112px;
-					background-size:cover;
-					background-position:center;
-					background-repeat:no-repeat;
-					border-radius:50%;
-					transition: .5s ease all;
+			& .next{
+				width: 100%;
+				& a{
+					margin-top: 20px;
+					margin-right:15px;
+					font-size:13px;
+					float:right;
+					color:#000;
+					font-family: 'ProximaNovaSemibold';
 					&:hover{
-						border-radius:25%;
-						transition: .5s ease all;
+						color: #ccc;
+					}
+				}		
+			}
+				& .our_work{
+					font-family: 'ProximaNovaSemibold';
+					margin-top: 50px;
+					& h2{
+						font-size:26px;
+						text-transform: uppercase;
+					}
+					& p{
+						font-size:22px;
+						margin-top: 40px;
 					}
 				}
-			}
+				& .image_block_two{
+					margin-top: 40px;
+					display:flex;
+					justify-content:space-between;
+					max-width: 515px;
+					width: 100%;		
+						&>div{
+						width: 112px;
+						height: 112px;
+						background-size:cover;
+						background-position:center;
+						background-repeat:no-repeat;
+						border-radius:50%;
+						transition: .5s ease all;
+						&:hover{
+							border-radius:25%;
+							transition: .5s ease all;
+						}
+					}
+				}
 		}
 		& .block_three{
 			max-width: 790px;
@@ -519,10 +553,6 @@ header {
 					position:relative;
 					border:none;
 					font-family: 'DejaVuSerif-Italic';
-					&:hover,
-					&:focus{
-						border:1px solid #ccc;
-					}
 				}
 				& textarea{
 					height: 85px;
@@ -533,10 +563,6 @@ header {
 					color:#8a8a8a;
 					border:none;
 					font-family: 'DejaVuSerif-Italic';
-					&:hover,
-					&:focus{
-						border:1px solid #ccc;
-					}
 				}
 				& .wrappe_form{
 					display:flex;
