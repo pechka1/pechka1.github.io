@@ -1,23 +1,28 @@
 @font-face {
-  font-family: "DejaVu Serif";
+  font-family: "DejaVuSerif-Italic";
+  src: url("../fonts/DejaVuSerif-Italic.eot");
+  src: url("../fonts/DejaVuSerif-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/DejaVuSerif-Italic.woff2") format("woff2"), url("../fonts/DejaVuSerif-Italic.woff") format("woff"), url("../fonts/DejaVuSerif-Italic.ttf") format("truetype"), url("../fonts/DejaVuSerif-Italic.svg#DejaVuSerif-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DejaVuSerif-Bold";
   src: url("../fonts/DejaVuSerif-Bold.eot");
   src: url("../fonts/DejaVuSerif-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DejaVuSerif-Bold.woff2") format("woff2"), url("../fonts/DejaVuSerif-Bold.woff") format("woff"), url("../fonts/DejaVuSerif-Bold.ttf") format("truetype"), url("../fonts/DejaVuSerif-Bold.svg#DejaVuSerif-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Proxima Nova Lt";
-  src: url("../fonts/ProximaNova-Semibold.eot");
-  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype"), url("../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Minion Pro";
+  font-family: "MinionPro-Regular";
   src: url("../fonts/MinionPro-Regular.eot");
   src: url("../fonts/MinionPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MinionPro-Regular.woff2") format("woff2"), url("../fonts/MinionPro-Regular.woff") format("woff"), url("../fonts/MinionPro-Regular.ttf") format("truetype"), url("../fonts/MinionPro-Regular.svg#MinionPro-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  src: url("../fonts/MarkSimonsonProximaNovaSemibold.eot");
+  src: url("../fonts/MarkSimonsonProximaNovaSemibold.eot") format("embedded-opentype"), url("../fonts/MarkSimonsonProximaNovaSemibold.woff2") format("woff2"), url("../fonts/MarkSimonsonProximaNovaSemibold.woff") format("woff"), url("../fonts/MarkSimonsonProximaNovaSemibold.ttf") format("truetype"), url("../fonts/MarkSimonsonProximaNovaSemibold.svg#MarkSimonsonProximaNovaSemibold") format("svg");
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -100,6 +105,9 @@ header .header_line .time_to_work {
   align-items: center;
   position: relative;
 }
+header .header_line .time_to_work p {
+  font-family: "MinionPro-Regular";
+}
 header .header_line .time_to_work:hover .time_to_work_full {
   display: block;
 }
@@ -117,6 +125,7 @@ header .header_line .time_to_work .time_to_work_full {
   padding-bottom: 15px;
 }
 header .header_line .time_to_work .time_to_work_full p {
+  font-family: "DejaVuSerif-Bold";
   font-size: 13px;
   color: #dadada;
   display: block;
@@ -128,6 +137,7 @@ header .header_line .time_to_work .time_to_work_full span {
   color: #fff;
 }
 header .header_line .time_to_work .time_to_work_full ul {
+  font-family: "ProximaNovaSemibold";
   max-width: 140px;
   margin: 0 auto;
 }
@@ -137,6 +147,7 @@ header .header_line .time_to_work .time_to_work_full li {
   margin-bottom: 7px;
 }
 header .header_line .time_to_work .time_to_work_full a {
+  font-family: "ProximaNovaSemibold";
   line-height: 30px;
   display: block;
   width: 130px;
@@ -168,6 +179,7 @@ header .header_line .time_to_work p span {
   font-size: 16px;
 }
 header .header_line .location {
+  font-family: "DejaVuSerif-Bold";
   display: inline-block;
   align-items: center;
 }
@@ -183,6 +195,7 @@ header .header_line .location .wrappe p:last-of-type {
   font-size: 9px;
 }
 header .header_line .telephon_number {
+  font-family: "DejaVuSerif-Bold";
   color: #fff;
   font-size: 13px;
   display: flex;
@@ -219,6 +232,9 @@ header .header_line .telephon_number p {
   vertical-align: top;
   position: fixed;
   top: 35px;
+}
+.conten_block_sidebar aside .sidebar_menu {
+  font-family: "proximanovasemibold";
 }
 .conten_block_sidebar aside .sidebar_menu .social_block {
   margin-top: 60px;
@@ -269,9 +285,9 @@ header .header_line .telephon_number p {
   padding: 10px 0;
   position: relative;
   max-width: 193px;
-  font-family: "Proxima Nova Lt";
 }
 .conten_block_sidebar aside .sidebar_menu ul li a {
+  font-family: "proximanovasemibold";
   color: #000;
 }
 .conten_block_sidebar aside .sidebar_menu ul li a:hover {
@@ -308,8 +324,9 @@ header .header_line .telephon_number p {
   background-image: url("../images/background_block_1.jpg");
 }
 .conten_block_sidebar section .block_one .text_of_first_block {
+  font-family: "ProximaNovaSemibold";
   position: absolute;
-  width: 68.8%;
+  width: 72.8%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -327,6 +344,7 @@ header .header_line .telephon_number p {
   margin: 0 auto;
 }
 .conten_block_sidebar section .block_two .our_work {
+  font-family: "ProximaNovaSemibold";
   margin-top: 50px;
 }
 .conten_block_sidebar section .block_two .our_work h2 {
@@ -376,15 +394,17 @@ header .header_line .telephon_number p {
   max-width: 350px;
 }
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three {
+  font-family: "ProximaNovaSemibold";
+  font-weight: bold;
   max-width: 400px;
 }
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three h2 {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three p {
   font-size: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .conten_block_sidebar section .block_four {
   margin-top: 40px;
@@ -414,6 +434,7 @@ header .header_line .telephon_number p {
   height: 100%;
   left: 45%;
   z-index: 10;
+  font-family: "ProximaNovaSemibold";
 }
 .conten_block_sidebar section .block_four .location_map .mask_map > div > p > span {
   display: block;
@@ -488,6 +509,7 @@ header .header_line .telephon_number p {
   color: #8a8a8a;
   position: relative;
   border: none;
+  font-family: "DejaVuSerif-Italic";
 }
 .conten_block_sidebar section .block_five_form form input:hover, .conten_block_sidebar section .block_five_form form input:focus {
   border: 1px solid #ccc;
@@ -500,6 +522,7 @@ header .header_line .telephon_number p {
   font-size: 12px;
   color: #8a8a8a;
   border: none;
+  font-family: "DejaVuSerif-Italic";
 }
 .conten_block_sidebar section .block_five_form form textarea:hover, .conten_block_sidebar section .block_five_form form textarea:focus {
   border: 1px solid #ccc;
@@ -510,6 +533,9 @@ header .header_line .telephon_number p {
   margin-left: 15px;
 }
 .conten_block_sidebar section .block_five_form form .necessarily_line {
+  font-family: "DejaVuSerif-Italic";
+  font-size: 12px;
+  color: #ccc;
   margin-bottom: 15px;
 }
 .conten_block_sidebar section .block_five_form form .necessarily_line span {
@@ -536,6 +562,7 @@ header .header_line .telephon_number p {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 25px;
+  font-family: "DejaVuSerif-Bold";
 }
 .conten_block_sidebar section .block_five_form .name_last {
   display: flex;
@@ -556,6 +583,7 @@ header .header_line .telephon_number p {
   align-items: baseline;
 }
 .conten_block_sidebar section .block_five_form .submit_button button {
+  font-family: "DejaVuSerif-Bold";
   width: 122px;
   height: 36px;
   background: #000;
@@ -572,7 +600,8 @@ header .header_line .telephon_number p {
   width: 196px;
   font-size: 9px;
   margin-left: 15px;
-  color: #000;
+  color: #ccc;
+  font-family: "DejaVuSerif-Bold";
 }
 
 footer {
@@ -604,7 +633,9 @@ footer .wrappe_footer .social_block_footer a img:hover {
   transition: 0.7s ease;
 }
 footer .wrappe_footer .block_info {
+  font-family: "ProximaNovaSemibold";
   font-size: 9px;
+  font-weight: bold;
 }
 footer .wrappe_footer .block_info p {
   margin: 5px 0;
@@ -613,6 +644,8 @@ footer .wrappe_footer .social_block_footer a {
   margin: 0 10px;
 }
 footer .wrappe_footer .social_block_footer h3 {
+  font-family: "ProximaNovaSemibold";
+  color: rgba(0, 0, 0, 0.6);
   text-align: center;
   font-size: 9px;
   margin-top: 5px;

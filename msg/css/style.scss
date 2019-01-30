@@ -1,4 +1,4 @@
-@import "fonts.scss";
+@import "fonts";
 body{
 	-webkit-font-smoothing:antialiased;
 	-webkit-overflow-scrolling:touch;
@@ -80,6 +80,9 @@ header {
 		 		justify-content: space-between;
 		 		align-items: center;
 		 		position:relative;
+		 		& p{
+		 			font-family: 'MinionPro-Regular';
+		 		}
 		 		&:hover .time_to_work_full{
 		 			display:block;
 		 		}
@@ -96,6 +99,7 @@ header {
 		 			padding-top:15px;
 		 			padding-bottom:15px;
 		 			& p{
+		 				font-family: 'DejaVuSerif-Bold';
 		 				font-size:13px;
 		 				color:#dadada;
 		 				display:block;
@@ -107,6 +111,7 @@ header {
 		 				color:#fff;
 		 			}
 		 			& ul{
+		 				font-family: 'ProximaNovaSemibold';
 		 				max-width: 140px;
 		 				margin:0 auto;
 		 			}
@@ -116,6 +121,7 @@ header {
 		 				margin-bottom: 7px;
 		 			}
 		 			& a{
+		 				font-family: 'ProximaNovaSemibold';
 		 				line-height: 30px;
 		 				display:block;
 		 				width: 130px;
@@ -149,6 +155,7 @@ header {
 				}
 		 	}
 			& .location{
+				font-family: 'DejaVuSerif-Bold';
 				display: inline-block;
 				align-items: center;
 				& .wrappe{
@@ -164,6 +171,7 @@ header {
 				}
 			}
 			& .telephon_number{
+				font-family: 'DejaVuSerif-Bold';
 				color:#fff;
 				font-size:13px;
 				display: flex;
@@ -204,6 +212,7 @@ header {
 		position:fixed;
 		top:35px;
 		& .sidebar_menu{
+			  font-family: "proximanovasemibold";
 			& .social_block{
 				margin-top: 60px;
 				text-align: center;
@@ -254,8 +263,8 @@ header {
 					padding:10px 0; ;
 					position:relative;
 					max-width: 193px;
-					font-family: 'Proxima Nova Lt';
 					& a{
+    					font-family: 'proximanovasemibold';
 						color:#000;
 							&:hover{
 								color:#ccc;
@@ -295,8 +304,9 @@ header {
 				background-image:url('../images/background_block_1.jpg')
 			}
 			& .text_of_first_block{
+				font-family: 'ProximaNovaSemibold';
 				position:absolute;
-				width: 68.8%;
+				width: 72.8%;
 				top:50%;
 				left:50%;
 				transform: translate(-50%,-50%);
@@ -314,6 +324,7 @@ header {
 			width: 100%;
 			margin:0 auto;
 			& .our_work{
+				font-family: 'ProximaNovaSemibold';
 				margin-top: 50px;
 				& h2{
 					font-size:26px;
@@ -362,14 +373,16 @@ header {
 					max-width: 350px;
 				}
 				& .wrappe_text_three{
+					font-family: 'ProximaNovaSemibold';
+					font-weight:bold;
 					max-width: 400px;
 					& h2{
 						font-size:30px;
-						margin-bottom:30px;
+						margin-bottom:20px;
 					}
 					& p{
 						font-size:13px;
-						margin-bottom:20px;
+						margin-bottom:15px;
 					}
 				}
 			}
@@ -400,6 +413,7 @@ header {
 					height: 100%;
 					left: 45%;
 					z-index: 10;
+					font-family: 'ProximaNovaSemibold';
 					& > div > p > span{
 						display:block;
 						color:#fff;
@@ -466,6 +480,7 @@ header {
 					color:#8a8a8a;
 					position:relative;
 					border:none;
+					font-family: 'DejaVuSerif-Italic';
 					&:hover,
 					&:focus{
 						border:1px solid #ccc;
@@ -479,6 +494,7 @@ header {
 					font-size:12px;
 					color:#8a8a8a;
 					border:none;
+					font-family: 'DejaVuSerif-Italic';
 					&:hover,
 					&:focus{
 						border:1px solid #ccc;
@@ -490,6 +506,9 @@ header {
 					margin-left:15px;
 				}
 				& .necessarily_line{
+					font-family: 'DejaVuSerif-Italic';
+					font-size:12px;
+					color:#ccc;
 					margin-bottom: 15px;
 					& span{
 						color:#ff0000;
@@ -517,6 +536,7 @@ header {
 				font-size:24px;
 				text-transform: uppercase;
 				margin-bottom:25px;
+				font-family: 'DejaVuSerif-Bold';
 			}
 			& .name_last{
 				display: flex;
@@ -536,6 +556,7 @@ header {
 				display:flex;
 				align-items: baseline;
 				& button{
+					font-family: 'DejaVuSerif-Bold';
 					width: 122px;
 					height: 36px;
 					background:#000;
@@ -552,7 +573,8 @@ header {
 					width: 196px;
 					font-size:9px;
 					margin-left:15px;
-					color:#000;
+					color:#ccc;
+					font-family: 'DejaVuSerif-Bold';
 				}
 			}
 		}
@@ -585,7 +607,9 @@ footer{
 			}
 		}
 		& .block_info{
+    		font-family: 'ProximaNovaSemibold';
 			font-size:9px;
+			font-weight: bold;
 			& p{
 				margin:5px 0;
 			}
@@ -595,6 +619,8 @@ footer{
 				margin:0 10px;
 			}
 			& h3{
+				font-family: 'ProximaNovaSemibold';
+				color:rgba(0,0,0,.6);
 				text-align: center;
 				font-size:9px;
 				margin-top: 5px;
