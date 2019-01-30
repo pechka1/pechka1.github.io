@@ -309,6 +309,7 @@ header .header_line .telephon_number p {
   width: 100%;
   display: block;
   margin-left: 244px;
+  border-left: 1px solid #cfd4d3;
 }
 .conten_block_sidebar section .block_one {
   position: relative;
@@ -606,10 +607,12 @@ header .header_line .telephon_number p {
 
 footer {
   max-width: 1135px;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
 }
 footer .out_block {
   margin-left: 244px;
+  border-left: 1px solid #cfd4d3;
+  padding-top: 50px;
 }
 footer .wrappe_footer {
   display: flex;
