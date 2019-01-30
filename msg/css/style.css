@@ -159,14 +159,15 @@ header .header_line .time_to_work .time_to_work_full a {
   width: 130px;
   height: 30px;
   text-align: center;
-  background: #517af6;
+  background: #ccc;
   border-radius: 5px;
   font-size: 16px;
   margin: 8px auto 0 auto;
-  color: #fffafa;
+  color: #000;
 }
 header .header_line .time_to_work .time_to_work_full a:hover {
-  background: #042da9;
+  background: #000;
+  color: #ccc;
 }
 header .header_line .time_to_work .wrappe_img {
   display: inline-block;

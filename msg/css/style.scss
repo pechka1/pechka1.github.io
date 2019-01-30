@@ -133,13 +133,14 @@ header {
 		 				width: 130px;
 		 				height: 30px;
 		 				text-align: center;
-		 				background:#517af6;
+		 				background:#ccc;
 		 				border-radius: 5px;
 		 				font-size:16px;
 		 				margin:8px auto 0 auto;
-		 				color:#fffafa;
+		 				color:#000;
 		 				&:hover{
-		 					background:#042da9;
+		 					background:#000;
+		 					color:#ccc;
 		 				}
 		 			}
 		 		}
