@@ -82,6 +82,7 @@ header {
 		 		position:relative;
 		 		& p{
 		 			font-family: 'MinionPro-Regular';
+		 			color: #fff;
 		 		}
 		 		&:hover .time_to_work_full{
 		 			display:block;
@@ -298,22 +299,49 @@ header {
 				content:'';
 				padding:0 0 60.9% 0;
 				display:block;
+			}
+			& .owl-carousel.owl-theme{
+				height: 100%;
+				width: 100%;
+			}
+			& .owl-stage-outer{
+				width: 100%;
+				height: 100%;
+			}
+			& .owl-stage{
+				height: 100%;
+				width: 100%;
+			}
+			& .owl-item{
+				height: 100%;
+			}
+			& .item{
 				position:relative;
 				background-position:center;
 				background-size:cover;
-				background-image:url('../images/background_block_1.jpg')
+				width: 100%;
+				height: 100%;
+				position:relative;
+				display: flex;
+				align-items:center;
+				justify-content: center;
+				&  .wrappe_text{
+					p{
+						margin:20px 0;
+						font-size:26px;
+						font-family: 'ProximaNovaSemibold';
+					}
+				}
 			}
 			& .text_of_first_block{
 				font-family: 'ProximaNovaSemibold';
 				position:absolute;
-				width: 72.8%;
-				top:50%;
-				left:50%;
-				transform: translate(-50%,-50%);
-				font-size:26px;
-				& p{
-					margin:16px 0;
-				}
+				width:100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				bottom:0;
+				right:0;
 			}
 		}
 		& .block_two{
@@ -384,6 +412,15 @@ header {
 					& p{
 						font-size:13px;
 						margin-bottom:15px;
+					}
+					& a{
+						float: right;
+						margin-right:65px;
+						color: #000;
+						font-size:13px;
+						&:hover{
+							color:#ccc;
+						}
 					}
 				}
 			}

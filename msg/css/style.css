@@ -107,6 +107,7 @@ header .header_line .time_to_work {
 }
 header .header_line .time_to_work p {
   font-family: "MinionPro-Regular";
+  color: #fff;
 }
 header .header_line .time_to_work:hover .time_to_work_full {
   display: block;
@@ -318,22 +319,47 @@ header .header_line .telephon_number p {
   content: "";
   padding: 0 0 60.9% 0;
   display: block;
+}
+.conten_block_sidebar section .block_one .owl-carousel.owl-theme {
+  height: 100%;
+  width: 100%;
+}
+.conten_block_sidebar section .block_one .owl-stage-outer {
+  width: 100%;
+  height: 100%;
+}
+.conten_block_sidebar section .block_one .owl-stage {
+  height: 100%;
+  width: 100%;
+}
+.conten_block_sidebar section .block_one .owl-item {
+  height: 100%;
+}
+.conten_block_sidebar section .block_one .item {
   position: relative;
   background-position: center;
   background-size: cover;
-  background-image: url("../images/background_block_1.jpg");
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conten_block_sidebar section .block_one .item .wrappe_text p {
+  margin: 20px 0;
+  font-size: 26px;
+  font-family: "ProximaNovaSemibold";
 }
 .conten_block_sidebar section .block_one .text_of_first_block {
   font-family: "ProximaNovaSemibold";
   position: absolute;
-  width: 72.8%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 26px;
-}
-.conten_block_sidebar section .block_one .text_of_first_block p {
-  margin: 16px 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .conten_block_sidebar section .block_two {
   display: flex;
@@ -406,6 +432,15 @@ header .header_line .telephon_number p {
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three p {
   font-size: 13px;
   margin-bottom: 15px;
+}
+.conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three a {
+  float: right;
+  margin-right: 65px;
+  color: #000;
+  font-size: 13px;
+}
+.conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three a:hover {
+  color: #ccc;
 }
 .conten_block_sidebar section .block_four {
   margin-top: 40px;

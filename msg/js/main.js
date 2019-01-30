@@ -11,3 +11,16 @@ $(document).ready(function() {
 });
 
 $('#comment').attr('placeholder', 'Комментарий: ' + '\n' + 'Могу ли я записаться на 16:00 во вторник?');
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    // nav:true,
+    // navText:['&#x27;next&#x27;','&#x27;prev&#x27;'],
+    dots:false,
+    responsive:{
+        1000:{
+            items:1
+        }
+    }
+})
