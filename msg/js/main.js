@@ -13,6 +13,7 @@ $(document).ready(function() {
 $('#comment').attr('placeholder', 'Комментарий: ' + '\n' + 'Могу ли я записаться на 16:00 во вторник?');
 
 
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     // nav:true,
@@ -32,4 +33,30 @@ $(".location_map").paroller({
 	factor: 0.5,
 	type: 'background',
 	direction: 'vertical' 
+});
+//MASK for phone
+$('#telephon_number').mask("+38 (999)-999-9999")
+
+//VAKIDATE
+$('#main_form').validate({
+	rules: {
+		name:{
+			required:true,
+		},
+		phone:{
+			required:true
+		}
+	},
+	messages:{
+		name:{
+			required:'Ведіть імя'
+		},
+		phone:{
+			required:'Ведіть телефон'
+		}
+	},
+	invalidHandler: function(){
+	 	$('.error-line').addClass('open');
+	 	console.log('add');	 
+	}
 });

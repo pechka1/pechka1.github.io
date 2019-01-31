@@ -166,18 +166,19 @@
 		<div class="block_five_form" id="form">
 			<div class="vertical_line"></div>
 			<div class="horizontal_line"></div>
-			<form action="">
+			<form action="" id="main_form">
 				<h3>Напишіть нам!</h3>
 				<p class="necessarily_line"><span>*</span> — Поле обов'язкове для заповнення</p>
 				<div class="wrappe_form">
 					<div class="name_last">
-						<div class="necessarily"><input  type="text" placeholder="Имя"></div>
+						<div class="necessarily"><input class="nes"  type="text" name="name" placeholder="Имя"></div>
 						<input type="text" placeholder="Фамилия">
 					</div>
-					<div class="necessarily phone"><input type="text" class="necessarily" placeholder="Номер телефона"></div>
+					<div class="necessarily phone"><input class="nes" id='telephon_number' type="phone" name="phone" class="necessarily" placeholder="Номер телефона"></div>
 					<textarea name="" id="comment" placeholder=""></textarea>
 				</div>
 				<div class="submit_button"><button>Надіслати</button><p>Ви автоматично погоджуєтеся з використанням персональних даних</p></div>
+				<div class="error-line"><p>Заповніть, будь ласка, правильно!</p> </div>
 			</form>
 			
 		</div>
@@ -221,6 +222,8 @@
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.paroller.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
 <script type="text/javascript" src="js/main.js"></script>	
 </body>
 </html>
