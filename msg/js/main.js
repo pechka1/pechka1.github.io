@@ -27,3 +27,9 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+// Parallax
+$(".location_map").paroller({ 
+	factor: 0.5,
+	type: 'background',
+	direction: 'vertical' 
+});
