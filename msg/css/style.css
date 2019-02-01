@@ -179,11 +179,15 @@ header .header_line .time_to_work .wrappe_img img {
 header .header_line .time_to_work p {
   display: inline-block;
   font-size: 11px;
+  width: 175px;
 }
-header .header_line .time_to_work p span {
+header .header_line .time_to_work p .open_close {
   color: #74e78b;
   padding: 0 5px;
   font-size: 16px;
+}
+header .header_line .time_to_work p .time-of-work {
+  font-size: 11px;
 }
 header .header_line .location {
   font-family: "DejaVuSerif-Bold";

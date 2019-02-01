@@ -155,10 +155,14 @@ header {
 		 	& .time_to_work p{
 		 		display: inline-block;
 		 		font-size:11px;
-				& span{
+		 		width: 175px;
+				.open_close{
 					color:#74e78b;
 					padding: 0 5px;
 					font-size:16px;
+				}
+				.time-of-work{
+					font-size:11px;
 				}
 		 	}
 			& .location{
