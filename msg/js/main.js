@@ -62,8 +62,6 @@ $('#main_form').validate({
 });
 //moment
 $(document).ready(function() {
-
-
 var  beforeTime = moment('09:00', 'HH:mm');
 var  afterTime = moment('17:30', 'HH:mm');
 var  afterStime = moment('13:00','HH:mm');
@@ -76,15 +74,13 @@ if(mom <= 6 && moment().isBetween(beforeTime, afterTime)){
 	}else if(mom == 6 && moment().isBetween(beforeTime, afterStime)){
 		$('.time-of-work').text('з 9:00 до 13:00');
 	}
-else{
-	$('.open_close').css('color','red');
-	$('.open_close').text('Закрито');
+	else{
+		$('.open_close').css('color','red');
+		$('.open_close').text('Закрито');
 }	
 }
 else{
 	$('.open_close').css('color','red');
 	$('.open_close').text('Закрито');
 }
-
-
 });

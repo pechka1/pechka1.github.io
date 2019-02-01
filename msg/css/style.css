@@ -160,7 +160,6 @@ header .header_line .time_to_work .time_to_work_full a {
   height: 30px;
   text-align: center;
   background: #ccc;
-  border-radius: 5px;
   font-size: 16px;
   margin: 8px auto 0 auto;
   color: #000;
@@ -388,7 +387,7 @@ header .header_line .telephon_number p {
   right: 0;
 }
 .conten_block_sidebar section .block_two {
-  margin: 50px auto 0 auto;
+  margin: 100px auto 0 auto;
   border: 5px solid #fff;
   max-width: 650px;
   padding-top: 30px;
@@ -417,12 +416,18 @@ header .header_line .telephon_number p {
 .conten_block_sidebar section .block_two .next a {
   margin-top: 20px;
   margin-right: 15px;
-  font-size: 13px;
+  text-align: center;
+  background: #fff;
   float: right;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
   color: #000;
   font-family: "ProximaNovaSemibold";
 }
 .conten_block_sidebar section .block_two .next a:hover {
+  background: #000;
   color: #ccc;
 }
 .conten_block_sidebar section .block_two .our_work {
@@ -443,7 +448,7 @@ header .header_line .telephon_number p {
   max-width: 515px;
   width: 100%;
 }
-.conten_block_sidebar section .block_two .image_block_two > div {
+.conten_block_sidebar section .block_two .image_block_two .img_med {
   width: 112px;
   height: 112px;
   background-size: cover;
@@ -452,13 +457,31 @@ header .header_line .telephon_number p {
   border-radius: 50%;
   transition: 0.5s ease all;
 }
-.conten_block_sidebar section .block_two .image_block_two > div:hover {
+.conten_block_sidebar section .block_two .image_block_two .img_med:hover {
   border-radius: 25%;
   transition: 0.5s ease all;
 }
+.conten_block_sidebar section .block_two .image_block_two .wrappe_item_med {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  align-items: center;
+}
+.conten_block_sidebar section .block_two .image_block_two .text_med {
+  margin-top: 30px;
+  color: #000;
+  font-weight: bold;
+  font-family: "ProximaNovaSemibold";
+}
+.conten_block_sidebar section .block_two .image_block_two .text_med p:first-of-type {
+  font-size: 13px;
+}
+.conten_block_sidebar section .block_two .image_block_two .text_med p:last-of-type {
+  font-size: 9px;
+}
 .conten_block_sidebar section .block_three {
   max-width: 790px;
-  margin: 50px auto 0 auto;
+  margin: 100px auto 0 auto;
 }
 .conten_block_sidebar section .block_three .line {
   width: 100%;
@@ -498,7 +521,7 @@ header .header_line .telephon_number p {
   color: #ccc;
 }
 .conten_block_sidebar section .block_four {
-  margin-top: 40px;
+  margin-top: 100px;
 }
 .conten_block_sidebar section .block_four .location_map {
   height: 285px;
@@ -508,20 +531,13 @@ header .header_line .telephon_number p {
   position: relative;
   overflow: hidden;
 }
-.conten_block_sidebar section .block_four .location_map:hover .mask_map {
-  bottom: 0;
-}
-.conten_block_sidebar section .block_four .location_map:hover .trap {
-  bottom: 0;
-}
 .conten_block_sidebar section .block_four .location_map .mask_map {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  transition: 1s ease all;
   width: 320px;
   position: absolute;
-  bottom: 100%;
+  bottom: 0;
   height: 100%;
   left: 45%;
   z-index: 10;
@@ -576,17 +592,16 @@ header .header_line .telephon_number p {
 .conten_block_sidebar section .block_four .location_map .trap {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
-  transition: 1s ease all;
   transform: skew(-15deg);
   left: 45%;
   width: 320px;
-  bottom: 100%;
+  bottom: 0;
   height: 100%;
   z-index: 0;
 }
 .conten_block_sidebar section .block_five_form {
   margin-left: 145px;
-  margin-top: 120px;
+  margin-top: 200px;
   margin-bottom: 90px;
   position: relative;
 }
@@ -651,14 +666,12 @@ header .header_line .telephon_number p {
 .conten_block_sidebar section .block_five_form form .wrappe_form {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
 }
 .conten_block_sidebar section .block_five_form form .necessarily_line {
   font-family: "DejaVuSerif-Italic";
   font-size: 12px;
   color: #ccc;
   margin-bottom: 15px;
-  margin-left: 15px;
 }
 .conten_block_sidebar section .block_five_form form .necessarily_line span {
   color: #ff0000;
@@ -732,8 +745,9 @@ footer {
 }
 footer .out_block {
   margin-left: 244px;
+  padding-bottom: 50px;
   border-left: 1px solid #cfd4d3;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 footer .wrappe_footer {
   display: flex;
