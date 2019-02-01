@@ -414,6 +414,7 @@ header .header_line .telephon_number p {
   width: 100%;
 }
 .conten_block_sidebar section .block_two .next a {
+  font-weight: bold;
   margin-top: 20px;
   margin-right: 15px;
   text-align: center;
@@ -512,6 +513,11 @@ header .header_line .telephon_number p {
   margin-bottom: 15px;
 }
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three a {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #fff;
   float: right;
   margin-right: 65px;
   color: #000;
@@ -519,6 +525,7 @@ header .header_line .telephon_number p {
 }
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_text_three a:hover {
   color: #ccc;
+  background: #000;
 }
 .conten_block_sidebar section .block_four {
   margin-top: 100px;
