@@ -609,7 +609,7 @@ header .header_line .telephon_number p {
 .conten_block_sidebar section .block_five_form {
   margin-left: 145px;
   margin-top: 200px;
-  margin-bottom: 90px;
+  margin-bottom: 250px;
   position: relative;
 }
 .conten_block_sidebar section .block_five_form .vertical_line {
@@ -745,6 +745,127 @@ header .header_line .telephon_number p {
   color: #ccc;
   font-family: "DejaVuSerif-Bold";
 }
+.conten_block_sidebar section .block_six_response {
+  margin-left: 145px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  position: relative;
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask {
+  position: absolute;
+  top: 0;
+  bottom: -50px;
+  width: 430px;
+  background: #fff;
+  display: block;
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask .wrappe_block_social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask .wrappe_block_social h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: "ProximaNovaSemibold";
+  font-weight: 300;
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask .wrappe_block_social .social_block_footer img {
+  transition: 0.7s all;
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask .wrappe_block_social .social_block_footer img:hover {
+  transform: rotate(360deg);
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask .wrappe_block_social .social_block_footer a {
+  margin: 0 10px;
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask .wrappe_block_social .info_block {
+  font-family: "ProximaNovaSemibold";
+  background: #edf2f1;
+  font-size: 10px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask .wrappe_block_social .info_block:hover {
+  color: #ccc;
+  background: #000;
+}
+.conten_block_sidebar section .block_six_response .block_six_response_mask.close {
+  display: none;
+}
+.conten_block_sidebar section .block_six_response form {
+  max-width: 430px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.conten_block_sidebar section .block_six_response form .name_last_wrappe {
+  display: flex;
+  justify-content: space-between;
+}
+.conten_block_sidebar section .block_six_response form .name_last_wrappe input {
+  width: 200px;
+}
+.conten_block_sidebar section .block_six_response form input {
+  font-family: "DejaVuSerif-Italic";
+  height: 26px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+.conten_block_sidebar section .block_six_response form textarea {
+  font-family: "DejaVuSerif-Italic";
+  border: none;
+  padding: 10px;
+  height: 100px;
+}
+.conten_block_sidebar section .block_six_response form .wrappe_file_unload {
+  margin: 15px 0;
+  display: flex;
+  font-family: "ProximaNovaSemibold";
+}
+.conten_block_sidebar section .block_six_response form .file_unload {
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.conten_block_sidebar section .block_six_response form .file_unload:hover {
+  color: #ccc;
+}
+.conten_block_sidebar section .block_six_response form .file_unload input {
+  display: none;
+}
+.conten_block_sidebar section .block_six_response form .submit_button {
+  display: flex;
+  align-items: baseline;
+}
+.conten_block_sidebar section .block_six_response form .submit_button button {
+  font-family: "DejaVuSerif-Bold";
+  width: 122px;
+  height: 36px;
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.conten_block_sidebar section .block_six_response form .submit_button button:hover {
+  background: #ccc;
+  color: #000;
+}
+.conten_block_sidebar section .block_six_response form .submit_button p {
+  width: 196px;
+  font-size: 9px;
+  margin-left: 15px;
+  color: #ccc;
+  font-family: "DejaVuSerif-Bold";
+}
 
 footer {
   max-width: 1135px;
@@ -754,7 +875,7 @@ footer .out_block {
   margin-left: 244px;
   padding-bottom: 50px;
   border-left: 1px solid #cfd4d3;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 footer .wrappe_footer {
   display: flex;

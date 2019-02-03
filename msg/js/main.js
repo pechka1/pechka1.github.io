@@ -1,9 +1,13 @@
+//Dropdown menu
 $(document).ready(function() {
 	$('.dropdown_sidebar').on('click',function(){
 		$(this).toggleClass('open');
 	});
+//BLOCK INFO
+	$('.info_block').on('click',function(){
+		$('.block_six_response_mask').addClass('close');
+	});
 //Anchor
-
 	$('a.anchor').on('click', function(){
 		var id = $(this).attr('href');
 		$('html, body').animate({scrollTop: $(id).offset().top},1000)
@@ -11,6 +15,7 @@ $(document).ready(function() {
 });
 
 $('#comment').attr('placeholder', 'Комментарий: ' + '\n' + 'Могу ли я записаться на 16:00 во вторник?');
+
 
 
 
