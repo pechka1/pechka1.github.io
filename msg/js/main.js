@@ -19,7 +19,7 @@ $('#comment').attr('placeholder', 'Комментарий: ' + '\n' + 'Могу 
 
 
 
-$('.owl-carousel').owlCarousel({
+$('.header_slider').owlCarousel({
     loop:true,
     // nav:true,
     // navText:['&#x27;next&#x27;','&#x27;prev&#x27;'],
@@ -33,6 +33,19 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+// Peoples Reviews  Slider
+$('.reviews-slider').owlCarousel({
+    loop:true,
+    dots:false,
+    margin:30,
+    nav:true,
+    navText:['<img src="images/arrow_left_s.png" >','<img src="images/arrow_right_s.png" >'],
+    responsive:{
+        1000:{
+            items:2
+        }
+    }
+})
 // Parallax
 $(".location_map").paroller({ 
 	factor: 0.3,
@@ -40,7 +53,7 @@ $(".location_map").paroller({
 	direction: 'vertical' 
 });
 
-$(".item").paroller({ 
+$(".item.top").paroller({ 
 	factor: 0.5,
 	type: 'background',
 	direction: 'vertical' 

@@ -739,6 +739,135 @@ header {
 				}
 			}
 		}
+		.peoples_reviews_block{
+			max-width: 1000px;
+			width: 100%;
+			.owl-theme .owl-nav [class*="owl-"]{
+				margin:0;
+			}
+			.add_post{
+				margin-top: 50px;
+				text-align: center;
+				button{
+					font-family: 'ProximaNovaSemibold';
+					font-size: 24px;
+					color:#000;
+					cursor:pointer;
+					background:#fff;
+					padding:5px 20px;
+					&:hover{
+						background:#ccc;
+					}
+				}
+			}
+			margin:0 auto;
+			h2{
+				font-size: 24px;
+				margin-bottom: 50px;
+				font-family: 'ProximaNovaSemibold';
+				text-align: center;
+			}
+			.reviews-slider{
+				position:relative;
+				.owl-prev,
+				.owl-next{
+					position:absolute;
+					top: 50%;
+					width: 50px;
+					height:50px;
+					background:#edf2f1;
+					border-radius:50%;
+					img{
+					width: 35px;	
+					}
+				}
+				.owl-prev{
+					left: 0;
+					transform:translateX(-50%) translateY(-50%);
+					transition:0.3s ease all;
+					&:hover{
+						transform:translateX(-60%) translateY(-50%);
+					}
+				}
+				.owl-next{
+					right:0;
+					transform:translateX(50%) translateY(-50%);
+					transition:0.3s ease all;
+					&:hover{
+						transform:translateX(60%) translateY(-50%);
+					}
+				}
+			}
+			.item{
+				width: 100%;
+				height:300px;
+				background:#ffffff;
+				display:flex;
+				justify-content:space-between;
+				.left_block{					
+					padding-left:35px;
+					padding-top:30px;
+				}
+				.right_block{
+					background: #dbdada;
+					max-width: 150px;
+					width: 100%;
+					height: 300px; 
+					border-radius:50%  0  0 50%;
+					position:relative;
+					.open_sorce{
+						position:absolute;
+						top:50%;
+						left: 50%;
+						transform:translate(-50%,-50%);	
+						width: 80px;
+						height:80px;
+						background:#ffff00;
+						border-radius:50px;
+						display:flex;
+						justify-content:space-around;
+						align-items:center;
+						&:hover{
+							cursor:pointer;
+							background:#d8d805;
+						}
+					img{
+						width: 50px;
+					}
+					}
+				}
+				.photo_patient{
+					width: 125px;
+					height:125px;
+					img{
+						border-radius:50%;
+					}
+					margin-bottom: 15px;
+				}
+				.name_P{
+					font-size: 22px;
+					font-family: 'ProximaNovaSemibold';
+				}
+				.location_P{
+					font-size: 16px;
+					color:#979797;
+					font-family: 'ProximaNovaSemibold';
+				}
+				.illness{
+					margin-top:15px;
+					span{
+						color:#979797;
+						font-size: 12px;
+						font-family: 'ProximaNovaSemibold';
+					}
+					p{
+						font-family: 'ProximaNovaSemibold';
+						font-size: 15px;
+						color:#000;
+					}
+				}
+			}
+		}
 		.block_six_response{
 			margin: 50px auto 50px auto;
 			max-width: 430px;

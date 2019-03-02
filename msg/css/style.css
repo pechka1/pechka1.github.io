@@ -766,6 +766,136 @@ header .header_line .telephon_number p {
   color: #ccc;
   font-family: "DejaVuSerif-Bold";
 }
+.conten_block_sidebar section .peoples_reviews_block {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.conten_block_sidebar section .peoples_reviews_block .owl-theme .owl-nav [class*=owl-] {
+  margin: 0;
+}
+.conten_block_sidebar section .peoples_reviews_block .add_post {
+  margin-top: 50px;
+  text-align: center;
+}
+.conten_block_sidebar section .peoples_reviews_block .add_post button {
+  font-family: "ProximaNovaSemibold";
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  background: #fff;
+  padding: 5px 20px;
+}
+.conten_block_sidebar section .peoples_reviews_block .add_post button:hover {
+  background: #ccc;
+}
+.conten_block_sidebar section .peoples_reviews_block h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-family: "ProximaNovaSemibold";
+  text-align: center;
+}
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider {
+  position: relative;
+}
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-prev,
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-next {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: #edf2f1;
+  border-radius: 50%;
+}
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-prev img,
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-next img {
+  width: 35px;
+}
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-prev {
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 0.3s ease all;
+}
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-prev:hover {
+  transform: translateX(-60%) translateY(-50%);
+}
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-next {
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+  transition: 0.3s ease all;
+}
+.conten_block_sidebar section .peoples_reviews_block .reviews-slider .owl-next:hover {
+  transform: translateX(60%) translateY(-50%);
+}
+.conten_block_sidebar section .peoples_reviews_block .item {
+  width: 100%;
+  height: 300px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .left_block {
+  padding-left: 35px;
+  padding-top: 30px;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block {
+  background: #dbdada;
+  max-width: 150px;
+  width: 100%;
+  height: 300px;
+  border-radius: 50% 0 0 50%;
+  position: relative;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: #ffff00;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce:hover {
+  cursor: pointer;
+  background: #d8d805;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce img {
+  width: 50px;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .photo_patient {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 15px;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .photo_patient img {
+  border-radius: 50%;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .name_P {
+  font-size: 22px;
+  font-family: "ProximaNovaSemibold";
+}
+.conten_block_sidebar section .peoples_reviews_block .item .location_P {
+  font-size: 16px;
+  color: #979797;
+  font-family: "ProximaNovaSemibold";
+}
+.conten_block_sidebar section .peoples_reviews_block .item .illness {
+  margin-top: 15px;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .illness span {
+  color: #979797;
+  font-size: 12px;
+  font-family: "ProximaNovaSemibold";
+}
+.conten_block_sidebar section .peoples_reviews_block .item .illness p {
+  font-family: "ProximaNovaSemibold";
+  font-size: 15px;
+  color: #000;
+}
 .conten_block_sidebar section .block_six_response {
   margin: 50px auto 50px auto;
   max-width: 430px;
