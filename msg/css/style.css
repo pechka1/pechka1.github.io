@@ -606,10 +606,9 @@ header .header_line .telephon_number p {
   z-index: 0;
 }
 .conten_block_sidebar section .block_five_form {
-  margin-left: 145px;
-  margin-top: 200px;
-  margin-bottom: 250px;
   position: relative;
+  margin: 200px auto 250px auto;
+  max-width: 550px;
 }
 .conten_block_sidebar section .block_five_form .vertical_line {
   height: 525px;
@@ -745,9 +744,8 @@ header .header_line .telephon_number p {
   font-family: "DejaVuSerif-Bold";
 }
 .conten_block_sidebar section .block_six_response {
-  margin-left: 145px;
-  margin-bottom: 50px;
-  padding-top: 50px;
+  margin: 50px auto 50px auto;
+  max-width: 430px;
   position: relative;
 }
 .conten_block_sidebar section .block_six_response .block_six_response_mask {

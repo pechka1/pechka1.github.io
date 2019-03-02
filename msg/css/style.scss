@@ -581,10 +581,9 @@ header {
 			}
 		}
 		& .block_five_form{
-			margin-left:145px;
-			margin-top:200px;
-			margin-bottom: 250px;
 			position:relative;
+			margin:200px auto 250px auto;
+			max-width: 550px;
 			.vertical_line{
 				height:525px;
 				width: 5px;
@@ -720,9 +719,8 @@ header {
 			}
 		}
 		.block_six_response{
-			margin-left:145px;
-			margin-bottom: 50px;
-			padding-top:50px;
+			margin: 50px auto 50px auto;
+			max-width: 430px;
 			position:relative;
 			.block_six_response_mask{
 				position:absolute;
