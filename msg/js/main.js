@@ -10,7 +10,7 @@ $(document).ready(function() {
 //Anchor
 	$('a.anchor').on('click', function(){
 		var id = $(this).attr('href');
-		$('html, body').animate({scrollTop: $(id).offset().top},1000)
+		$('html, body').animate({scrollTop: $(id).offset().top - 50} ,1000)
 	});
 });
 
@@ -36,6 +36,12 @@ $('.owl-carousel').owlCarousel({
 // Parallax
 $(".location_map").paroller({ 
 	factor: 0.3,
+	type: 'background',
+	direction: 'vertical' 
+});
+
+$(".item").paroller({ 
+	factor: 0.5,
 	type: 'background',
 	direction: 'vertical' 
 });

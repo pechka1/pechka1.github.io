@@ -73,7 +73,7 @@ header {
 	 position:fixed;
 	 left: 0;
 	 right:0;
-	 z-index: 10;
+	 z-index: 20;
 		& .header_line{
 		 display: flex;
 		 justify-content: space-between;
@@ -211,10 +211,11 @@ header {
 }
 // %%%% SIDEBAR %%%%
 .conten_block_sidebar{
-	max-width: 1135px;
+	max-width: 2800px;
 	margin:0 auto;
 	position:relative;
 	display: flex;
+	padding:0 15px;
 	& aside{
 		width: 244px;//Одинаково з шириною sidebar
 		display:block;
@@ -227,9 +228,7 @@ header {
 			& .social_block{
 				text-align: center;
 				vertical-align:bottom;
-				position:absolute;
-				left: 15%;
-				bottom:50px;
+				margin-top:40px;
 				& a{
 					margin:0 6px;
 					& img{
@@ -847,7 +846,8 @@ header {
 	}
 }
 footer{
-	max-width: 1135px;
+	max-width: 2800px;
+	padding:0 15px;
 	margin:0 auto;
 	& .out_block{
 		margin-left: 244px;
@@ -898,8 +898,8 @@ footer{
 
 	}
 	& .line_footer{
-		max-width: 835px;
-		height: 1px;
+		max-width: 1100px;
+		height: 2px;
 		background:#8e9191;
 		margin:0 auto;
 	}
