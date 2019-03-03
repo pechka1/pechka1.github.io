@@ -203,8 +203,9 @@ header {
 
 					}
 				}
-				& p{
+				a{
 					display: inline-block;
+					color:#fff;
 				}
 			}
 		}
@@ -374,6 +375,18 @@ header {
 						margin:20px 0;
 						font-size:26px;
 						font-family: 'ProximaNovaSemibold';
+					}
+					a{
+						font-family: 'ProximaNovaSemibold';
+						font-size: 22px;
+						color:#fff;
+						background:rgba(0,0,0,0.6);
+						padding:10px 15px;
+						text-transform:uppercase;
+						margin-top: 10px;
+						&:hover{
+							background:rgba(0,0,0,1);
+						}
 					}
 				}
 			}

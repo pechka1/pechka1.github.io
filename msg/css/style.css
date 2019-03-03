@@ -226,8 +226,9 @@ header .header_line .telephon_number span {
 header .header_line .telephon_number span img {
   vertical-align: bottom;
 }
-header .header_line .telephon_number p {
+header .header_line .telephon_number a {
   display: inline-block;
+  color: #fff;
 }
 
 .conten_block_sidebar {
@@ -396,6 +397,18 @@ header .header_line .telephon_number p {
   margin: 20px 0;
   font-size: 26px;
   font-family: "ProximaNovaSemibold";
+}
+.conten_block_sidebar section .block_one .item .wrappe_text a {
+  font-family: "ProximaNovaSemibold";
+  font-size: 22px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.conten_block_sidebar section .block_one .item .wrappe_text a:hover {
+  background: black;
 }
 .conten_block_sidebar section .block_one .text_of_first_block {
   font-family: "ProximaNovaSemibold";
