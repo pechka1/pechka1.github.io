@@ -852,12 +852,21 @@ header .header_line .telephon_number a {
   padding-top: 30px;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block {
-  background: #dbdada;
   max-width: 150px;
   width: 100%;
   height: 300px;
-  border-radius: 50% 0 0 50%;
   position: relative;
+  overflow: hidden;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .half_roud {
+  background: #dbdada;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: -90px;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce {
   position: absolute;
@@ -871,6 +880,7 @@ header .header_line .telephon_number a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 2;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce:hover {
   cursor: pointer;
