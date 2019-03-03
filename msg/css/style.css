@@ -867,6 +867,7 @@ header .header_line .telephon_number a {
   z-index: 1;
   left: 10px;
   top: -90px;
+  transition: 1s ease all;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce {
   position: absolute;
@@ -885,6 +886,9 @@ header .header_line .telephon_number a {
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce:hover {
   cursor: pointer;
   background: #d8d805;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce:hover + .half_roud {
+  background: green;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce img {
   width: 50px;

@@ -825,7 +825,6 @@ header {
 					max-width: 150px;
 					width: 100%;
 					height: 300px; 
-					//border-radius:50%  0  0 50%;
 					position:relative;
 					overflow:hidden;
 					.half_roud{
@@ -837,6 +836,7 @@ header {
 					z-index: 1;
 					left: 10px;
 					top:-90px;
+					transition:1s ease all;
 					}
 					.open_sorce{
 						position:absolute;
@@ -855,6 +855,9 @@ header {
 							cursor:pointer;
 							background:#d8d805;
 						}
+							&:hover + .half_roud{
+								background: green;
+							}
 					img{
 						width: 50px;
 					}
