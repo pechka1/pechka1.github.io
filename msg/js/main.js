@@ -108,3 +108,17 @@ else{
 	$('.open_close').text('Закрито');
 }
 });
+//
+$(document).ready(function() {
+	$('#add_post').on('click',function(){
+		$('.block_six_response').toggleClass('open');
+		$('.shadow_back').toggleClass('open');
+	});	
+});
+$(document).ready(function() {
+	$('.shadow_back').on('click',function(){
+		$('.block_six_response').toggleClass('open');
+		$('.shadow_back').toggleClass('open');
+		$('.block_six_response_mask').removeClass('close');
+	});	
+});

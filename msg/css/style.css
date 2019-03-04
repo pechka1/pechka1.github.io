@@ -393,6 +393,7 @@ header .header_line .telephon_number a {
   margin-left: 244px;
   border-left: 1px solid #cfd4d3;
   overflow: hidden;
+  position: relative;
 }
 .conten_block_sidebar section .block_one {
   margin-top: 35px;
@@ -959,10 +960,30 @@ header .header_line .telephon_number a {
   font-size: 15px;
   color: #000;
 }
+.conten_block_sidebar section .shadow_back {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  display: none;
+}
+.conten_block_sidebar section .block_six_response.open,
+.conten_block_sidebar section .shadow_back.open {
+  display: block;
+}
 .conten_block_sidebar section .block_six_response {
   margin: 50px auto 50px auto;
   max-width: 430px;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
 }
 .conten_block_sidebar section .block_six_response .block_six_response_mask {
   position: absolute;
