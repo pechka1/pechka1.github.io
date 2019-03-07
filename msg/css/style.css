@@ -430,6 +430,11 @@ header .header_line .telephon_number a {
   align-items: center;
   justify-content: center;
 }
+.conten_block_sidebar section .block_one .item .wrappe_text {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+}
 .conten_block_sidebar section .block_one .item .wrappe_text p {
   margin: 20px 0;
   font-size: 26px;
@@ -464,6 +469,13 @@ header .header_line .telephon_number a {
   padding-top: 30px;
   padding-bottom: 15px;
   position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s ease all;
+}
+.conten_block_sidebar section .block_two.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 .conten_block_sidebar section .block_two .big_line {
   height: 5px;
@@ -554,6 +566,13 @@ header .header_line .telephon_number a {
 .conten_block_sidebar section .block_three {
   max-width: 790px;
   margin: 100px auto 0 auto;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: 1s ease all;
+}
+.conten_block_sidebar section .block_three.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 .conten_block_sidebar section .block_three .line {
   width: 100%;
@@ -600,6 +619,13 @@ header .header_line .telephon_number a {
 }
 .conten_block_sidebar section .block_four {
   margin-top: 100px;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: 1s ease all;
+}
+.conten_block_sidebar section .block_four.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 .conten_block_sidebar section .block_four .location_map {
   height: 285px;
@@ -682,6 +708,13 @@ header .header_line .telephon_number a {
   margin: 0 auto 250px auto;
   max-width: 550px;
   padding-top: 200px;
+  opacity: 0;
+  transition: 1s ease all;
+  transform: translateX(-200px);
+}
+.conten_block_sidebar section .block_five_form.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 .conten_block_sidebar section .block_five_form .vertical_line {
   height: 525px;
@@ -819,7 +852,14 @@ header .header_line .telephon_number a {
 .conten_block_sidebar section .peoples_reviews_block {
   max-width: 1000px;
   width: 100%;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: 1s ease all;
   margin: 0 auto;
+}
+.conten_block_sidebar section .peoples_reviews_block.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 .conten_block_sidebar section .peoples_reviews_block .owl-theme .owl-nav [class*=owl-] {
   margin: 0;
@@ -975,8 +1015,7 @@ header .header_line .telephon_number a {
   display: block;
 }
 .conten_block_sidebar section .block_six_response {
-  margin: 50px auto 50px auto;
-  max-width: 430px;
+  max-width: 500px;
   width: 100%;
   position: fixed;
   top: 50%;
@@ -988,8 +1027,9 @@ header .header_line .telephon_number a {
 .conten_block_sidebar section .block_six_response .block_six_response_mask {
   position: absolute;
   top: 0;
-  bottom: -50px;
-  width: 430px;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background: #fff;
   display: block;
 }
@@ -1035,10 +1075,13 @@ header .header_line .telephon_number a {
   display: none;
 }
 .conten_block_sidebar section .block_six_response form {
-  max-width: 430px;
+  max-width: 500px;
   font-size: 12px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
+  background: green;
+  border-radius: 10px;
 }
 .conten_block_sidebar section .block_six_response form .name_last_wrappe {
   display: flex;
@@ -1084,8 +1127,8 @@ header .header_line .telephon_number a {
   font-family: "DejaVuSerif-Bold";
   width: 122px;
   height: 36px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-size: 13px;
   cursor: pointer;
 }

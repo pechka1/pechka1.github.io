@@ -21,8 +21,6 @@ $('#comment').attr('placeholder', 'Комментарий: ' + '\n' + 'Могу 
 
 $('.header_slider').owlCarousel({
     loop:true,
-    // nav:true,
-    // navText:['&#x27;next&#x27;','&#x27;prev&#x27;'],
     dots:false,
     autoplay:true,
     autoplayTimeout:5000,
@@ -108,7 +106,7 @@ else{
 	$('.open_close').text('Закрито');
 }
 });
-//
+//Fixed Describe
 $(document).ready(function() {
 	$('#add_post').on('click',function(){
 		$('.block_six_response').toggleClass('open');
@@ -121,4 +119,60 @@ $(document).ready(function() {
 		$('.shadow_back').toggleClass('open');
 		$('.block_six_response_mask').removeClass('close');
 	});	
+});
+//animation slider
+window.setInterval(function(){
+  if( $( ".owl-item.active")){
+  $( ".wrappe_text" ).animate({bottom: "50%",opacity: 1}, 1000).delay( 3000 );
+
+  }
+  if($( ".owl-item")){
+  	$( ".wrappe_text" ).animate({bottom: "0", opacity: 0}, 1000);
+  }
+
+}, 1000);
+//ScrollMagic
+
+$(document).ready(function() {
+
+	var controller = new ScrollMagic.Controller();
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement:'.block_two'
+	})
+	.setClassToggle('.block_two', 'show')
+	.addTo(controller);
+
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement:'.block_three'
+	})
+	.setClassToggle('.block_three', 'show')
+	.addTo(controller);
+
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement:'.block_four'
+	})
+	.setClassToggle('.block_four', 'show')
+	.addTo(controller);
+
+		var ourScene = new ScrollMagic.Scene({
+		triggerElement:'.block_five_form'
+	})
+	.setClassToggle('.block_five_form', 'show')
+	.addTo(controller);
+
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement:'.peoples_reviews_block'
+	})
+	.setClassToggle('.peoples_reviews_block', 'show')
+	.addTo(controller);
+
+
+	var sidbar = $('aside');
+	TweenMax.from(sidbar,1,{x:-200,opacity:0});
+
+	var block_one = $('.block_one');
+	TweenMax.from(block_one,1,{y:-200,opacity:0});
+
+	var header = $('header');
+	TweenMax.from(header,1,{y:-200,opacity:0});
 });

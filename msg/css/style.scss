@@ -386,6 +386,9 @@ header {
 				align-items:center;
 				justify-content: center;
 				&  .wrappe_text{
+					position:absolute;
+					bottom:0;
+					opacity:0;
 					p{
 						margin:20px 0;
 						font-size:26px;
@@ -423,6 +426,13 @@ header {
 			padding-top:30px;
 			padding-bottom:15px;
 			position:relative;
+			opacity: 0;
+			transform:translateY(100px);
+			transition:1s ease all;
+			&.show{
+			opacity: 1;
+			transform:translateY(0);
+			}
 				.big_line{
 					height: 5px;
 					background:#fff;
@@ -513,6 +523,13 @@ header {
 		& .block_three{
 			max-width: 790px;
 			margin:100px auto 0 auto;
+			opacity: 0;
+			transform:translateX(-200px);
+			transition: 1s ease all;
+			&.show{
+			opacity: 1;
+			transform:translateX(0);
+			}
 			& .line{
 				width: 100%;
 				height: 1px;
@@ -559,6 +576,13 @@ header {
 		}
 		& .block_four{
 			margin-top: 100px;
+			opacity:0;
+			transform:translateX(200px);
+			transition: 1s ease all;
+			&.show{
+			opacity: 1;
+			transform:translateX(0);
+			}
 			& .location_map{				
 				height: 285px;
 				background-position:center;
@@ -633,6 +657,13 @@ header {
 			margin:0 auto 250px auto;
 			max-width: 550px;
 			padding-top:200px;
+			opacity:0;
+			transition: 1s ease all;
+			transform:translateX(-200px);
+			&.show{
+				opacity:1;
+				transform:translateX(0);
+			}
 			.vertical_line{
 				height:525px;
 				width: 5px;
@@ -770,6 +801,13 @@ header {
 		.peoples_reviews_block{
 			max-width: 1000px;
 			width: 100%;
+			opacity: 0;
+			transform:translateX(200px);
+			transition:1s ease all;
+			&.show{
+				opacity:1;
+				transform:translateX(0);
+			}
 			.owl-theme .owl-nav [class*="owl-"]{
 				margin:0;
 			}
@@ -925,8 +963,7 @@ header {
 			display: block;
 		}
 		.block_six_response{
-			margin: 50px auto 50px auto;
-			max-width: 430px;
+			max-width: 500px;
 			width: 100%;
 			position:fixed;
 			top:50%;
@@ -939,8 +976,9 @@ header {
 			.block_six_response_mask{
 				position:absolute;
 				top:0;
-				bottom: -50px;
-				width: 430px;
+				left: 0;
+				bottom:0;
+				right:0;
 				background:#fff;
 				display:block;
 				.wrappe_block_social{
@@ -988,10 +1026,13 @@ header {
 				display:none;
 			}
 			form{
-				max-width: 430px;
+				max-width: 500px;
 				font-size:12px;
+				padding:30px;
 				display:flex;
 				flex-direction:column;
+				background:green;
+				border-radius:10px;
 				.name_last_wrappe{
 					display:flex;
 					justify-content:space-between;
@@ -1035,8 +1076,8 @@ header {
 					font-family: 'DejaVuSerif-Bold';
 					width: 122px;
 					height: 36px;
-					background:#000;
-					color: #fff;
+					background:#fff;
+					color: #000;
 					font-size:13px;
 					cursor:pointer;
 					&:hover{
