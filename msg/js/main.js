@@ -134,36 +134,49 @@ window.setInterval(function(){
 //ScrollMagic
 
 $(document).ready(function() {
-
+	var offsetTo = -100;
 	var controller = new ScrollMagic.Controller();
-	var ourScene = new ScrollMagic.Scene({
-		triggerElement:'.block_two'
+	var Scene2 = new ScrollMagic.Scene({
+		triggerElement:'.block_two',
+		offset: offsetTo
 	})
 	.setClassToggle('.block_two', 'show')
 	.addTo(controller);
 
-	var ourScene = new ScrollMagic.Scene({
-		triggerElement:'.block_three'
+	var ourScene3 = new ScrollMagic.Scene({
+		triggerElement:'.block_three',
+		offset: offsetTo
 	})
 	.setClassToggle('.block_three', 'show')
 	.addTo(controller);
 
-	var ourScene = new ScrollMagic.Scene({
-		triggerElement:'.block_four'
+	var ourScene4 = new ScrollMagic.Scene({
+		triggerElement:'.block_four',
+		offset: offsetTo
 	})
 	.setClassToggle('.block_four', 'show')
 	.addTo(controller);
 
-		var ourScene = new ScrollMagic.Scene({
-		triggerElement:'.block_five_form'
+		var ourScene5 = new ScrollMagic.Scene({
+		triggerElement:'.block_five_form',
+		offset: offsetTo
 	})
 	.setClassToggle('.block_five_form', 'show')
 	.addTo(controller);
 
-	var ourScene = new ScrollMagic.Scene({
-		triggerElement:'.peoples_reviews_block'
+	var ourScene6 = new ScrollMagic.Scene({
+		triggerElement:'.peoples_reviews_block',
+		offset: offsetTo
 	})
 	.setClassToggle('.peoples_reviews_block', 'show')
+	.addTo(controller);
+
+		
+	var footer = new ScrollMagic.Scene({
+		triggerElement:'footer',
+		offset: offsetTo
+	})
+	.setClassToggle('footer', 'show')
 	.addTo(controller);
 
 
