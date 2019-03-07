@@ -174,7 +174,7 @@ $(document).ready(function() {
 		
 	var footer = new ScrollMagic.Scene({
 		triggerElement:'footer',
-		offset: offsetTo
+		offset:-1000
 	})
 	.setClassToggle('footer', 'show')
 	.addTo(controller);

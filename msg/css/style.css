@@ -1149,7 +1149,7 @@ footer {
   padding: 0 15px;
   margin: 0 auto;
   opacity: 0;
-  transition: 1s ease all;
+  transition: 5s ease all;
 }
 footer.show {
   opacity: 1;
