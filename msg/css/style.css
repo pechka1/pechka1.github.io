@@ -923,6 +923,7 @@ header .header_line .telephon_number a {
   background: #ffffff;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .left_block {
   padding-left: 35px;
@@ -933,7 +934,6 @@ header .header_line .telephon_number a {
   width: 100%;
   height: 300px;
   position: relative;
-  overflow: hidden;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .half_roud {
   background: #dbdada;
@@ -945,6 +945,17 @@ header .header_line .telephon_number a {
   left: 10px;
   top: -90px;
   transition: 1s ease all;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .half_roud p {
+  position: absolute;
+  top: 25%;
+  left: 150px;
+  max-width: 280px;
+  font-family: "ProximaNovaSemibold";
+  font-size: 16px;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .half_roud.open {
+  left: -290px;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce {
   position: absolute;
@@ -959,6 +970,13 @@ header .header_line .telephon_number a {
   justify-content: space-around;
   align-items: center;
   z-index: 2;
+  transition: 1s ease all;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce.open {
+  left: -200px;
+}
+.conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce.open:hover + .half_roud {
+  background: #ccc;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce:hover {
   cursor: pointer;

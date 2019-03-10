@@ -16,9 +16,7 @@ $(document).ready(function() {
 
 $('#comment').attr('placeholder', 'Комментарий: ' + '\n' + 'Могу ли я записаться на 16:00 во вторник?');
 
-
-
-
+//SLIDER HEADAER
 $('.header_slider').owlCarousel({
     loop:true,
     dots:false,
@@ -31,6 +29,18 @@ $('.header_slider').owlCarousel({
         }
     }
 })
+//animation slider
+window.setInterval(function(){
+  if( $( ".owl-item.active")){
+  $( ".wrappe_text" ).animate({bottom: "50%",opacity: 1}, 1000).delay( 3000 );
+  $( ".wrappe_text" ).animate({bottom: "0", opacity: 0}, 1000);
+	var slider_header =  $('.header_slider');
+	    slider_header.trigger('stop.owl.autoplay').delay(1000);
+	    slider_header.trigger('play.owl.autoplay',[1000]);
+  }
+
+
+}, 1000);
 // Peoples Reviews  Slider
 $('.reviews-slider').owlCarousel({
     loop:true,
@@ -44,6 +54,11 @@ $('.reviews-slider').owlCarousel({
         }
     }
 })
+$('.open_sorce').on('click',function(){
+	$(this).closest('.right_block').find('.half_roud').toggleClass('open');
+	$(this).closest('.right_block').find('.open_sorce').toggleClass('open');
+});
+
 // Parallax
 $(".location_map").paroller({ 
 	factor: 0.3,
@@ -120,17 +135,6 @@ $(document).ready(function() {
 		$('.block_six_response_mask').removeClass('close');
 	});	
 });
-//animation slider
-window.setInterval(function(){
-  if( $( ".owl-item.active")){
-  $( ".wrappe_text" ).animate({bottom: "50%",opacity: 1}, 1000).delay( 3000 );
-
-  }
-  if($( ".owl-item")){
-  	$( ".wrappe_text" ).animate({bottom: "0", opacity: 0}, 1000);
-  }
-
-}, 1000);
 //ScrollMagic
 
 $(document).ready(function() {

@@ -870,6 +870,7 @@ header {
 				background:#ffffff;
 				display:flex;
 				justify-content:space-between;
+				overflow:hidden;
 				.left_block{					
 					padding-left:35px;
 					padding-top:30px;
@@ -879,7 +880,6 @@ header {
 					width: 100%;
 					height: 300px; 
 					position:relative;
-					overflow:hidden;
 					.half_roud{
 					background: #dbdada;
 					width: 500px;
@@ -890,6 +890,17 @@ header {
 					left: 10px;
 					top:-90px;
 					transition:1s ease all;
+					p{
+						position:absolute;
+						top:25%;
+						left: 150px;
+						max-width: 280px;
+						font-family: 'ProximaNovaSemibold';
+						font-size: 16px;
+					}
+					&.open{
+						left:-290px;
+					}
 					}
 					.open_sorce{
 						position:absolute;
@@ -904,6 +915,13 @@ header {
 						justify-content:space-around;
 						align-items:center;
 						z-index: 2;
+						transition:1s ease all;
+						&.open{
+							left: -200px;
+						}
+						&.open:hover+ .half_roud{
+							background:#ccc;
+						}
 						&:hover{
 							cursor:pointer;
 							background:#d8d805;
