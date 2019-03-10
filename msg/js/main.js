@@ -104,12 +104,17 @@ var  afterTime = moment('17:30', 'HH:mm');
 var  afterStime = moment('13:00','HH:mm');
 
 var mom = moment().format("d");
-if(mom <= 6 && moment().isBetween(beforeTime, afterTime)){
-	if(mom <=5 && moment().isBetween(beforeTime, afterTime)){
+console.log(mom);
+if(mom > 0 && mom <= 6 && moment().isBetween(beforeTime, afterTime)){
+	if(mom > 0 && mom <=5 && moment().isBetween(beforeTime, afterTime)){
 		$('.open_close').css('color','#74e78b');
 		$('.time-of-work').text('з 9:00 до 17:30');	
-	}else if(mom == 6 && moment().isBetween(beforeTime, afterStime)){
+	}else if(mom > 0 && mom == 6 && moment().isBetween(beforeTime, afterStime)){
 		$('.time-of-work').text('з 9:00 до 13:00');
+	}
+	else if(mom == 0){
+		$('.open_close').css('color','red');
+		$('.open_close').text('Закрито');	
 	}
 	else{
 		$('.open_close').css('color','red');
