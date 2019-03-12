@@ -81,6 +81,9 @@ header .navbar.navbar-default{
 	max-width: 1580px;
 	margin:35px auto 0 auto;
 }
+.navbar-default{
+	background:none;
+}
 .navbar-brand{
 	background:#1a1a1a;
 	border-radius: 50%;
