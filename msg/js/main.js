@@ -1,7 +1,13 @@
 //Dropdown menu
 $(document).ready(function() {
+	$('.dropdown_sidebar').find('ul').slideUp('normal');
 	$('.dropdown_sidebar').on('click',function(){
-		$(this).toggleClass('open');
+			var burger = $(this);
+			burger.toggleClass('open');
+			burger.find('ul').slideUp('normal');
+		if(burger.hasClass('open')){
+			burger.find('ul').slideDown('normal');	
+		}
 	});
 //BLOCK INFO
 	$('.info_block').on('click',function(){
@@ -30,17 +36,17 @@ $('.header_slider').owlCarousel({
     }
 })
 //animation slider
-window.setInterval(function(){
-  if( $( ".owl-item.active")){
-  $( ".wrappe_text" ).animate({bottom: "50%",opacity: 1}, 1000).delay( 3000 );
-  $( ".wrappe_text" ).animate({bottom: "0", opacity: 0}, 1000);
-	var slider_header =  $('.header_slider');
-	    slider_header.trigger('stop.owl.autoplay').delay(1000);
-	    slider_header.trigger('play.owl.autoplay',[1000]);
-  }
+// window.setInterval(function(){
+//   if( $( ".owl-item.active")){
+//   $( ".wrappe_text" ).animate({bottom: "50%",opacity: 1}, 1000).delay( 3000 );
+//   $( ".wrappe_text" ).animate({bottom: "0", opacity: 0}, 1000);
+// 	var slider_header =  $('.header_slider');
+// 	    slider_header.trigger('stop.owl.autoplay').delay(1000);
+// 	    slider_header.trigger('play.owl.autoplay',[1000]);
+//   }
 
 
-}, 1000);
+// }, 1000);
 // Peoples Reviews  Slider
 $('.reviews-slider').owlCarousel({
     loop:true,

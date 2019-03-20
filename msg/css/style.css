@@ -332,15 +332,15 @@ header .header_line .telephon_number a {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #000;
   border-width: 10px;
+  transition: 0.5s ease all;
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar:hover:after {
   border-top-color: #ccc;
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar.open:after {
-  transform: rotateX(180deg) translateY(50%);
+  transform: rotateZ(-180deg) translateY(50%);
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar ul {
-  display: none;
   padding-left: 0;
   margin-top: 10px;
 }
@@ -355,9 +355,6 @@ header .header_line .telephon_number a {
   position: absolute;
   top: 0;
   left: -7px;
-}
-.conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar.open ul {
-  display: block;
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar ul li {
   font-size: 13px;
@@ -429,11 +426,6 @@ header .header_line .telephon_number a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.conten_block_sidebar section .block_one .item .wrappe_text {
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
 }
 .conten_block_sidebar section .block_one .item .wrappe_text p {
   margin: 20px 0;
@@ -949,7 +941,7 @@ header .header_line .telephon_number a {
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .half_roud p {
   position: absolute;
   top: 25%;
-  left: 150px;
+  left: 100px;
   max-width: 280px;
   font-family: "ProximaNovaSemibold";
   font-size: 16px;
@@ -973,7 +965,7 @@ header .header_line .telephon_number a {
   transition: 1s ease all;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce.open {
-  left: -200px;
+  left: -230px;
 }
 .conten_block_sidebar section .peoples_reviews_block .item .right_block .open_sorce.open:hover + .half_roud {
   background: #ccc;
