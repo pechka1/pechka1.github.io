@@ -9,6 +9,15 @@ $(document).ready(function() {
 			burger.find('ul').slideDown('normal');	
 		}
 	});
+
+
+//SIDEBAR
+
+	$('.sidebar_open').on('click',function(){
+		$('.sidebar_open').find('i').toggleClass('fa-bars').toggleClass('fa-times');
+		$('.conten_block_sidebar aside').toggleClass('open');
+	});
+
 //BLOCK INFO
 	$('.info_block').on('click',function(){
 		$('.block_six_response_mask').addClass('close');
@@ -30,7 +39,7 @@ $('.header_slider').owlCarousel({
     autoplayTimeout:5000,
     autoplayHoverPause:true,
     responsive:{
-        1000:{
+        0:{
             items:1
         }
     }
@@ -57,6 +66,9 @@ $('.reviews-slider').owlCarousel({
     responsive:{
         1000:{
             items:2
+        },
+        0:{
+        	items:1
         }
     }
 })
@@ -148,59 +160,61 @@ $(document).ready(function() {
 });
 //ScrollMagic
 
-$(document).ready(function() {
-	var offsetTo = -100;
-	var controller = new ScrollMagic.Controller();
-	var Scene2 = new ScrollMagic.Scene({
-		triggerElement:'.block_two',
-		offset: offsetTo
-	})
-	.setClassToggle('.block_two', 'show')
-	.addTo(controller);
+// $(document).ready(function() {
+// 	var offsetTo = -100;
+// 	var controller = new ScrollMagic.Controller();
+// 	var Scene2 = new ScrollMagic.Scene({
+// 		triggerElement:'.block_two',
+// 		offset: offsetTo
+// 	})
+// 	.setClassToggle('.block_two', 'show')
+// 	.addTo(controller);
 
-	var ourScene3 = new ScrollMagic.Scene({
-		triggerElement:'.block_three',
-		offset: offsetTo
-	})
-	.setClassToggle('.block_three', 'show')
-	.addTo(controller);
+// 	var ourScene3 = new ScrollMagic.Scene({
+// 		triggerElement:'.block_three',
+// 		offset: offsetTo
+// 	})
+// 	.setClassToggle('.block_three', 'show')
+// 	.addTo(controller);
 
-	var ourScene4 = new ScrollMagic.Scene({
-		triggerElement:'.block_four',
-		offset: offsetTo
-	})
-	.setClassToggle('.block_four', 'show')
-	.addTo(controller);
+// 	var ourScene4 = new ScrollMagic.Scene({
+// 		triggerElement:'.block_four',
+// 		offset: offsetTo
+// 	})
+// 	.setClassToggle('.block_four', 'show')
+// 	.addTo(controller);
 
-		var ourScene5 = new ScrollMagic.Scene({
-		triggerElement:'.block_five_form',
-		offset: offsetTo
-	})
-	.setClassToggle('.block_five_form', 'show')
-	.addTo(controller);
+// 		var ourScene5 = new ScrollMagic.Scene({
+// 		triggerElement:'.block_five_form',
+// 		offset: offsetTo
+// 	})
+// 	.setClassToggle('.block_five_form', 'show')
+// 	.addTo(controller);
 
-	var ourScene6 = new ScrollMagic.Scene({
-		triggerElement:'.peoples_reviews_block',
-		offset: offsetTo
-	})
-	.setClassToggle('.peoples_reviews_block', 'show')
-	.addTo(controller);
+// 	var ourScene6 = new ScrollMagic.Scene({
+// 		triggerElement:'.peoples_reviews_block',
+// 		offset: offsetTo
+// 	})
+// 	.setClassToggle('.peoples_reviews_block', 'show')
+// 	.addTo(controller);
 
 		
-	var footer = new ScrollMagic.Scene({
-		triggerElement:'footer',
-		offset:-1000
-	})
-	.setClassToggle('footer', 'show')
-	.addTo(controller);
+// 	var footer = new ScrollMagic.Scene({
+// 		triggerElement:'footer',
+// 		offset:-1000
+// 	})
+// 	.setClassToggle('footer', 'show')
+// 	.addTo(controller);
 
 
-	var sidbar = $('aside');
-	TweenMax.from(sidbar,1,{x:-200,opacity:0});
+// 	  var sidbar = $('.sidebar_menu');
+// 		TweenMax.from(sidbar,1,{x:-200,opacity:0});	
+ 
+	
 
-	var block_one = $('.block_one');
-	TweenMax.from(block_one,1,{y:-200,opacity:0});
+// 	var block_one = $('.block_one');
+// 	TweenMax.from(block_one,1,{y:-200,opacity:0});
 
-	var header = $('header');
-	TweenMax.from(header,1,{y:-200,opacity:0});
-});
+// 	var header = $('header');
+// 	TweenMax.from(header,1,{y:-200,opacity:0});
+// });

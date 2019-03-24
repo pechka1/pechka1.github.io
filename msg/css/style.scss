@@ -94,6 +94,7 @@ header {
 		 max-width: 1000px;
 		 width: 100%;
 		 margin:auto;
+		 padding:0 15px;
 		 	& .time_to_work{
 		 		display: inline-flex;
 		 		justify-content: space-between;
@@ -230,7 +231,6 @@ header {
 	margin:0 auto;
 	position:relative;
 	display: flex;
-	padding:0 15px;
 	& aside{
 		width: 244px;//Одинаково з шириною sidebar
 		display:block;
@@ -238,8 +238,13 @@ header {
 		position:fixed;
 		top:35px;
 		bottom:0;
+		transition: 0.5s ease all;
+		.sidebar_open{
+	  	display:none;
+	  }
 		& .sidebar_menu{
 			  font-family: "proximanovasemibold";
+			  overflow-y:auto;
 			& .social_block{
 				text-align: center;
 				vertical-align:bottom;
@@ -382,6 +387,7 @@ header {
 				display: flex;
 				align-items:center;
 				justify-content: center;
+				padding:10px;
 				&  .wrappe_text{
 
 
@@ -419,16 +425,15 @@ header {
 			margin:100px auto 0 auto;
 			border:5px solid #fff;
 			max-width: 650px;
-			padding-top:30px;
-			padding-bottom:15px;
+			padding:30px 10px 15px 10px;
 			position:relative;
-			opacity: 0;
-			transform:translateY(100px);
-			transition:1s ease all;
-			&.show{
 			opacity: 1;
-			transform:translateY(0);
-			}
+			//transform:translateY(100px);
+			transition:1s ease all;
+			// &.show{
+			// opacity: 1;
+			// transform:translateY(0);
+			// }
 				.big_line{
 					height: 5px;
 					background:#fff;
@@ -519,13 +524,14 @@ header {
 		& .block_three{
 			max-width: 790px;
 			margin:100px auto 0 auto;
-			opacity: 0;
-			transform:translateX(-200px);
-			transition: 1s ease all;
-			&.show{
 			opacity: 1;
-			transform:translateX(0);
-			}
+			padding:0 15px;
+			//transform:translateX(-200px);
+			transition: 1s ease all;
+			// &.show{
+			// opacity: 1;
+			// transform:translateX(0);
+			// }
 			& .line{
 				width: 100%;
 				height: 1px;
@@ -536,14 +542,28 @@ header {
 				display:flex;
 				justify-content:space-between;
 				margin-bottom:35px;
-				& .wrappe_img_three img{
-					height: 350px;
+				.wrappe_img_three{
+				margin-right: 10px;
+					img{
+					max-height: 350px;
 					max-width: 350px;
+					width: 100%;
+					float:left;
+					display:inline-block;
+				}
+				h2{
+					float:right;
+				}
+				.test{
+					float:right;
+					display:inline-block;
+				}
 				}
 				& .wrappe_text_three{
 					font-family: 'ProximaNovaSemibold';
 					font-weight:bold;
 					max-width: 400px;
+					width: 100%;
 					& h2{
 						font-size:30px;
 						margin-bottom:20px;
@@ -572,13 +592,13 @@ header {
 		}
 		& .block_four{
 			margin-top: 100px;
-			opacity:0;
-			transform:translateX(200px);
+			opacity:1;
+			//transform:translateX(200px);
 			transition: 1s ease all;
-			&.show{
-			opacity: 1;
-			transform:translateX(0);
-			}
+			// &.show{
+			// opacity: 1;
+			// transform:translateX(0);
+			// }
 			& .location_map{				
 				height: 285px;
 				background-position:center;
@@ -653,13 +673,13 @@ header {
 			margin:0 auto 250px auto;
 			max-width: 550px;
 			padding-top:200px;
-			opacity:0;
+			opacity:1;
 			transition: 1s ease all;
-			transform:translateX(-200px);
-			&.show{
-				opacity:1;
-				transform:translateX(0);
-			}
+			//transform:translateX(-200px);
+			// &.show{
+			// 	opacity:1;
+			// 	transform:translateX(0);
+			// }
 			.vertical_line{
 				height:525px;
 				width: 5px;
@@ -797,13 +817,14 @@ header {
 		.peoples_reviews_block{
 			max-width: 1000px;
 			width: 100%;
-			opacity: 0;
-			transform:translateX(200px);
+			opacity: 1;
+			//transform:translateX(200px);
 			transition:1s ease all;
-			&.show{
-				opacity:1;
-				transform:translateX(0);
-			}
+			padding:0 15px;
+			// &.show{
+			// 	opacity:1;
+			// 	transform:translateX(0);
+			// }
 			.owl-theme .owl-nav [class*="owl-"]{
 				margin:0;
 			}
@@ -1114,14 +1135,13 @@ header {
 }
 footer{
 	max-width: 2800px;
-	padding:0 15px;
 	margin:0 auto;
-	opacity:0;
-	transition:5s ease all;
-	&.show{
 	opacity:1;
+	transition:5s ease all;
+	// &.show{
+	// opacity:1;
 
-	}
+	// }
 	& .out_block{
 		margin-left: 244px;
 		padding-bottom:50px;
@@ -1176,4 +1196,133 @@ footer{
 		background:#8e9191;
 		margin:0 auto;
 	}
+}
+
+@media only screen and (max-width: 992px){
+	.conten_block_sidebar section{ 
+		.block_one .item .wrappe_text{
+			p{
+				font-size: 16px;
+
+			}
+			a{
+				font-size: 14px;
+			}
+		}
+		.block_two .big_line{
+			left: -150px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.conten_block_sidebar aside{
+		transform:translateX(-100%);
+		z-index:10;
+		.sidebar_open{
+			display:block;
+			position:absolute;
+			right: -50px;
+			top:5px;
+			font-size: 40px;
+			color:#000;
+			transition:.5s ease all;
+			z-index:10;
+			&:hover{
+				cursor:pointer;
+				color:#ccc;
+			}
+		}
+		&.open{
+			transform:translateX(0);
+			z-index:10;
+			background:#fff;
+		}
+	}
+	.conten_block_sidebar section{
+		margin-left: 0;
+		border:none;
+	}
+	footer .out_block{
+		margin-left: 0;
+		border:none;
+	}
+
+}
+@media only screen and (max-width: 610px){
+	header{
+		height:102px;
+		padding:10px 15px;
+		.header_line{
+			flex-direction: column-reverse;
+			align-items:center;
+			&>div,
+			&>a{
+				margin-bottom:10px;
+			}
+		}
+		.header_line .time_to_work p{
+			width: 140px;
+		}
+	}
+	.conten_block_sidebar section .block_one{
+		margin-top: 102px;
+		.item .wrappe_text{
+				 p{
+				margin-top:0;
+				margin-bottom: 5px;
+			}
+			a{
+				padding:6px 12px;
+			}	
+		}
+	}
+	.conten_block_sidebar aside{
+		top:102px;
+	}
+}
+@media only screen and (max-width: 550px){
+	.conten_block_sidebar section{
+	 .block_two{
+		 .our_work{
+			 h2{
+				font-size: 20px;
+			}
+			p{
+				font-size: 16px;
+				margin-top: 10px;
+			}	
+		}
+		 .image_block_two .img_med{
+			width: 90px;
+			height:90px;
+		  }	
+		}
+		.block_three_wrappe{
+			flex-direction:column;
+			align-items:center;
+		}	
+	}
+
+}
+@media only screen and (max-width: 467px){
+		.conten_block_sidebar section{
+		.block_one{
+			.item .wrappe_text{
+					 p{
+					margin:0;
+					line-height:1.3;
+					}
+					a{
+					font-size: 12px;
+					padding:5px 8px;
+				}	
+			}
+		}
+		.block_two .image_block_two  .wrappe_item_med{
+			&:nth-child(2n){
+				margin:0 10px;
+			}
+		}		
+	}	
 }
