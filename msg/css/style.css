@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DejaVuSerif-Italic";
   src: url("../fonts/DejaVuSerif-Italic.eot");
@@ -23,6 +24,13 @@
   font-family: "ProximaNovaSemibold";
   src: url("../fonts/MarkSimonsonProximaNovaSemibold.eot");
   src: url("../fonts/MarkSimonsonProximaNovaSemibold.eot") format("embedded-opentype"), url("../fonts/MarkSimonsonProximaNovaSemibold.woff2") format("woff2"), url("../fonts/MarkSimonsonProximaNovaSemibold.woff") format("woff"), url("../fonts/MarkSimonsonProximaNovaSemibold.ttf") format("truetype"), url("../fonts/MarkSimonsonProximaNovaSemibold.svg#MarkSimonsonProximaNovaSemibold") format("svg");
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../font-awesome-4.7.0/fonts/fontawesome-webfont.eot");
+  src: url("../font-awesome-4.7.0//fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../font-awesome-4.7.0//fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../font-awesome-4.7.0//fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../font-awesome-4.7.0//fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../font-awesome-4.7.0//fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -326,24 +334,18 @@ header .header_line .telephon_number a {
   cursor: pointer;
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar:after {
-  content: "";
+  content: "";
+  font-family: "FontAwesome";
   position: absolute;
   right: 10px;
-  top: 15px;
-  border: solid transparent;
-  height: 0;
-  width: 0;
-  pointer-events: none;
-  border-color: rgba(136, 183, 213, 0);
-  border-top-color: #000;
-  border-width: 10px;
+  top: 12px;
   transition: 0.5s ease all;
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar:hover:after {
   border-top-color: #ccc;
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar.open:after {
-  transform: rotateZ(-180deg) translateY(50%);
+  transform: rotate(180deg);
 }
 .conten_block_sidebar aside .sidebar_menu ul .dropdown_sidebar ul {
   padding-left: 0;
@@ -640,8 +642,9 @@ header .header_line .telephon_number a {
   position: absolute;
   bottom: 0;
   height: 100%;
-  left: 45%;
-  z-index: 10;
+  left: 51%;
+  z-index: 5;
+  transform: translateX(-50%);
   font-family: "ProximaNovaSemibold";
 }
 .conten_block_sidebar section .block_four .location_map .mask_map > div > p > span {
@@ -693,8 +696,8 @@ header .header_line .telephon_number a {
 .conten_block_sidebar section .block_four .location_map .trap {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
-  transform: skew(-15deg);
-  left: 45%;
+  transform: skew(-15deg) translateX(-50%);
+  left: 50%;
   width: 320px;
   bottom: 0;
   height: 100%;
@@ -702,9 +705,9 @@ header .header_line .telephon_number a {
 }
 .conten_block_sidebar section .block_five_form {
   position: relative;
-  margin: 0 auto 250px auto;
-  max-width: 550px;
-  padding-top: 200px;
+  margin: 100px auto 250px auto;
+  padding-top: 100px;
+  max-width: 430px;
   opacity: 1;
   transition: 1s ease all;
 }
@@ -714,14 +717,14 @@ header .header_line .telephon_number a {
   background: #fff;
   position: absolute;
   left: -65px;
-  top: 115px;
+  top: 10px;
 }
 .conten_block_sidebar section .block_five_form .horizontal_line {
-  width: 105%;
+  width: 550px;
   height: 5px;
   background: #fff;
   position: absolute;
-  top: 150px;
+  top: 60px;
   left: -120px;
 }
 .conten_block_sidebar section .block_five_form form {
@@ -1218,6 +1221,9 @@ footer .line_footer {
   .conten_block_sidebar section .block_two .big_line {
     left: -150px;
   }
+  .conten_block_sidebar section .block_five_form .vertical_line {
+    left: -30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .conten_block_sidebar aside {
@@ -1227,9 +1233,9 @@ footer .line_footer {
   .conten_block_sidebar aside .sidebar_open {
     display: block;
     position: absolute;
-    right: -50px;
+    right: -40px;
     top: 5px;
-    font-size: 40px;
+    font-size: 30px;
     color: #000;
     transition: 0.5s ease all;
     z-index: 10;
@@ -1301,6 +1307,11 @@ footer .line_footer {
     flex-direction: column;
     align-items: center;
   }
+  .conten_block_sidebar section .block_five_form {
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media only screen and (max-width: 467px) {
   .conten_block_sidebar section .block_one .item .wrappe_text p {
@@ -1313,6 +1324,38 @@ footer .line_footer {
   }
   .conten_block_sidebar section .block_two .image_block_two .wrappe_item_med:nth-child(2n) {
     margin: 0 10px;
+  }
+  .conten_block_sidebar section .block_four .location_map .trap {
+    width: 235px;
+  }
+  .conten_block_sidebar section .block_four .location_map .mask_map {
+    width: 250px;
+  }
+  .conten_block_sidebar section .block_four .location_map .mask_map > div {
+    margin-left: 80px;
+  }
+  .conten_block_sidebar section .block_four .location_map .mask_map > div > p > span {
+    font-size: 10px;
+  }
+  .conten_block_sidebar section .block_four .location_map .mask_map .logo_text::before,
+.conten_block_sidebar section .block_four .location_map .mask_map .location_adress::before,
+.conten_block_sidebar section .block_four .location_map .mask_map .telephon_number::before,
+.conten_block_sidebar section .block_four .location_map .mask_map .email_contact::before {
+    left: -25px;
+  }
+  .conten_block_sidebar section .block_five_form form textarea {
+    margin-top: 10px;
+  }
+  .conten_block_sidebar section .block_five_form .name_last {
+    margin: 0;
+    flex-direction: column;
+  }
+  .conten_block_sidebar section .block_five_form .name_last .necessarily,
+.conten_block_sidebar section .block_five_form .name_last input {
+    width: 100%;
+  }
+  .conten_block_sidebar section .block_five_form .name_last input {
+    margin-bottom: 10px;
   }
 }
 

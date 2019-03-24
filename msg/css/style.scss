@@ -279,24 +279,18 @@ header {
 						cursor: pointer;
 					}
 					&:after{
-						content:'';
+						content:'\f078';
+						font-family: 'FontAwesome';
 						position: absolute;
 						right:10px;
-						top:15px;
-						border: solid transparent;
-						height: 0;
-						width: 0;
-						pointer-events: none;
-						border-color: rgba(136, 183, 213, 0);
-						border-top-color: #000;
-						border-width: 10px;
+						top:12px;
 						transition:.5s ease all;
 					}
 					&:hover:after{
 						border-top-color: #ccc;
 					}
 					&.open:after{
-						transform:rotateZ(-180deg) translateY(50%);
+						transform: rotate(180deg);
 					}
 				}
 				& .dropdown_sidebar ul{
@@ -614,8 +608,9 @@ header {
 					position:absolute;
 					bottom:0;
 					height: 100%;
-					left: 45%;
-					z-index: 10;
+					left: 51%;
+					z-index: 5;
+					transform:translateX(-50%);
 					font-family: 'ProximaNovaSemibold';
 					& > div > p > span{
 						display:block;
@@ -659,8 +654,8 @@ header {
 				& .trap{
 					background:rgba(0,0,0,0.8);
 					position:absolute;
-					transform: skew(-15deg);
-					left: 45%;
+					transform: skew(-15deg) translateX(-50%);
+					left: 50%;
 					width: 320px;
 					bottom:0;
 					height: 100%;
@@ -670,9 +665,9 @@ header {
 		}
 		& .block_five_form{
 			position:relative;
-			margin:0 auto 250px auto;
-			max-width: 550px;
-			padding-top:200px;
+			margin:100px auto 250px auto;
+			padding-top:100px;
+			max-width: 430px;
 			opacity:1;
 			transition: 1s ease all;
 			//transform:translateX(-200px);
@@ -686,14 +681,14 @@ header {
 				background:#fff;
 				position:absolute;
 				left: -65px;
-				top: 115px;
+				top: 10px;
 			}
 			.horizontal_line{
-				width: 105%;
+				width: 550px;
 				height:5px;
 				background:#fff;
 				position:absolute;
-				top: 150px;
+				top: 60px;
 				left: -120px;
 			}
 			& form{
@@ -1212,6 +1207,9 @@ footer{
 		.block_two .big_line{
 			left: -150px;
 		}
+		.block_five_form .vertical_line{
+			left: -30px;
+		}
 	}
 }
 
@@ -1222,9 +1220,9 @@ footer{
 		.sidebar_open{
 			display:block;
 			position:absolute;
-			right: -50px;
+			right: -40px;
 			top:5px;
-			font-size: 40px;
+			font-size: 30px;
 			color:#000;
 			transition:.5s ease all;
 			z-index:10;
@@ -1301,7 +1299,12 @@ footer{
 		.block_three_wrappe{
 			flex-direction:column;
 			align-items:center;
-		}	
+		}
+		.block_five_form{
+			margin-top: 0;
+			padding-left:15px;
+			padding-right:15px;
+		}
 	}
 
 }
@@ -1323,6 +1326,42 @@ footer{
 			&:nth-child(2n){
 				margin:0 10px;
 			}
-		}		
-	}	
+		}
+		.block_four .location_map{
+			.trap{
+				width:235px;
+			}
+			.mask_map{
+				width:250px;
+				& > div{
+					margin-left: 80px;
+				}
+				& > div > p > span{
+					font-size:10px; 
+				}
+				.logo_text::before,
+				.location_adress::before,
+				.telephon_number::before,
+				.email_contact::before{
+					left: -25px;
+				}
+			} 
+		}
+		.block_five_form{
+			form textarea{
+				margin-top: 10px;
+			}
+			 .name_last{
+			margin:0;
+			flex-direction:column;
+			.necessarily,
+			input{
+				width:100%;
+			}
+			input{
+				margin-bottom: 10px;
+			}
+		}
+		}	
+	}
 }
