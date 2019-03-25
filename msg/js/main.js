@@ -64,11 +64,18 @@ $('.reviews-slider').owlCarousel({
     nav:true,
     navText:['<img src="images/arrow_left_s.png" >','<img src="images/arrow_right_s.png" >'],
     responsive:{
-        1000:{
+        1250:{
             items:2
         },
-        0:{
-        	items:1
+        551:{
+        	items:1,
+        	
+        },
+       	0:{
+       		items:1,
+       		//autoplay:true,
+    			//autoplayTimeout:1000,
+    			//autoplayHoverPause:true
         }
     }
 })
