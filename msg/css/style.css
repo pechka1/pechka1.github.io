@@ -1311,6 +1311,12 @@ footer .line_footer {
     color: #000;
     transition: 0.5s ease all;
     z-index: 10;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .conten_block_sidebar aside .sidebar_open:hover, .conten_block_sidebar aside .sidebar_open:focus, .conten_block_sidebar aside .sidebar_open:active {
     cursor: pointer;
