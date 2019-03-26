@@ -14,10 +14,15 @@ $(document).ready(function() {
 //SIDEBAR
 
 	$('.sidebar_open').on('click',function(){
-		$('.sidebar_open').find('i').toggleClass('fa-bars').toggleClass('fa-times');
+		$('.sidebar_open').toggleClass('open');
 		$('.conten_block_sidebar aside').toggleClass('open');
+		$('.shadow').toggleClass('open');
 	});
 
+	$('.sidebar_menu a').on('click',function(){
+		$('.sidebar_open').removeClass('open');
+		$('.conten_block_sidebar aside').removeClass('open');
+	});
 //BLOCK INFO
 	$('.info_block').on('click',function(){
 		$('.block_six_response_mask').addClass('close');
@@ -47,18 +52,6 @@ $('.header_slider').owlCarousel({
         }
     }
 })
-//animation slider
-// window.setInterval(function(){
-//   if( $( ".owl-item.active")){
-//   $( ".wrappe_text" ).animate({bottom: "50%",opacity: 1}, 1000).delay( 3000 );
-//   $( ".wrappe_text" ).animate({bottom: "0", opacity: 0}, 1000);
-// 	var slider_header =  $('.header_slider');
-// 	    slider_header.trigger('stop.owl.autoplay').delay(1000);
-// 	    slider_header.trigger('play.owl.autoplay',[1000]);
-//   }
-
-
-// }, 1000);
 // Peoples Reviews  Slider
 $('.reviews-slider').owlCarousel({
     loop:true,
@@ -76,9 +69,9 @@ $('.reviews-slider').owlCarousel({
         },
        	0:{
        		items:1,
-       		//autoplay:true,
-    			//autoplayTimeout:1000,
-    			//autoplayHoverPause:true
+       		autoplay:true,
+    			autoplayTimeout:4000,
+    		  autoplayHoverPause:true
         }
     }
 })
