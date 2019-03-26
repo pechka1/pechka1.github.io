@@ -12,16 +12,11 @@ $(document).ready(function() {
 
 
 //SIDEBAR
-
 	$('.sidebar_open').on('click',function(){
-		$('.sidebar_open').toggleClass('open');
-		$('.conten_block_sidebar aside').toggleClass('open');
-		$('.shadow').toggleClass('open');
+		$('.sidebar_open,.conten_block_sidebar aside,.shadow').toggleClass('open');
 	});
-
-	$('.sidebar_menu a').on('click',function(){
-		$('.sidebar_open').removeClass('open');
-		$('.conten_block_sidebar aside').removeClass('open');
+	$('.sidebar_menu a,.shadow').on('click',function(){
+		$('.sidebar_open,.conten_block_sidebar aside,.shadow').removeClass('open');
 	});
 //BLOCK INFO
 	$('.info_block').on('click',function(){
