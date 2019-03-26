@@ -1542,5 +1542,18 @@ footer{
 				}
 			}
 		}
+		.block_six_response{
+			top:50px;
+			transform: translateX(-50%);
+			form{
+				padding:15px;
+			.name_last_wrappe{
+				flex-direction: column;
+				input{
+					width:100%;
+				}
+				}
+			}
+		}
 	}
 }
