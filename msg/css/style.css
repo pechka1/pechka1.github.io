@@ -1353,11 +1353,15 @@ footer .line_footer {
     width: 150px;
   }
   header .header_line .more_info {
+    width: 20px;
     display: block;
     position: absolute;
-    right: 20px;
+    right: 15px;
     bottom: 0;
     color: #fff;
+    text-align: center;
+  }
+  header .header_line .more_info i {
     animation-name: show_info;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -1377,6 +1381,9 @@ footer .line_footer {
   }
   .conten_block_sidebar section .block_one .item .wrappe_text a {
     padding: 6px 12px;
+  }
+  .conten_block_sidebar section .block_five_form {
+    margin-bottom: 100px;
   }
 
   .conten_block_sidebar aside {

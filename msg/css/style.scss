@@ -1343,16 +1343,20 @@ footer{
 			width: 150px;
 		}
 		.more_info{
+			width:20px;
 			display:block;
 			position:absolute;
-			right:20px;
+			right:15px;
 			bottom:0;
 			color:#fff;
-			animation-name:show_info;
-			animation-duration: 1s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-			animation-direction: alternate;
+			text-align: center;
+			i{
+				animation-name:show_info;
+				animation-duration: 1s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
 			&:hover{
 				cursor:pointer;
 			}
@@ -1360,16 +1364,21 @@ footer{
 		}
 
 	}
-	.conten_block_sidebar section .block_one{
-		margin-top: 40px;
-		.item .wrappe_text{
-				 p{
-				margin-top:0;
-				margin-bottom: 5px;
+	.conten_block_sidebar section{
+			 .block_one{
+			margin-top: 40px;
+			.item .wrappe_text{
+					 p{
+					margin-top:0;
+					margin-bottom: 5px;
+				}
+				a{
+					padding:6px 12px;
+				}	
 			}
-			a{
-				padding:6px 12px;
-			}	
+		}
+		.block_five_form{
+			margin-bottom: 100px;
 		}
 	}
 	.conten_block_sidebar aside{
