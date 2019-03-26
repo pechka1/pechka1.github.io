@@ -1312,7 +1312,7 @@ footer .line_footer {
     transition: 0.5s ease all;
     z-index: 10;
   }
-  .conten_block_sidebar aside .sidebar_open:hover, .conten_block_sidebar aside .sidebar_open:focus, .conten_block_sidebar aside .sidebar_open:actice {
+  .conten_block_sidebar aside .sidebar_open:hover, .conten_block_sidebar aside .sidebar_open:focus, .conten_block_sidebar aside .sidebar_open:active {
     cursor: pointer;
     color: #ccc;
   }
