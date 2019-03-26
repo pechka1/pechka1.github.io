@@ -30,7 +30,10 @@ $(document).ready(function() {
 });
 
 $('#comment').attr('placeholder', 'Комментарий: ' + '\n' + 'Могу ли я записаться на 16:00 во вторник?');
-
+//Show Info
+	$('.more_info').on('click', function(){
+		$('header').toggleClass('open');
+		});
 //SLIDER HEADAER
 $('.header_slider').owlCarousel({
     loop:true,

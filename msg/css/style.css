@@ -131,6 +131,17 @@ button::-moz-focus-inner {
     transform: translateX(0);
   }
 }
+@keyframes show_info {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
 header {
   background-color: #4c4c4c;
   height: 35px;
@@ -148,6 +159,10 @@ header .header_line {
   width: 100%;
   margin: auto;
   padding: 0 15px;
+  position: relative;
+}
+header .header_line .more_info {
+  display: none;
 }
 header .header_line .time_to_work {
   display: inline-flex;
@@ -1188,11 +1203,48 @@ footer .wrappe_footer .social_block_footer a img:hover {
 }
 footer .wrappe_footer .block_info {
   font-family: "ProximaNovaSemibold";
-  font-size: 9px;
+  font-size: 10px;
   font-weight: bold;
+  position: relative;
 }
-footer .wrappe_footer .block_info p {
-  margin: 5px 0;
+footer .wrappe_footer .block_info .trap {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  transform: skew(-15deg) translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 240px;
+  height: 172px;
+  z-index: -1;
+}
+footer .wrappe_footer .block_info .mask_map {
+  z-index: 1;
+  color: #fff;
+  margin-left: 85px;
+}
+footer .wrappe_footer .block_info .mask_map .location_adress,
+footer .wrappe_footer .block_info .mask_map .telephon_number,
+footer .wrappe_footer .block_info .mask_map .email_contact {
+  position: relative;
+  margin: 10px 0;
+}
+footer .wrappe_footer .block_info .mask_map .location_adress:before {
+  content: url("../images/location_red.png");
+  position: absolute;
+  left: -45px;
+}
+footer .wrappe_footer .block_info .mask_map .telephon_number:before {
+  content: url("../images/phone.png");
+  position: absolute;
+  left: -45px;
+}
+footer .wrappe_footer .block_info .mask_map .email_contact:before {
+  content: url("../images/sobaka.png");
+  position: absolute;
+  left: -45px;
+}
+footer .wrappe_footer .block_info .mask_map span {
+  display: block;
 }
 footer .wrappe_footer .social_block_footer a {
   margin: 0 10px;
@@ -1229,6 +1281,20 @@ footer .line_footer {
   }
   .conten_block_sidebar section .block_five_form .vertical_line {
     left: -30px;
+  }
+
+  footer .wrappe_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .wrappe_footer > div {
+    margin: 20px 0;
+  }
+  footer .wrappe_footer .social_block_footer a {
+    margin: 5px;
+  }
+  footer .wrappe_footer .block_info .trap {
+    left: 45%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1268,8 +1334,13 @@ footer .line_footer {
 }
 @media only screen and (max-width: 610px) {
   header {
-    height: 102px;
+    height: 110px;
+    transform: translateY(-70px);
     padding: 10px 15px;
+    transition: 1s ease all;
+  }
+  header.open {
+    transform: translateY(0);
   }
   header .header_line {
     flex-direction: column-reverse;
@@ -1281,9 +1352,24 @@ footer .line_footer {
   header .header_line .time_to_work p {
     width: 150px;
   }
+  header .header_line .more_info {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    color: #fff;
+    animation-name: show_info;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  header .header_line .more_info:hover {
+    cursor: pointer;
+  }
 
   .conten_block_sidebar section .block_one {
-    margin-top: 102px;
+    margin-top: 40px;
   }
   .conten_block_sidebar section .block_one .item .wrappe_text p {
     margin-top: 0;
@@ -1294,7 +1380,7 @@ footer .line_footer {
   }
 
   .conten_block_sidebar aside {
-    top: 102px;
+    top: 40px;
   }
 }
 @media only screen and (max-width: 550px) {
