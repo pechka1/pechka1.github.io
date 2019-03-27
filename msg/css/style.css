@@ -389,7 +389,7 @@ header .header_line .telephon_number a {
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
 }
-.conten_block_sidebar aside .sidebar_open {
+header  .sidebar_open {
   display: none;
 }
 .conten_block_sidebar aside .sidebar_menu {
@@ -731,7 +731,7 @@ header .header_line .telephon_number a {
 .conten_block_sidebar section .block_three .block_three_wrappe .wrappe_img_three h2 {
   float: right;
 }
-.conten_block_sidebar section .block_three .block_three_wrappe .wrappe_img_three .test {
+.conten_block_sidebar section .block_three .block_three_wrappe .wrappe_img_three .but {
   float: right;
   display: inline-block;
 }
@@ -1042,6 +1042,9 @@ header .header_line .telephon_number a {
   transition: 1s ease all;
   padding: 0 30px;
   margin: 0 auto;
+}
+.owl-theme .owl-dots{
+  margin-top:10px;
 }
 .conten_block_sidebar section .peoples_reviews_block .owl-theme .owl-nav [class*=owl-] {
   margin: 0;
@@ -1537,43 +1540,46 @@ footer .line_footer {
   }
 }
 @media only screen and (max-width: 768px) {
+  header .but{
+
+  }
   .conten_block_sidebar aside {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     z-index: 10;
   }
-  .conten_block_sidebar aside .sidebar_open {
+  header .sidebar_open {
     display: block;
-    position: absolute;
-    right: -45px;
-    top: 3px;
+    position: fixed;
+    left: 5px;
+    bottom: 0;
     font-size: 30px;
     color: #000;
     -webkit-transition: 0.5s ease all;
     transition: 0.5s ease all;
-    z-index: 10;
+    z-index: 21;
     padding: 7px;
   }
-  .conten_block_sidebar aside .sidebar_open.open span {
+  header .sidebar_open.open span {
     background: #fff;
   }
-  .conten_block_sidebar aside .sidebar_open.open span:first-of-type {
+  header .sidebar_open.open span:first-of-type {
     -webkit-transform-origin: 0px 0%;
             transform-origin: 0px 0%;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  .conten_block_sidebar aside .sidebar_open.open span:nth-child(2n) {
+  header  .sidebar_open.open span:nth-child(2n) {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
-  .conten_block_sidebar aside .sidebar_open.open span:last-of-type {
+  header .sidebar_open.open span:last-of-type {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     -webkit-transform-origin: 0px 100%;
             transform-origin: 0px 100%;
   }
-  .conten_block_sidebar aside .sidebar_open span {
+  header  .sidebar_open span {
     display: block;
     margin: 4px 0;
     width: 25px;

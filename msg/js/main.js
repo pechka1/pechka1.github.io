@@ -63,6 +63,7 @@ $('.reviews-slider').owlCarousel({
         	
         },
        	0:{
+       		dots:true,
        		items:1,
        		autoplay:true,
     			autoplayTimeout:4000,
