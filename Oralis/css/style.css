@@ -1,0 +1,1462 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p,h2{
+	margin: 0;
+}
+a,
+a:hover,
+a:focus{
+	text-decoration: none;
+}
+header input, 
+header textarea,
+header a,
+section input, 
+section textarea,
+section a,
+footer a{
+ outline: none;
+}
+button{
+	background: none;
+	border: none;
+}
+/*Header*/
+header{
+	max-width: 1920px;
+	margin:0 auto;
+}
+header .background_video{
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+header .background_video .logo{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	-webkit-transition: .6s all ease;
+	transition: .6s all ease;
+}
+header .background_video .logo:hover{
+	-webkit-transform: translate(-50%,-50%) scale(1.1) ;
+	        transform: translate(-50%,-50%) scale(1.1) ;
+}
+header .background_video:before{
+	content: '';
+	padding: 0 0 56% 0;
+	display: block;
+}
+header .button_down{
+	position:absolute;
+	bottom: 50px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	font-size:60px;
+	color: #fff;
+	-webkit-transition: .7s ease all;
+	transition: .7s ease all;
+	display:block;
+}
+header .button_down:hover,
+header .button_down:focus{
+	color: #fff;
+	text-decoration:none;
+	-webkit-transform: translateY(35%) translateX(-50%);
+	        transform: translateY(35%) translateX(-50%);
+	border: none;
+    outline:none;
+}
+header .navbar-nav .nav-item  a{
+	color: #2e2e2f;
+	font-size: 16px;
+	font-family: 'FuturaBT-Book';
+	line-height: 20px;
+	letter-spacing:100;
+	padding: 5px 15px;
+}
+header .navbar-nav .nav-item a:hover{
+	 font-family: 'FuturaHeavy';
+	 text-decoration: none;
+}
+header .main_navbar{
+	height:100px;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	max-width: 1060px;
+	margin:0 auto;
+}
+header .navbar-collapse{
+	-webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
+}
+section{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+section .block_cabinet{
+	position:relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+section .block_cabinet:before{
+	content: '';
+	display: block;
+	padding: 0 0 52% 0;
+}
+section .block_cabinet .block_text{
+	position:absolute;
+	max-width: 695px;
+	width: 100%;
+	height:365px;
+	border: 5px solid #a5c468;
+	bottom: -80px;
+	left: 230px;
+	background: #fff;
+	padding: 50px 90px 0 90px;
+}
+section .block_cabinet .block_text h2{
+	font-size: 36px;
+	color: #2e2e2f;
+	font-family: 'FuturaHeavy';
+}
+section .block_cabinet .block_text p{
+	font-size: 16px;
+	color: #2e2e2f;
+	font-family: 'FuturaBT-Book';
+}
+section .line_info_contact_as{
+	background: #a5c468;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+section .line_info_contact_as .wrapp{
+	max-width: 1465px;
+	margin:0 auto;
+}
+section .line_info_contact_as .right_block{
+	max-width:715px;
+	float: right;
+}
+section .line_info_contact_as .wrapp:after{ 
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+ }
+section .line_info_contact_as .right_block h2{
+	font-size: 30px;
+	font-family: 'FuturaHeavy';
+	color: #fff;
+	letter-spacing: 1.4px;
+}
+section .line_info_contact_as .bottom_block{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+section .line_info_contact_as .bottom_block .right p{
+	font-size: 24px;
+	color: #2e2e2f;
+	font-family: 'FuturaBT-Book';
+	margin-bottom: 0;
+	font-variant: small-caps;
+	letter-spacing: 3px;
+}
+section .line_info_contact_as .bottom_block .right a{
+	font-size: 36px;
+	font-family: 'FuturaHeavy';
+	color: #2e2e2f;
+	letter-spacing: 3px;
+	-webkit-transition: .5s ease all;
+	transition:.5s ease all;
+}
+section .line_info_contact_as .bottom_block .right a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+section .line_info_contact_as .bottom_block .contact_us_button{
+	padding: 15px 20px;
+	background: #fff;
+	font-size: 16px;
+	color: #000206;
+	text-transform:uppercase;
+	font-family: 'FuturaHeavy';
+	-ms-flex-item-align:start;
+	    align-self:flex-start;
+	-webkit-transition: .3s ease all;
+	transition:.3s ease all;
+}
+section .line_info_contact_as .bottom_block .contact_us_button:hover{
+	text-decoration: none;
+	background: #ccc;
+}
+section .meet_our_team{
+	max-width: 1465px;
+	margin:0 auto;
+	padding-top: 40px;
+}
+section .meet_our_team > h2{
+	font-size: 36px;
+	color: #2e2e2f;
+	text-transform: uppercase;
+	font-family: 'FuturaHeavy';
+}
+section .meet_our_team .wrapp{
+	margin-top: 90px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+	border-bottom: 4px solid #a5c468;
+	max-width: 694px;
+}
+section .meet_our_team .photo_staff{
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+}
+section .meet_our_team .info_staff{
+	max-width: 345px;
+	width:100%;
+}
+section .meet_our_team .info_staff h3{
+	font-size: 30px;
+	color: #2e2e2f;
+	letter-spacing: 3px;
+	font-family: 'FuturaTOT-Book';
+	padding-left: 10px;
+	margin-bottom:25px;
+}
+section .meet_our_team .info_staff ul{
+	list-style: none;
+	margin-bottom:0;
+}
+section .meet_our_team .info_staff ul li{
+	position:relative;
+	font-variant: small-caps;
+	padding-left: 15px;
+	color: #2e2e2f;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 1.6px;
+	font-family: 'FuturaTOT-Book';
+}
+section .meet_our_team .info_staff ul li:before{
+	content: '';
+	display: block;
+	height:3px;
+	width:3px;
+	-webkit-transform:rotate(45deg);
+	        transform:rotate(45deg);
+	background: #2e2e2f;
+	position:absolute;
+	left: 2px;
+	top:8px;
+}
+/*%%%% Our Assistens %%%%%*/
+section .our_assistens{
+	max-width: 1465px;
+	margin:90px  auto 0 auto;
+}
+section .our_assistens > h2{
+	margin-bottom:50px;
+	color: #2e2e2f;
+	font-size: 36px;
+	letter-spacing: 3.6px;
+	font-family: 'FuturaHeavy';
+}
+section .our_assistens .wrapp{
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+	overflow: hidden;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+section .our_assistens .item{
+	margin-top: 40px;
+}
+section .our_assistens .item img{
+	max-width: 240px;
+}
+section .our_assistens .item .name{
+	font-size: 30px;
+	font-family: 'FuturaTOT-Book';
+	color: #2e2e2f;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0;
+	line-height: normal;
+}
+section .our_assistens .item .job{
+	font-size: 16px;
+	font-family: 'FuturaTOT-Book';
+	line-height: 24px;
+	letter-spacing: 1.6px;
+	color: #2e2e2f;
+	text-align: center;
+}
+section .our_assistens .item .line{
+	height: 4px;
+	display: block;
+	background: #aec75f;
+	position:relative;
+}
+section .our_assistens .item .line:before{
+	content: '';
+	position:absolute;
+	width:50%;
+	height: 4px;
+	display: block;
+	background: #aec75f;
+}
+section .our_assistens .item .line:before{
+	right:-50%;
+}
+section .our_assistens .item:nth-child(5n) .line:before{
+ right: 0;
+}
+section .our_assistens .item:last-of-type  .line:before{
+	right: 0;
+}
+
+/* %%%% SLIDER %%%% */
+
+section .slider{
+	margin:50px auto 0 auto;
+	max-width: 1465px;
+}
+section .slider_nav.slick-current img{
+	border: 5px solid #aec75f;
+}
+section .slider .wrappe_slider{
+	position: relative;
+	padding: 0 0 62.11%   0;
+	overflow:hidden;
+}
+section .slider .slider_wrapp{
+	width:75%;
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	right:0;
+	top:0;
+}
+section .slider .slider_wrapp .slider_main{
+	padding: 0 0 14.11%   0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width:100%;
+	vertical-align: top;
+}
+section .slider .slider-nav{
+	width:22%;
+	display: inline-block;
+	margin-right:3%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+
+}
+section .slider .slider-nav > div img{
+	max-width: 317px;
+	width:100%;
+}
+section .slider_nav{
+	padding:10px 0;
+}
+section .slider .button_up,
+section .slider .button_down{
+	position:absolute;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	        transform:translateX(-50%);
+}
+section .slider .button_up:hover,
+section .slider .button_down:hover{
+	cursor: pointer;
+}
+section .slider .button_up{
+	top:20px;
+	z-index: 10;
+}
+section .slider .button_down{
+	bottom: 0;
+}
+
+/*OUR ENGAGEMENTS*/
+
+section .our_engagements{
+	margin:45px  auto 0 auto;
+	max-width: 1465px;
+}
+section .our_engagements h3{
+	font-family: 'FuturaHeavy';
+	font-size: 36px;
+	letter-spacing: 3.6px;
+	color: #2e2e2f;
+	margin-bottom:50px;
+}
+section .our_engagements .wrappe{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+section .our_engagements .wrappe div:nth-child(even){
+	margin-left: 15px;
+	margin-right: 15px;
+}
+section .our_engagements .wrappe > div{
+	max-width: 450px;
+	width:100%;
+	border: 5px solid #a5c468;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding:35px 0;
+}
+section .our_engagements .wrappe > div p{
+	font-size: 24px;
+	color: #2e2e2f;
+	letter-spacing: 2.4px;
+	font-variant: small-caps;
+	font-family: 'FuturaTOT-Book';
+	text-align: center;
+	margin-top:20px;
+}
+/* %%%% PROCESS OF SUPPORT %%%%*/
+section .process_of_support{
+	margin:70px  auto 0 auto;
+	max-width: 1465px;
+}
+section .process_of_support h3{
+	font-family: 'FuturaHeavy';
+	font-size: 36px;
+	letter-spacing: 3.6px;
+	color: #2e2e2f;
+	margin-bottom:45px;
+}
+section .process_of_support .item{
+	margin-bottom:45px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+section .process_of_support .item:last-of-type{
+	margin-bottom:0;
+}
+section .process_of_support .item .block_of_text{
+	max-width: 450px;
+	width:100%;
+	margin-top:-30px;
+}
+section .process_of_support .item .block_of_text ul{
+	list-style: none;
+	font-size: 72px;
+	font-family: 'FuturaHeavy';
+}
+section .process_of_support .item .block_of_text ul li span{
+	color: #aec75f;
+	padding-bottom: 30px;
+	vertical-align: top;
+}
+section .process_of_support .item .block_of_text ul p{
+	font-size: 24px;
+	display:inline-block;
+	max-width: 380px;
+	padding-top: 20px;
+	padding-left: 20px;
+	letter-spacing: 2.4px;
+	font-variant: small-caps;
+	font-family: 'FuturaTOT-Book';
+	line-height: normal;
+	color: #2e2e2f;
+}
+section .process_of_support .item .block_of_image{
+	max-width: 940px;
+}
+section .process_of_support .item:nth-child(even){
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+}
+/* %%% OUR TREATMENTS %%% */
+section .our_treatments{
+	margin:45px  auto 0 auto;
+	max-width: 1465px;
+}
+section .our_treatments > h3{
+	font-family: 'FuturaHeavy';
+	font-size: 36px;
+	letter-spacing: 3.6px;
+	color: #2e2e2f;
+	margin-bottom: 40px;
+}
+section .our_treatments .wrappe .item{
+	max-width:445px;
+	width:100%;
+	margin-bottom:45px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+}
+section .our_treatments .wrappe .item h3{
+	font-size: 30px;
+	letter-spacing: 1.1px;	
+	line-height: normal;
+	font-family: 'FuturaHeavy';
+	font-variant: small-caps;
+	margin-top:40px;
+	margin-bottom: 30px;
+}
+section .our_treatments .wrappe .item ul{
+	list-style: none;
+	color: #2e2e2f;
+	margin-bottom: 25px;
+}
+section .our_treatments .wrappe .item ul li{
+	font-size: 16px;
+	color: #2e2e2f;
+	letter-spacing: 1.6px;
+	position: relative;
+	padding-left: 15px;
+}
+section .our_treatments .wrappe .item ul li:before{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 3px;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	background: #2e2e2f;
+	position: absolute;
+	left: 2px;
+	top: 12px;
+}
+section .our_treatments .wrappe .item .read_more{
+	max-width: 243px;
+	width:100%;
+	padding: 10px 0;
+	border: 3px #aec75f solid;
+	display:block;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'FuturaHeavy';
+	color: #000;
+	margin:auto auto 0 auto;
+	-webkit-transition: 0.5s ease all;
+	transition:0.5s ease all;
+	text-decoration: none;
+}
+section .our_treatments .wrappe .item .read_more:hover{
+	background: #aec75f;
+	color: #fff;
+}
+section .acts_performed{
+	max-width: 1465px;
+	margin:65px auto 0 auto;
+}
+section .acts_performed > .wrapp{
+	width:50%;
+	color: #2e2e2f;
+	font-size: 24px;
+	letter-spacing: 2.4px;
+	font-family: 'FuturaTOT-Book';
+	font-variant: small-caps;
+	line-height: normal;
+}
+/* %%% Our laboratory prosthesis %%% */
+section .our_laboratory_prosthesis{
+	background-image: url('../images/our_laboratory_prosthesis_b.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+	padding:55px 0 ;
+	margin-top:45px;
+}
+section .our_laboratory_prosthesis > .wrapp{
+	max-width: 1465px;
+	margin:0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:end;
+	    -ms-flex-pack:end;
+	        justify-content:flex-end;
+}
+section .our_laboratory_prosthesis .text_block{
+	display: inline-block;
+	padding:50px;
+	background-color: #fff;
+	border: 5px solid #aec75f;
+}
+section .our_laboratory_prosthesis .text_block h3{
+	font-size: 36px;
+	color: #2e2e2f;
+	text-transform: uppercase;
+	font-family: 'FuturaHeavy';
+	letter-spacing: 3.6px;
+	margin-bottom:25px;
+	line-height:normal;
+}
+section .our_laboratory_prosthesis .text_block p{
+	font-family: 'FuturaTOT-Book';
+	font-size: 18px;
+	color: #2e2e2f;
+	letter-spacing: 1.8px;
+	font-variant: small-caps;
+	margin-bottom:25px;
+	line-height:normal;
+}
+section .our_laboratory_prosthesis .text_block p:last-of-type{
+	margin-bottom:0;
+}
+section .our_laboratory_prosthesis .text_block > .wrapp{
+	max-width: 525px;
+}
+/* %%% OUR TRAINING COMMITMENT %%%*/
+section .our_training_commitment{
+	padding-top: 60px;
+	margin-bottom:65px;
+}
+section .our_training_commitment > .wrappe{
+	max-width: 750px;
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+}
+section .our_training_commitment > .wrappe h3{
+	font-size: 36px;
+	color: #000;
+	letter-spacing: 2px;
+	font-family: 'FuturaHeavy';
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom:40px;
+}
+section .our_training_commitment > .wrappe p{
+	font-size: 24px;
+	color: #000;
+	font-family: 'FuturaTOT-Book';
+	font-variant: small-caps;
+	letter-spacing: 1.8px;
+	line-height: normal;
+	margin-bottom:40px;
+}
+section .our_training_commitment > .wrappe .button_block{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack:distribute;
+	    justify-content:space-around;
+}
+section .our_training_commitment > .wrappe .button_block a{
+	border: 3px solid #aec75f;
+	max-width: 310px; 
+	width:100%;
+	padding:10px 0;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+	font-family: 'FuturaHeavy';
+	-webkit-transition: 0.5s ease all;
+	transition:0.5s ease all;
+}
+section .our_training_commitment > .wrappe .button_block a:hover{
+	background-color: #aec75f;
+	color: #fff;
+}
+/* %%%backg %%%*/
+section .photo_build{
+	background-image: url('../images/background_b.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  position: relative;
+  margin-bottom:70px;
+}
+section .photo_build:before{
+ content: '';
+ display: block;
+ padding-bottom: 54%;
+ position: relative;
+}
+section .photo_build .mask{
+	 position: absolute;
+	 left: 0;
+	 top:0;
+	 right:0;
+	 bottom:0;
+	 background-color: rgba(37,40,43,.23);
+	 background-blend-mode:multiply;
+}
+/*%%% your opinion %%%*/
+section .your_opinion{
+	max-width: 1080px;
+	margin:0 auto 50px auto;
+	text-align: center;
+}
+section .your_opinion h4{
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #000;
+	font-family: 'FuturaHeavy';
+	margin-bottom:10px;
+}
+section .your_opinion .button_contact_us{
+	font-size: 16px;
+	color: #000;
+	font-family: 'FuturaHeavy';
+	text-transform: uppercase;
+	padding:10px 40px;
+	border: 3px solid #aec75f;
+	text-decoration: none;
+	-webkit-transition: .5s ease all;
+	transition:.5s ease all;
+	margin-top: 15px;
+	display: inline-block;
+}
+section .your_opinion .button_contact_us:hover{
+	color: #fff;
+	background-color: #aec75f;
+}
+/* %%% Knowledge is %%% */
+section .knowledge_is{
+	background-image: url('../images/knolege_is.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-bottom:75px;
+}
+section .knowledge_is:before{
+	content: '';
+	padding:0 0 43% 0;
+	display: block;
+}
+section .knowledge_is .wrapp{
+	max-width: 950px;
+	width:100%;
+	position: absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	        transform:translate(-50%,-50%);
+	height: 180px;
+}
+section .knowledge_is .wrapp h3{
+	font-size: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'FuturaHeavy';
+	letter-spacing: 1.6px;
+	text-shadow: 1px 1px 50px #ccc;
+	margin-bottom:0;
+}
+section .knowledge_is .wrapp span{
+	display: block;
+	text-align: right;
+	font-size: 36px;
+	font-family: 'FuturaTOT-Book';
+	color: #fff;
+	text-shadow: 1px 1px 50px #ccc;
+	margin-top: 50px;
+}
+/* %%% ACCESS THE CABINET %%% */
+section .access_the_cabinet{
+	padding-left: 245px;
+	padding-right: 0;
+}
+section .access_the_cabinet > h3{
+	font-family: 'FuturaHeavy';
+	font-size: 36px;
+	letter-spacing: 3.6px;
+	color: #2e2e2f;
+	margin-bottom: 100px;
+}
+section .access_the_cabinet .wrapp{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+section .access_the_cabinet .wrapp .info{
+	max-width: 350px;
+	width:100%;
+	padding: 100px 15px 50px 0;
+}
+section .access_the_cabinet .wrapp .info h3{
+	font-size: 24px;
+	color: #000;
+	font-family: 'FuturaTOT-Book';
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+section .access_the_cabinet .wrapp .info ul{
+	list-style: none;
+	font-size: 24px;
+	color: #000;
+	font-family: 'FuturaTOT-Book';
+	letter-spacing: 0.6px;
+	line-height: 30px;
+}
+section .access_the_cabinet .wrapp .info li{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+
+}
+section .access_the_cabinet .wrapp .map{
+	max-width: 1270px;
+	width:100%;
+}
+section .access_the_cabinet .wrapp .map iframe{
+	height: 100%;
+	width:100%;
+	border: 0px;
+}
+ /* %%% contact us for any your requests %%% */
+section .contact_us{
+	max-width: 1465px;
+	margin:80px  auto 0 auto;
+	padding-bottom: 100px;
+}
+section .contact_us > h3{
+	max-width: 500px;
+	font-size: 36px;
+	font-family: 'FuturaHeavy';
+	line-height:48px;
+	text-transform: uppercase;
+	margin-bottom:50px;
+}
+section .contact_us > .wrapp{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+section .contact_us  .left_block > .wrapp{
+	margin-bottom:50px;
+}
+section .contact_us  .left_block > .wrapp p{
+	font-size: 24px;
+	color: #413d3e;
+	letter-spacing: 1.2px;
+	font-family: 'FuturaHeavy';
+	margin-bottom:0;
+	font-variant: small-caps;
+	line-height: normal;
+}
+section .contact_us  .left_block > .wrapp a{
+	text-decoration: none;
+	color: #413d3e;
+}
+section .contact_us  .left_block .location{
+	max-width: 250px;
+	font-size: 18px;
+	color: #413d3e;
+	letter-spacing: 0.9px;
+	font-variant:small-caps;
+	font-family: 'FuturaTOT-Book';
+}
+section .contact_us .rigth_block{
+	max-width: 940px;
+	width:100%;
+	padding-top: 120px;
+}
+section .contact_us .rigth_block .wrapp{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+section .contact_us .rigth_block .wrapp .you_info{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	max-width: 440px;
+	width:100%;
+}
+section .contact_us .rigth_block .wrapp .you_info input{
+	height: 55px;
+	border: 2px solid #707070;
+	padding:0 10px;
+	font-family: 'FuturaTOT-Book';
+	color: #000;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+section .contact_us .rigth_block .wrapp .you_info input:last-child{
+	margin-bottom: 0;
+}
+section .contact_us .rigth_block .wrapp .messag{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	max-width: 440px;
+	width:100%;
+}
+section .contact_us .rigth_block .wrapp .you_info > label,
+section .contact_us .rigth_block .wrapp .messag label{
+	font-size:18px;
+	color: #454545;
+	letter-spacing: 1.35px;
+	font-variant: small-caps;
+	font-family: 'FuturaTOT-Book';
+	margin-bottom: 15px;
+	line-height: normal;
+}
+section .contact_us .rigth_block .wrapp .messag textarea{
+	height: 100%;
+	min-height: 200px;
+	border: 2px solid #707070;
+	padding: 10px;
+	font-family: 'FuturaTOT-Book';
+}
+section .contact_us .rigth_block .button_submit{
+	float: right;
+	margin-top:50px;
+	padding:0 30px;
+	height: 50px;
+	border: 3px solid #aec75f;
+	background:#fff;
+	font-size:16px;
+	color: #000;
+	text-transform: uppercase;
+	font-family: 'FuturaHeavy';
+	letter-spacing: 1.6px;
+	-webkit-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+}
+section .contact_us .rigth_block .button_submit:hover{
+	color: #fff;
+	background: #aec75f;
+}
+section .contact_us .rigth_block .button_submit:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* %%%% FOOTER %%%%*/
+footer{
+	max-width: 1920px;
+	margin:0 auto;
+	background-color: #a5c468;
+	position: relative;
+}
+footer:before{
+	content: '';
+	padding: 0 0 25.52% 0;
+	display: block;
+}
+footer .wrapp{
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+footer .wrapp p{
+	font-size:16px;
+	color: #fff;
+	font-family: 'FuturaTOT-Book';
+	letter-spacing: 0.8px;
+	position: absolute;
+	left:144px;
+	bottom: -10px;
+	white-space: nowrap;
+	margin-bottom: 0;
+}
+			/*MEDIA SCREEN*/
+@media only screen and (max-width: 1870px){
+	section .line_info_contact_as{
+		padding-top: 100px;
+	}
+}			
+@media only screen and (max-width: 1349px){
+	section .our_assistens .item:nth-child(n) .line:before{
+	 right: 0;
+	}	
+	section .contact_us > .wrapp{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+	}
+	section .contact_us > .wrapp .left_block{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	section .contact_us .left_block > .wrapp{
+		margin-bottom:0;
+		padding-right: 10px;
+	}
+	section .contact_us .left_block .location{
+		padding-left: 10px;
+	}
+	section .contact_us .rigth_block{
+		padding: 0;
+		margin-top:30px;
+	}
+	section .contact_us .rigth_block .wrapp .you_info{
+		margin-right:15px;
+	}
+}
+@media only screen and (max-width: 1200px){
+	header .background_video .logo img{
+		width:200px;
+	}
+	section .line_info_contact_as .right_block{
+		margin:0 auto;
+		float: none;
+	}
+	section .block_cabinet .block_text{
+		left: 50%;
+		-webkit-transform:translateX(-50%);
+		        transform:translateX(-50%);
+	}
+	section .access_the_cabinet{
+		padding: 0 15px;
+	}
+	footer .wrapp img{
+		max-width: 250px;
+	}
+	footer .wrapp p{
+		left: 95px;
+	}
+}
+@media only screen and (max-width: 1100px){
+  section .knowledge_is .wrapp{
+  	max-width: 630px;
+  }
+  section .knowledge_is .wrapp h3{
+  	font-size:30px;
+  }
+  section .knowledge_is .wrapp span{
+  	font-size:30px;
+  	margin-top:30px;
+  }
+}
+@media only screen and (max-width: 991px){
+	header .button_down{
+		font-size:30px;
+	}
+	header .main_navbar{
+		height: auto;
+	}
+	.navbar-nav{
+		text-align: center;
+	}
+	section .our_engagements .wrappe{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+	}
+	section .our_engagements .wrappe > div{
+		margin-bottom:20px;
+	}
+	section .our_engagements .wrappe div:nth-child(even){
+		margin-left: 0;
+		margin-right: 0;
+	}
+	section .process_of_support .item:nth-child(2n),
+	section .process_of_support .item{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	section .acts_performed > .wrapp{
+		width: 100%;
+	}
+	section .our_laboratory_prosthesis .text_block{
+		padding: 10px;
+	}
+	section .our_laboratory_prosthesis .text_block h3{
+		font-size:20px;
+		letter-spacing: 2px;
+		margin-bottom:10px;
+		text-align: center;
+	}
+	section .our_laboratory_prosthesis .text_block p{
+		margin-bottom:10px;
+		font-size:16px;
+	}
+	footer .wrapp img{
+		max-width: 200px;
+	}
+	footer .wrapp p{
+		font-size:14px;
+		left: 0px;
+		bottom: -22px;
+	}
+	footer:before{
+		padding-bottom: 250px;
+	}
+}
+@media only screen and (max-width: 768px){
+	section .block_cabinet .block_text{
+		padding: 15px;
+		height: auto;
+		max-width: 490px;
+	}
+	section .line_info_contact_as .right_block{
+		max-width: 445px;
+	}
+	section .line_info_contact_as .right_block h2{
+		font-size:20px;
+		letter-spacing: normal;
+	}
+	section .line_info_contact_as .bottom_block .right p{
+		font-size:16px;
+		letter-spacing: 2px;
+	}
+	section .line_info_contact_as .bottom_block .right a{
+		font-size:24px;
+	}
+	section .line_info_contact_as .bottom_block .contact_us_button{
+		padding: 10px;
+	}
+	section .meet_our_team .wrapp{
+		max-width: 520px;
+	}
+	section .our_engagements h3{
+		font-size:28px;
+		text-align: center;
+	}
+	section .our_training_commitment > .wrappe .button_block{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+	}
+	section .our_training_commitment > .wrappe .button_block a{
+		margin-bottom: 15px;
+	}
+	section .your_opinion h4{
+		font-size:24px;
+	}
+	section .knowledge_is .wrapp{
+		max-width: 508px;
+		height: auto;
+	}
+	section .knowledge_is .wrapp h3{
+		font-size:24px;
+	}
+	section .knowledge_is .wrapp span{
+		margin-top: 10px;
+		font-size:24px;
+	}
+	section .access_the_cabinet .wrapp{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+	}
+	section .access_the_cabinet .wrapp .map{
+		height: 350px;
+	}
+	section .access_the_cabinet > h3{
+		font-size:28px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	section .access_the_cabinet .wrapp .info{
+		padding: 0;
+	}
+	section .access_the_cabinet .wrapp .info{
+		margin-bottom:20px;
+	}
+	section .slider .button_up, 
+	section .slider .button_down{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 575px){
+	header .background_video .logo img{
+		width:100px;
+	}
+	header .button_down{
+		bottom: 20px;
+	}
+	section .block_cabinet .block_text h2{
+		font-size:23px;
+	}
+	section .block_cabinet .block_text p{
+		margin-bottom: 5px;
+	}
+	section .line_info_contact_as{
+		padding-top: 300px;
+	}
+	section .block_cabinet .block_text{
+		bottom: -300px;
+	}
+	section .line_info_contact_as .bottom_block{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+	}
+	section .line_info_contact_as .bottom_block .contact_us_button{
+		-ms-flex-item-align: auto;
+		    align-self: auto;
+	}
+	section .meet_our_team .info_staff ul li{
+		font-size:14px;
+		letter-spacing: 0;
+	}
+	section .meet_our_team > h2{
+		text-align: center;
+		font-size:28px;
+	}
+	section .meet_our_team .wrapp{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+		border: none;
+		margin-top: 35px;
+	}
+	section .meet_our_team .photo_staff{
+		-ms-flex-item-align: auto;
+		    align-self: auto;
+	}
+	section .meet_our_team .info_staff h3{
+		padding-left: 0;
+	}
+	section .our_assistens{
+		margin-top:50px;
+	}
+	section .our_assistens > h2{
+		font-size:28px;
+		margin-bottom:0;
+	}
+	section .our_training_commitment > .wrappe h3{
+		margin-bottom: 10px;
+		font-size:26px;
+	}
+	section .our_training_commitment > .wrappe p{
+		font-size:18px;
+		margin-bottom: 10px;
+	}
+	section .knowledge_is .wrapp{
+		max-width: 300px;
+	}
+	section .knowledge_is .wrapp h3{
+		font-size:18px;
+	}
+	section .knowledge_is .wrapp span{
+		font-size:18px;
+		margin-top:5px;
+	}
+	section .knowledge_is:before{
+		padding-bottom: 60%;
+	}
+	section .contact_us > .wrapp .left_block{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	section .contact_us .rigth_block .wrapp{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+	}
+	section .contact_us .rigth_block .wrapp .you_info{
+		margin-right:0;
+	}
+	section .contact_us .left_block > .wrapp{
+		margin-bottom:20px;
+		padding: 0;
+	}
+	section .contact_us .left_block .location{
+		padding: 0;
+	}
+	section .contact_us .rigth_block .button_submit{
+		float: none;
+		margin:20px auto 0 auto;
+		display: block;
+	}
+	section .contact_us > h3{
+		font-size:28px;
+		line-height:40px;
+		margin-bottom:25px;
+	}
+
+}
+@media only screen and (max-width: 467px){	
+	section .process_of_support .item .block_of_text ul{
+		font-size:35px;
+	}
+	section .process_of_support .item .block_of_text ul p{
+		max-width: 265px;
+		padding-left: 5px;
+		padding-top:0;
+		letter-spacing: 1px;
+	}
+	section .process_of_support h3{
+		font-size:28px;
+	}
+	section .our_treatments > h3{
+		font-size:28px;
+	}
+	section .our_treatments .wrappe .item h3{
+		font-size:20px;
+		text-align: center;
+	}
+	section .our_treatments .wrappe .item ul li{
+		font-size:14px;
+	}
+	section .our_treatments .wrappe .item .read_more{
+		font-size:14px;
+		max-width: 220px;
+		padding: 8px 0;
+	}
+	section .acts_performed{
+		margin-top:30px;
+	}
+	section .acts_performed > .wrapp{
+		font-size:20px;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	section .our_training_commitment{
+		padding-top: 30px;
+	}
+	section .your_opinion h4{
+		font-size:17px;
+	}
+	section .your_opinion .button_contact_us{
+		font-size:14px;
+		padding: 8px 30px;
+	}
+	section .knowledge_is .wrapp{
+		max-width: 260px;
+	}
+	section .knowledge_is .wrapp h3,
+	section .knowledge_is .wrapp span{
+		font-size:16px;
+	}
+	section .access_the_cabinet .wrapp .info h3{
+		font-size:20px;
+		margin-bottom:20px;
+	}
+	section .access_the_cabinet .wrapp .info ul{
+		font-size:20px;
+	}
+
+}

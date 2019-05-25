@@ -1,0 +1,1402 @@
+/*
+Theme Name:	mywpthemes
+Theme URI: mywordpress.ua
+Author: staswp
+Description: my first wordpress
+Version: 1.0
+*/
+body{
+	-webkit-font-smoothing:antialiased;
+	-webkit-overflow-scrolling:touch;
+	min-width: 320px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p{
+	margin: 0;
+}
+a,
+a:hover,
+a:focus{
+	text-decoration: none;
+}
+/* ---RIGHTSIDE MENU--- */
+.rightside_menu{
+	position: fixed;
+	right: 0;
+	top: 235px;
+	z-index: 5;
+}
+.rightside_menu ul{
+	padding: 0;
+}
+.rightside_menu ul li{
+	list-style: none;
+	text-align: center;
+}
+.rightside_menu ul li:hover i {
+	color: #ccc;
+}
+.rightside_menu ul li a{
+	text-align: center;
+	width: 48px;
+	height: 48px;
+	display: block;
+	line-height: 48px;
+}
+.rightside_menu ul li i{
+	font-size: 25px;
+	color: #fff;
+}
+.rightside_menu .facebook.color{
+	background: #2e5793;
+}
+.rightside_menu .twitter.color{
+	background: #20a7d4;
+}
+.rightside_menu .google.color{
+	background: #d04c33;
+}
+.rightside_menu .pinterest.color{
+	background: #ca2520;
+}
+.rightside_menu .email.color{
+	background: #738a8e;
+}
+.rightside_menu .plus.color{
+	background: #fb6947;
+}
+/* --- Header home section --- */
+header .home_section{
+	max-width: 1600px;
+	background: url(images/backgroud_header_home.jpg) no-repeat;
+	height: 850px;
+	margin: 0 auto;
+}
+header .inside_block{
+	max-width: 1210px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 22px;
+	margin: 0 auto;
+	position: relative;
+}
+header .top_line{
+	margin-bottom: 15px;
+	font-family: 'Roboto-Bold';
+}
+header .drop_line{
+	display: inline-block;
+}
+header .email_contact{
+	font-family: 'Roboto-Regular';
+}
+
+header .number_contact,
+header .email_contact{
+	display: inline-block;
+	color: #fff;
+}
+header .middle_contact{
+		color: #fff;
+		margin: 0 21px;
+}
+header .right_home_con{
+	float: right;
+	color: #fff;
+}
+header .right_home_con a{
+	color: #fff;	
+}
+header .right_home_con a:hover{
+	color:#ccc;
+}
+header .logo_small{
+	display: none;
+}
+header .logo{
+	width: 292px;
+	height: 180px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background:url(images/background_logo_1.png) no-repeat;
+	z-index: 2;
+}
+header .logo img{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+header .navbar{
+	width: 570px;
+	position: absolute;
+	left: 50%;
+	top: 200px;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+header .navbar-collapse{
+	padding: 0;
+}
+header .navbar-nav > li > a{
+	border: 2px solid #fff;
+	font-size: 18px;
+	color: #fff;
+	padding: 6px 11px;
+	background:rgba(255,255,255,0.3);
+	font-family: 'MuseoSlab-500';
+}
+header .navbar-nav > li:first-child{
+	margin-right: 20px;
+}
+header .navbar-nav > li{
+	margin-right: 15px;
+}
+header .navbar-nav > li:last-child{
+	margin-right:0;
+}
+header .navbar-nav > li > a:focus,
+header .navbar-nav > li > a:hover{
+	background:none;
+}
+header .navbar-nav > li > a:hover{
+	background:rgba(255,255,255,0.6)
+}
+/* -----SLIDER Header------ */
+header .slider_header{
+	z-index: 1;
+	max-height: 952px;
+}
+header .slider_header .item{
+	max-height: 952px;	
+}
+header .left_arrow,
+header .right_arrow{
+	position: relative;
+	width: 54px;
+	height: 54px;
+	background:#ca6820;
+}
+header .left_arrow:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 21px;
+	height: 21px;
+	border-left: 3px solid #fff;
+	border-top: 3px solid #fff;
+	transform: translate(-25%,-50%)  rotate(-45deg) ;
+}
+header .right_arrow:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 21px;
+	height: 21px;
+	border-left: 3px solid #fff;
+	border-top: 3px solid #fff;
+	transform: translate(-75%,-50%)  rotate(135deg) ;
+}
+header .owl-theme .owl-nav [class*="owl-"]{
+	margin: 0;
+}
+header .owl-prev{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+header .owl-next{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(50%,-50%);
+}
+header  .owl-prev:hover .left_arrow ,
+header  .owl-next:hover .right_arrow{
+	background: #ef8d45;
+}
+header .slide_block{
+	max-width: 1380px;
+	padding: 0 27px;
+	margin:0 auto;
+}
+header .button_slide img{
+	position: relative;
+}
+header .button_slide button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-65%);
+	color: #fff;
+	font-size: 48px;
+	text-transform: uppercase;
+	background: none;
+	border: 3px solid #fff;
+	max-width: 622px;
+	max-height: 114px;
+	height: 100%;
+	width: 100%;
+	font-family: 'MuseoSans-100';
+}
+header .button_slide button:hover{
+	color: #ccc;
+	border-color: #ccc;
+}
+/* ---Our Mission section / --- */
+section .our_mission{
+	height: 530px;
+	background: #465daa;
+}
+section .our_mission_inside{
+	max-width: 1210px;
+	margin: 0 auto;
+	padding-top: 225px;
+	text-align: center;
+	color: #ffffff;
+}
+section .our_mission_inside h2{
+	font-size: 24px;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 15px;
+	display: inline-block;
+	margin: 0 auto;
+  	font-family: 'MuseoSans-500';
+  	text-transform: uppercase;
+}
+section .our_mission_inside p{
+	font-size: 32px;
+	margin-top: 20px;
+	font-family: 'MuseoSlab-100';
+	max-width: 1080px;
+	margin:0 auto;
+	overflow: hidden;
+}
+/* --- Who are we?  --- */
+section .who_are_we_inside{
+	max-width: 1210px;
+	margin: 90px auto 0 auto;
+	text-align: center;
+	color: #616161;
+}
+section .who_are_we_inside h2{
+	font-size: 24px;
+	color: #465daa;
+	border-bottom: 3px solid #465daa;
+	padding-bottom: 15px;
+	max-width: 170px;
+	margin: 0 auto;
+  	font-family: 'MuseoSans-500';
+  	text-transform: uppercase;
+
+}
+section .who_are_we_inside p{
+	font-size: 30px;
+	margin-top: 20px;
+	font-family: 'MuseoSlab-100';
+	max-width: 1080px;
+	margin:0 auto;
+}
+section .who_are_we_inside p:last-child{
+	margin-top: 70px;
+}
+/* --- What Makes Avenai Unique? --- */
+section .what_makes_avenai{
+	background: url(images/background_what_makes_avena.jpg) no-repeat;
+	margin: 0 auto;
+	max-width: 1600px;
+	margin-top: 90px;
+}
+section .what_makes_caption {
+	font-size: 24px;
+	color: #fff;
+	font-family: 'MuseoSans-500';
+	text-transform: uppercase;
+	text-align: center;
+	max-width: 360px;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 12px;
+	padding-top: 70px;
+	margin: 0 auto  60px auto;
+}
+section .what_makes_avenai_inside{
+	max-width: 1210px;
+	margin: 0 auto;
+	font-size: 0;
+}
+section .block_info_row{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+section .block_info{
+	max-width: 381px;
+	display: inline-block;
+	vertical-align: top;
+}
+section .width_text{
+	max-width: 355px;
+	margin: 0 auto;
+}
+section .width_text.left_block{
+	max-width: 370px;
+}
+section .block_info h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #465daa;
+	font-family: 'MuseoSans-700';
+	margin-top:20px;
+	margin-bottom: 32px;
+}
+section .block_info p{
+	font-size: 18px;
+	color: #888888;
+	font-family: 'MuseoSans-300';
+	max-width: 375px;
+}
+/* --- FOOTER ---  */
+
+footer .footer_block{
+	background: url(images/backgorund_footer.jpg) no-repeat;
+	max-width: 1600px;
+	margin: 0 auto;
+	height: 575px;
+	clear:both;
+}
+footer .footer_block_inside{
+	max-width: 1210px;
+	margin: 0 auto;
+	height: 100%;
+}
+footer .text_up_menu{
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'MuseoSans-700';
+	margin-bottom: 8px;
+	margin-top: 25px;
+}
+footer .right_block_footer{
+	color: #c6c8d1;
+	font-size: 18px;
+	display: flex;
+  	flex-wrap: nowrap;
+}
+footer .logo{
+	display: block;
+	padding-top: 115px;
+	margin-bottom: 25px;
+}
+footer .right_block_footer ul{
+	padding: 0;
+	margin: 0;
+}
+footer .right_block_footer ul li{
+	list-style: none;
+  	font-family: 'MuseoSlab-300';
+}
+footer .right_block_footer ul li a{
+	color: #c6c8d1;
+  	font-family: 'MuseoSlab-300';
+}
+footer .right_block_footer ul li a:hover{
+	color: #fff;
+}
+footer .right_block_footer ul li:first-child{
+	text-transform: uppercase;
+	color: #fff;
+  	font-family: 'MuseoSans-700';
+  	margin-top: 25px;
+  	margin-bottom: 25px;
+}
+footer .consulting,
+footer .contact_footer,
+footer .about_footer{
+	display: inline-block;
+	vertical-align: top;
+}
+footer .about_footer{
+	margin-left: 9%;
+}
+footer .contact_footer{
+	max-width: 255px;
+}
+footer .consulting{
+	margin: 0 5.5%;
+}
+footer .rightside_menu.footer{
+	position: static;
+}
+footer .rightside_menu.footer.open{
+	display: none;
+}
+footer .rightside_menu.footer > ul > li{
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	position: relative;
+}
+footer .rightside_menu.footer ul li a i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+footer .rightside_menu.footer ul{
+	font-size: 0;
+	text-align: center;
+}
+footer .rightside_menu.footer ul li:last-child{
+	margin-right: 0;
+}
+footer .email_bottom{
+	margin-top: 25px;
+}
+footer .phone_bottom{
+	margin-bottom: 25px;
+}
+footer .careers_footer{
+	padding-top: 25px;
+}
+/* --------------- CONSULTING PAGE -------------- */ 
+header .block_header{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1325px;
+}
+header .logo.consulting{
+	background: url(images/background_logo_consulting.png) no-repeat;
+}
+header .home_section.consulting{
+	height: auto;
+	background: url(images/background_consulting.jpg) no-repeat;
+}
+header .block_header button{
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%,0);
+	color: #fff;
+	font-size: 48px;
+	text-transform: uppercase;
+	background: none;
+	border: 3px solid #fff;
+	max-width: 505px;
+	max-height: 115px;
+	height: 100%;
+	width: 100%;
+	font-family: 'MuseoSans-100';
+}
+header .block_header button:hover{
+	color: #6B6B6B;
+	border-color: #6B6B6B;
+}
+/* --- Our Areas of Expertise --- */
+section .our_areas{
+	max-width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	color: #616161;
+}
+section .our_areas h2{
+	font-size: 24px;
+	color: #465daa;
+	border-bottom: 3px solid #465daa;
+	padding-bottom: 15px;
+	display: inline-block;
+	margin: 0 auto;
+	font-family: 'MuseoSans-500';
+	text-transform: uppercase;
+	margin-top: 6.19%;
+	margin-bottom: 20px;
+}
+section .our_areas p {
+    font-size: 30px;
+    font-family: 'MuseoSlab-100';
+    margin: 0 auto;
+    margin-bottom: 75px;
+    overflow: hidden;
+}
+section .our_areas p:last-child{
+	margin-bottom: 90px;
+}
+
+/* --- Strategy --- */
+
+section .strategy_block{
+	background: url(images/Strategy_background.jpg) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin: 0 auto;
+	max-width: 1600px;
+	padding-top: 70px;
+	padding-bottom: 65px;
+	margin-bottom: 20px;
+}
+section .strategy_block_inside{
+	max-width: 1210px;
+	margin: 0 auto;
+}
+section .strategy_block_inside img{
+	display: inline-block;
+	float: left;
+	width: 31.48%;
+	margin-right: 4.13%;
+}
+section .text_side_block{
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	width: 59.1%;
+}
+section .text_side_block.top h2{
+	font-size: 24px;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	max-width: auto;
+	display: inline-block;
+	font-family: 'MuseoSans-500';
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+}
+section .text_side_block.top p{
+	font-size: 18px;
+	font-family: 'MuseoSlab-300';
+	color: #fff;
+	line-height: 30px;
+}
+section .text_side_block.top .out{
+	margin-bottom: 30px;
+}
+
+/* --- solutions delivery --- */
+section .solutions_delivery{
+	background: url(images/solutions_delivery_background.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin: 0 auto;
+	max-width: 1600px;
+	padding: 70px 0;
+	margin-bottom: 20px;
+}
+section .solutions_delivery_inside{
+	max-width: 1210px;
+	margin: 0 auto;
+}
+section .solutions_delivery_inside img{
+	display: inline-block;
+	float: right;
+	width: 31.48%;
+	margin-left: 4.13%;
+}
+section .text_side_block_middle{
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	width: 59%;
+
+}
+section .text_side_block_middle h2{
+	font-size: 24px;
+	display: inline-block;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	max-width: auto;
+	font-family: 'MuseoSans-500';
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	float: right;
+
+}
+section .text_side_block_middle p{
+	font-size: 18px;
+	font-family: 'MuseoSlab-300';
+	color: #fff;
+	text-align: right;
+	clear: both;
+	line-height: 30px;
+}
+section .text_side_block_middle .out{
+	margin-bottom: 40px;
+}
+/* --- solutions operations --- */
+section .operations_block{
+	background: url(images/operations_background.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin: 0 auto;
+	max-width: 1600px;
+	padding: 70px 0;
+	margin-bottom: 20px;
+	margin-bottom: 20px;
+}
+section .operations_block_inside{
+	max-width: 1210px;
+	margin: 0 auto;
+}
+section .operations_block_inside img{
+	display: inline-block;
+	float: left;
+	width: 31.48%;
+	margin-right: 4.13%;
+}
+section .text_side_block_bottom{
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	width: 56.1%;
+}
+section .text_side_block_bottom h2{
+	font-size: 24px;
+	display: inline-block;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	max-width: auto;
+	font-family: 'MuseoSans-500';
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+section .text_side_block_bottom p{
+	font-size: 18px;
+	font-family: 'MuseoSlab-300';
+	color: #fff;
+	line-height: 30px;
+}
+section .text_side_block_bottom .out{
+	margin-bottom: 38px;
+}
+
+/* --- ABOUT US PAGE  --- */
+header .about_page_header{
+	position: relative;
+	max-width: 1325px;
+	margin: 0 auto 70px auto;
+
+}
+header .logo.about_us{
+	background: url(images/background_logo_about_us.png) no-repeat;
+}
+header  .about_page_header button{
+	position: absolute;
+	top: 58.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 48px;
+	text-transform: uppercase;
+	background: none;
+	border: 3px solid #fff;
+	max-width: 505px;
+	max-height: 115px;
+	height: 100%;
+	width: 100%;
+	font-family: 'MuseoSans-100';
+}
+header .about_page_header button:hover{
+	color: #ccc;
+	border-color: #ccc;
+}
+/* --- Our Story --- */
+section .our_storyblock {
+	max-width: 1210px;
+	margin: 0 auto;
+	color: #616161;
+}
+section .our_storyblock h2{
+	color: #465daa;
+	font-size: 24px;
+	border-bottom: 3px solid #465daa;
+	padding-bottom: 10px;
+	max-width: 137px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+  	font-family: 'MuseoSans-500';
+  	text-transform: uppercase;
+}
+section .our_storyblock p{
+	font-size: 30px;
+	margin-top: 20px;
+	font-family: 'MuseoSlab-100';
+	max-width: 1110px;
+	margin:0 auto;
+	text-align: center;	
+}
+section .our_storyblock .out{
+	margin-bottom: 65px;
+}
+section .our_storyblock span{
+	font-family: 'MuseoSlab-500';
+}
+
+/* --- Our Culture  --- */
+.our_culture_block_back{
+	background: #465daa;
+	padding: 135px 0;
+	margin-top: 80px;
+}
+section .our_culture_block{
+	max-width: 1210px;
+	margin: 0 auto;
+}
+section .images_block{
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+}
+section .images_block.top{
+	margin-right:5%;
+	float: left;
+}
+section .block_right_info{
+	display: inline-block;
+	width:63%;
+	float: left;
+	padding-right: 20px;
+}
+section .block_right_info h2{
+	color: #fff;
+	font-size: 24px;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 10px;
+	max-width: 168px;
+	margin-bottom: 15px;
+	margin-top: 0;
+  	font-family: 'MuseoSans-500';
+  	text-transform: uppercase;
+}
+section .block_right_info p{
+	font-size: 18px;
+	margin-top: 20px;
+	max-width: 715px;
+	font-family: 'MuseoSlab-100';
+	text-align: left;
+	color: #fff;
+	line-height: 30px;
+}
+section .block_right_info .out{
+	margin-bottom: 30px;
+}
+/* --- Our Philosophy  --- */
+
+section .our_philosophy_block{
+	max-width: 1210px;
+	margin: 0 auto;
+	margin-top:20px;
+	clear:both;
+	padding-top: 90px;
+}
+section .block_philosophy_info{
+	width:60%;
+	float: right;
+}
+section .images_block.bottom{
+	float: right;
+	margin-left: 5%;
+}
+section .block_philosophy_info h2{
+	color: #fff;
+	font-size: 24px;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 10px;
+	max-width: 213px;
+	margin-bottom: 10px;
+	margin-top: 0;
+  	font-family: 'MuseoSans-500';
+  	text-transform: uppercase;
+  	float: right;
+}
+section .block_philosophy_info p{
+	font-size: 18px;
+	margin-top: 20px;
+	font-family: 'MuseoSlab-100';
+	max-width: 730px;
+	text-align: right;
+	color: #fff;
+	line-height: 30px;
+	clear: both;
+}
+section .block_philosophy_info .out{
+	margin-bottom: 25px;
+}
+
+/* --- We’re not just good at business transformation  --- */
+
+section .block_transformation{
+	max-width: 1210px;
+	margin:0 auto;
+}
+section .block_transformation > h2{
+	margin:5.08%  auto 4.4% auto;
+	text-align: center;
+	color: #465daa;
+	font-size: 24px;
+	font-family: 'MuseoSans-500';
+	max-width: 658px;
+	border-bottom:3px solid #465daa;
+	text-transform: uppercase;
+}
+section .block_of_business_transformation{
+	max-width: 32.1%;
+	width: 100%;
+	float: left;
+}
+section .block_of_business_transformation h2{
+	font-size: 18px;
+	color: #465daa;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-family: 'MuseoSans-500';
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+section .block_of_business_transformation p{
+	font-size: 18px;
+	color: #6e6e6e;
+	font-family: 'MuseoSlab-500';
+	line-height: 30px;
+	max-width: 370px;
+}
+section .row_transformation{
+}
+section .pic_of_block{
+	max-width: 380px;
+	width: 100%;
+	height: 240px;
+	background: rgba(0,0,0,0.1);
+	position: relative;
+}
+section .pic_of_block img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+section .row_transformation > div:nth-child(2){
+	margin: 0 1.71%;
+}
+
+/* --- MEDIA SCREEN --- */
+
+@media only screen and (max-width: 1199px){
+	section .block_info.middle{
+		margin: 0 10px;
+	}
+	section .block_info p{
+		font-size: 1.48vw;
+	}
+	section .our_mission{
+		height: 380px;
+	}
+	section .our_mission_inside{
+		padding-top: 70px;
+	}
+	footer .consulting{
+		margin-right: 15px;
+		max-width: 140px;
+	}
+	/* --- ABOUT US PAGE  --- */
+	section .block_right_info p,
+	section .block_philosophy_info p{
+		font-size: 1.50vw;
+	}
+	section .our_storyblock p{
+		font-size: 24px;
+	}
+
+}
+@media only screen and (max-width: 991px){
+	header .home_section{
+		height: 700px;
+	}
+	section .who_are_we_inside{
+		margin-top: 40px;
+	}
+	footer .about_footer{
+		margin-left: 20px;
+	}
+	footer .consulting{
+		margin-left: 15px;
+	}
+	/* --- ABOUT US PAGE  --- */
+	.our_culture_block_back{
+		padding:60px 0;
+	}
+	section .block_right_info p,
+	section .block_philosophy_info p{
+		line-height: 20px;
+	}
+/* --------------- CONSULTING PAGE -------------- */ 
+	header .block_header button{
+		max-width: 410px;
+		max-height: 80px;
+		font-size: 40px;
+	}
+
+}
+@media only screen and (max-width: 930px){
+	header .email_contact,
+	header .contact_us{
+		display: block;
+		padding-top: 10px;
+		position: relative;
+	}
+	header .email_contact:after,
+	header .contact_us:after{
+		content: '';
+		border: 1px solid #fff;
+		max-width: 100%;
+		position: absolute;
+		top: 4px;
+		left:0;
+		right: 0;
+	}
+	header .middle_contact{
+		display: none;
+	}
+	header .button_slide button{
+	max-width: 530px;
+	max-height: 100px;	
+	font-size: 5.16vw;
+	}
+	header .navbar{
+		width: 555px;
+	}
+
+}
+@media only screen and (max-width: 800px){
+	footer .right_block_footer{
+		font-size: 2.25vw
+	}
+		/* --- ABOUT US PAGE  --- */
+	section .block_of_business_transformation p,
+	section .block_of_business_transformation h2{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.rightside_menu.fixed{
+		display: none;
+	}
+	header .right_home_con{
+		display: inline-block;
+	}
+	header .top_line{
+		float: right;
+	}
+	header .home_section{
+		height: 600px;
+	}
+	header .drop_line{
+		margin-right: 20px;	
+	}
+	header .slide_block{
+		padding: 0;
+	}
+	header .slider_header{
+		clear: both;
+	}
+	header .logo_small{
+		display: inline-block;
+	}
+	header .logo_small img{
+		max-width: 150px;
+		height: 50px;
+		vertical-align: bottom;
+		position: absolute;
+		top: 16px;
+		left: 50%;
+		transform: translate(-50%,0);
+	}
+	header .logo{
+		display: none;
+	}
+	header .navbar-toggle .icon-bar{
+		background: #fff;
+		width: 25px;
+	}
+	header .navbar-toggle{
+		float: none;
+		margin:0;
+		background: rgba(225,225,225,0.4);
+	}
+	header .navbar-toggle:hover{
+		background: rgba(225,225,225,0.2);
+	}
+	header .navbar{
+		position: absolute;
+		top: 25px;
+		left: 15px;
+		width: auto;
+		transform: translateX(0%);
+	}
+	header .navbar-nav,
+	header .navbar-nav > li,
+	header .navbar-nav > li:first-child{
+		margin:0;
+	}
+	header .navbar-nav{
+		padding-top: 28px;
+	}
+	header .navbar-collapse{
+		box-shadow: none;
+	}
+	section .our_mission{
+		height: auto;
+		padding: 20px 0;
+	}
+	section .our_mission_inside{
+		padding-top: 0;
+	}
+	section .our_mission_inside h2{
+		font-size: 20px;
+		padding-bottom: 10px;
+		max-width: 145px;
+	}
+	section .our_mission_inside p,
+	section .who_are_we_inside p{
+		font-size: 24px;
+	}
+	section .who_are_we_inside{
+		margin-top:20px;
+	}
+	section .who_are_we_inside p:last-child{
+		margin-top:20px;
+	}
+	section .who_are_we_inside h2{
+		font-size: 20px;
+		max-width: 150px;
+		padding-bottom: 10px;
+	}
+	section .what_makes_avenai{
+		margin-top:30px;
+	}
+	section .block_info_row{
+		display: block;
+	}
+	section .block_info,
+	section .block_info.middle{
+		display: block;
+		margin: 0 auto;
+	}
+	section .block_info p{
+		font-size: 16px;
+	}
+	section .what_makes_caption{
+		padding-top: 20px;
+		margin-bottom: 0px;
+	}
+	section .block_info,
+	section .block_info.middle{
+		margin-top:25px;
+		border: 2px solid #ccc;
+	}
+	section .block_info h2{
+		margin-top:15px;
+		margin-bottom: 20px;
+	}
+		/* --- ABOUT US PAGE  --- */
+	header .about_page_header button{
+		font-size: 36px;
+		max-width: 400px;
+		max-height: 80px;
+		top:32%;
+	}	
+	section .our_storyblock h2{
+		font-size: 20px;
+		max-width: 115px;
+	}
+	section .our_storyblock p{
+		font-size: 20px;
+	}
+	section .our_storyblock .out{
+		margin-bottom: 30px;
+	}
+	section .block_right_info h2{
+		font-size: 20px;
+		max-width: 140px;
+		margin: 20px  auto 0 auto;
+	}
+	section .block_philosophy_info h2{
+		font-size: 20px;
+		float: none;
+		margin: 20px  auto 0 auto;
+		max-width: 180px;
+	}
+	section .block_right_info,
+	section .block_philosophy_info{
+		float: none;
+		width: 100%;
+	}
+	section .block_right_info .out ,
+	section .block_right_info p, 
+	section .block_philosophy_info p{
+		font-size: 20px;
+		text-align: center;
+	}
+	section .images_block.top,
+	section .images_block.bottom{
+		margin:0;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	section .our_philosophy_block{
+		padding-top: 0;
+	}
+	section .block_of_business_transformation{
+		float: none;
+		max-width: 100%;
+	}
+	section .block_of_business_transformation h2,
+	section .block_of_business_transformation p{
+		margin:0 auto;
+		text-align: center;
+		font-size: 16px;
+	}
+	section .pic_of_block{
+		margin:0 auto;
+	}
+	section .our_areas h2{
+		font-size: 20px;
+	}
+	section .our_areas p,
+	section .our_areas p:last-child{
+		font-size: 20px;
+		line-height: 25px;
+		margin-bottom:15px;
+	}
+/* --------------- CONSULTING PAGE -------------- */ 
+	header .block_header button{
+		top:50%;
+		transform: translate(-50%,-50%);
+	}
+	section .strategy_block_inside img,
+	section .text_side_block,
+	section .solutions_delivery_inside img,
+	section .text_side_block_middle,
+	section .operations_block_inside img,
+	section .text_side_block_bottom{
+		float: none;
+		width: 100%;
+		display: block;
+		margin:0 auto;
+		text-align:center;
+		line-height: 25px;
+	}
+	section .operations_block_inside img,
+	section .solutions_delivery_inside img,
+	section .strategy_block_inside img{
+		margin-bottom: 20px;
+	}
+	section .text_side_block_middle p{
+		text-align:center;
+	}
+	section .text_side_block_middle h2{
+		float: none;
+	}
+}
+@media only screen and (max-width: 700px){
+	header .home_section{
+		height: auto;
+		background-size: cover;
+		background-position: center center;
+	}
+	header .top_line{
+		display: block;
+	}
+	header .email_contact, 
+	header .contact_us{
+		display: inline-block;
+	}
+	header .top_line{
+		float: none;
+		margin-top:22px;
+	}
+	header .middle_contact{
+		display: inline-block;
+		margin:0 10px;
+	}
+	header .email_contact::after, 
+	header .contact_us::after{
+		display: none;
+	}
+	header .slider_header{
+		padding-bottom: 30px;
+	}
+	header .button_slide button{
+		max-width: 400px;
+		max-height: 90px;
+		font-size: 4.5vw;
+	}
+	header .navbar-nav{
+		padding-top:40px;
+	}
+	footer .rightside_menu.footer.open{
+	display: block;
+	}	
+	footer .rightside_menu.footer{
+		display: none;
+
+	}
+	footer .text_up_menu,
+	footer .logo{
+		text-align: center;
+	}
+	footer .logo{
+		padding-top: 70px;
+	}
+		/* --- ABOUT US PAGE  --- */
+	section .block_transformation > h2{
+		font-size: 3.42vw;
+		max-width: 94vw;
+	}
+}
+@media only screen and (max-width: 550px){
+	.owl-theme .owl-nav{
+		display: none;
+	}
+	header .button_slide button{
+		max-width: 260px;
+		max-height: 55px;
+		font-size: 20px;
+	}
+/* --------------- CONSULTING PAGE -------------- */ 
+	header .block_header button{
+		max-width: 360px;
+		max-height: 60px;
+		font-size: 32px;
+	}
+}
+@media only screen and (max-width: 479px){
+	.rightside_menu ul li a{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	header .right_home_con,
+	header .drop_line{
+		float: none;
+		display: block;
+		text-align: center;
+		margin:0;
+	}
+	header .right_home_con{
+		margin-left:11px;
+	}
+	header .logo_small img{
+		right: 0;
+		left: auto;
+		transform: translate(0%,0);
+	}
+	header .navbar-nav{
+		padding-top: 0;
+	}
+	header .navbar-nav > li > a{
+		background: rgba(255,255,255,0.8);
+		color: #465daa;
+		border-color: #465daa;
+	}
+	section .block_info, 
+	section .block_info.middle{
+		border: none;
+	}
+	section .what_makes_caption{
+		font-size: 5.01vw;
+		max-width: 75.15vw;
+	}
+	section .our_mission_inside h2,
+	section .who_are_we_inside h2{
+		font-size: 4.17vw;
+		max-width: 31vw;
+	}
+	section .our_mission_inside p, 
+	section .who_are_we_inside p{
+		font-size: 5.01vw;
+	}
+	footer .logo{
+		padding-top: 40px;
+	}
+	footer .right_block_footer{
+		font-size: 9px;
+	}
+	footer .about_footer{
+		margin-left:0;
+	}
+	/* --- ABOUT US PAGE  --- */
+	header .about_page_header button{
+		font-size: 28px;
+		max-width: 300px;
+		max-height: 55px;
+	}
+	header .about_page_header{
+		margin-bottom:5.8%;
+	}
+	header .home_section.consulting{
+		background-size: cover;
+		background-position: center center;
+	}
+	section .our_storyblock h2{
+		font-size: 16px;
+		max-width: 90px;
+	}
+	section .our_storyblock p{
+		font-size: 16px;
+	}
+	section .block_right_info h2{
+		font-size: 16px;
+		max-width: 112px;
+	}
+	section .block_philosophy_info h2{
+		font-size: 16px;
+		max-width: 141px;
+	}
+	section .block_right_info .out, 
+	section .block_right_info p, 
+	section .block_philosophy_info p {
+		font-size: 16px;
+	}
+	section .block_transformation > h2{
+		font-size: 16px;
+		max-width: 381px;
+	}
+	section .block_of_business_transformation p{
+		line-height: 20px;
+	}
+/* --------------- CONSULTING PAGE -------------- */ 	
+	header .block_header button {
+    	max-width: 260px;
+    	max-height: 45px;
+    	font-size: 28px;
+	}
+	section .text_side_block_middle h2,
+	section .text_side_block_bottom h2,
+	section .text_side_block.top h2{
+		font-size: 20px;
+	}
+	section .text_side_block.top p,
+	section .text_side_block_middle p,
+	section .text_side_block_bottom p{
+		line-height: 25px;
+	}
+	section .strategy_block,
+	section .solutions_delivery,
+	section .operations_block{
+		padding:40px 0;
+	}
+}

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'MuseoSlab-500';
+  src: url('../fonts/MuseoSlab/MuseoSlab-500.eot');
+  src: url('../fonts/MuseoSlab/MuseoSlab-500.woff2') format('woff2'),
+       url('../fonts/MuseoSlab/MuseoSlab-500.woff') format('woff'),
+       url('../fonts/MuseoSlab/MuseoSlab-500.ttf') format('truetype'),
+       url('../fonts/MuseoSlab/MuseoSlab-500.svg#MuseoSlab-500') format('svg'),
+       url('../fonts/MuseoSlab/MuseoSlab-500.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSlab-300';
+  src: url('../fonts/MuseoSlab/MuseoSlab-300.eot');
+  src: url('../fonts/MuseoSlab/MuseoSlab-300.woff2') format('woff2'),
+       url('../fonts/MuseoSlab/MuseoSlab-300.woff') format('woff'),
+       url('../fonts/MuseoSlab/MuseoSlab-300.ttf') format('truetype'),
+       url('../fonts/MuseoSlab/MuseoSlab-300.svg#MuseoSlab-300') format('svg'),
+       url('../fonts/MuseoSlab/MuseoSlab-300.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSlab-100';
+  src: url('../fonts/MuseoSlab/MuseoSlab-100.eot');
+  src: url('../fonts/MuseoSlab/MuseoSlab-100.woff2') format('woff2'),
+       url('../fonts/MuseoSlab/MuseoSlab-100.woff') format('woff'),
+       url('../fonts/MuseoSlab/MuseoSlab-100.ttf') format('truetype'),
+       url('../fonts/MuseoSlab/MuseoSlab-100.svg#MuseoSlab-100') format('svg'),
+       url('../fonts/MuseoSlab/MuseoSlab-100.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----- SANS ---- */
+
+@font-face {
+  font-family: 'MuseoSans-100';
+  src: url('../fonts/MuseoSans/MuseoSans-100.eot');
+  src: url('../fonts/MuseoSans/MuseoSans-100.woff2') format('woff2'),
+       url('../fonts/MuseoSans/MuseoSans-100.woff') format('woff'),
+       url('../fonts/MuseoSans/MuseoSans-100.ttf') format('truetype'),
+       url('../fonts/MuseoSans/MuseoSans-100.svg#MuseoSans-100') format('svg'),
+       url('../fonts/MuseoSans/MuseoSans-100.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url('../fonts/MuseoSans/MuseoSans-500.eot');
+  src: url('../fonts/MuseoSans/MuseoSans-500.woff2') format('woff2'),
+       url('../fonts/MuseoSans/MuseoSans-500.woff') format('woff'),
+       url('../fonts/MuseoSans/MuseoSans-500.ttf') format('truetype'),
+       url('../fonts/MuseoSans/MuseoSans-500.svg#MuseoSans-500') format('svg'),
+       url('../fonts/MuseoSans/MuseoSans-500.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-700';
+  src: url('../fonts/MuseoSans/MuseoSans-700.eot');
+  src: url('../fonts/MuseoSans/MuseoSans-700.woff2') format('woff2'),
+       url('../fonts/MuseoSans/MuseoSans-700.woff') format('woff'),
+       url('../fonts/MuseoSans/MuseoSans-700.ttf') format('truetype'),
+       url('../fonts/MuseoSans/MuseoSans-700.svg#MuseoSans-700') format('svg'),
+       url('../fonts/MuseoSans/MuseoSans-700.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-300';
+  src: url('../fonts/MuseoSans/MuseoSans-300.eot');
+  src: url('../fonts/MuseoSans/MuseoSans-300.woff2') format('woff2'),
+       url('../fonts/MuseoSans/MuseoSans-300.woff') format('woff'),
+       url('../fonts/MuseoSans/MuseoSans-300.ttf') format('truetype'),
+       url('../fonts/MuseoSans/MuseoSans-300.svg#MuseoSans-300') format('svg'),
+       url('../fonts/MuseoSans/MuseoSans-300.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --- ROBOTO --- */
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.eot');
+  src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+       url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
+       url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+       url('../fonts/Roboto/Roboto-Bold.svg#Roboto-Bold') format('svg'),
+       url('../fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.eot');
+  src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+       url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+       url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+       url('../fonts/Roboto/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+       url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
