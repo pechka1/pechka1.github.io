@@ -1465,6 +1465,9 @@ footer .bottom_line .tel_number img{
 	header .top_line .tel_number img{
 		width:35px;
 	}
+	header .main{
+		background-size: 9%;
+	}
 	header .main .for_export{
 		height: 300px;
 	}
@@ -1597,6 +1600,10 @@ footer .bottom_line .tel_number img{
 								url('../images/nutb_7.png') 65% 96% no-repeat, 
 								url('../images/nutb_8.png') 77% 101% no-repeat;
 		background-color: #21ac90;
+		background-size: 9%;
+	}
+	section .services_provide{
+		background-size: 24%;
 	}
 	section .services_provide > h2{
 		font-size:45px;
