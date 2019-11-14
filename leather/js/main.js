@@ -12,3 +12,18 @@ for (let anchor of anchors) {
     })
   })
 }
+
+$('section .gallery_block .wrapp .item a').fancybox({
+  thumbs: {
+    autoStart: true, // Display thumbnails on opening
+    hideOnClose: true, // Hide thumbnail grid when closing animation starts
+    parentEl: ".fancybox-container", // Container is injected into this element
+    axis: "y" // Vertical (y) or horizontal (x) scrolling
+  }
+
+});
+
+// // MDB Lightbox Init
+// $(function () {
+// $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+// });
