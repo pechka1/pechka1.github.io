@@ -529,3 +529,271 @@ section.about_us .person .list li{
 	list-style: disc;
 	margin-left: 27px;
 }
+ /* %%%%%  Our Services %%%%%%% */
+section.our_services,
+section.news{
+	margin-top: 120px;
+}
+section.our_services > h3,
+section.news > h3,
+section.contact .location > h3{
+	font-family: Source Serif Pro;
+	font-weight: bold;
+	font-size: 56.4744px;
+	line-height: 77px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #585959;
+	padding: 95px 0 50px 0;
+	background-image: url('../image/quotes_white_2.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+section.our_services > ul li{
+	margin-bottom: 20px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+section.our_services > ul li span{
+	background-color: #fff;
+	z-index: 1;
+	position: relative;	
+	font-family: Source Serif Pro;
+	font-weight: 600;
+	font-size: 34.392px;
+	line-height: 47px;
+	text-transform: uppercase;
+	color: #585959;
+}
+section.our_services > ul li:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	height: 1px;
+	width:  calc(100% - 60px);
+	border: 1px dashed #585959;
+}
+section.our_services > ul li span:first-of-type{
+	margin-left: 50px;
+	padding-right: 20px;
+}
+section.our_services > ul li span:last-of-type{
+	padding-left: 20px;
+}
+/* %%%%%  News %%%%%*/
+section.news{
+	margin-bottom: 220px;
+}
+section.news .item{
+	max-width: 380px;
+	width: 100%;
+	margin: 0 3px;
+}
+section.news .item .data{
+	font-family: FuturaDemiC;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 100.7%;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #949FA3;
+	margin:32px 0;
+	display: block;
+}
+section.news .item h5{
+	font-family: FuturaDemiC;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25.8px;
+	line-height: 122.2%;
+	color: #585959;
+	margin-bottom: 40px;
+}
+section.news .item .describe{
+	font-family: FuturaBookC;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 28px;
+	color: #585959;
+	padding-bottom: 39px;
+}
+section.news .item .describe:after{
+
+}
+section.news .item > a{
+	font-family: FuturaDemiC;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 100.7%;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #949FA3;
+	display: flex;
+	align-items: center;
+}
+section.news .item > a:hover{
+	color: #000;
+}
+section.news .item > a svg path{
+	transition: stroke .3s ease;
+}
+section.news .item > a:hover svg path{
+	stroke: #000;
+}
+section.news .item > a span:first-of-type{
+	padding-right: 20px;
+}
+section.news .wrap{
+	display: flex;
+}
+section.news .world,
+section.news .myself{
+	width: 100%;
+	position: relative;
+}
+section.news .myself:before,
+section.news .world:before{
+	content: '';
+	width: 1px;
+	background-color: #DDE0E2;
+	position: absolute;
+	right: 0;
+	top: -50%;
+	bottom: -10%;
+}
+section.news .myself:before{
+	left: 0;
+}
+section.news .world:before{
+	right: 0;
+}
+section.news .world{
+	display: flex;
+	justify-content: space-around;
+}
+section.news .myself{
+	display: flex;
+	justify-content: space-around;
+}
+section.news .wrap .inner_wrap{
+	width: 50%;
+}
+section.news .wrap .inner_wrap .title{
+	font-family: Source Serif Pro;
+	font-weight: bold;
+	font-size: 56.4744px;
+	line-height: 77px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #585959;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	height: 145px;
+	display: flex;
+	align-items: center;
+}
+
+/* %%%%% CONTACT %%%%% */
+section.contact{
+	position: relative;
+}
+section.contact .location{
+  max-width: 670px;
+  width: 100%;
+}
+section.contact .location > .wrap{
+	display: flex;
+	align-items: center;
+	margin-bottom: 26px;
+}
+section.contact .location > .wrap img{
+	padding-right: 11px;
+}
+section.contact .location > .wrap span{
+	font-family: FuturaDemiC;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: uppercase;
+	color: #585959;
+}
+section.contact .location .street{
+	font-family: FuturaBookC;
+	font-size: 23px;
+	line-height: 28px;
+	color: #585959;
+	margin-bottom: 42px;
+}
+section.contact .location .phone{
+	font-family: FuturaDemiC;
+	font-weight: 600;
+	font-size: 23px;
+	line-height: 122.2%;
+	color: #585959;
+	transition: color .3s ease;
+}
+section.contact .location .phone:hover{
+	color: #ccc;
+}
+section.contact form{
+	height: 100%;
+	background-color: #333333;
+	padding-left: 60px;
+	padding-top: 65px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+section.contact form .title{
+	font-family: Source Serif Pro;
+	font-weight:500;
+	font-size: 34px;
+	line-height: 46px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #F4F2EF;
+}
+section.contact form .desrcibe{
+	font-family: FuturaBookC;
+	font-size: 24px;
+	line-height: 27px;
+	color: rgba(244, 242, 239, 0.79);
+	width: 720px;
+}
+section.contact form textarea{
+	max-width: 520px;
+	width: 100%;
+	display: block;
+}
+section.contact form label{
+	font-family: FuturaBookC;
+	font-size: 14.4px;
+	line-height: 16px;
+	color: #CBCAC8;
+}
+section.contact form .cover{
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+}
+
+section.contact form .cover.name,
+section.contact form .cover.name input{
+	width: 100%;
+	max-width: 200px;
+}
+section.contact form .cover.cont,
+section.contact form .cover.cont input{
+	width: 100%;
+	max-width: 270px;
+}
+section.contact form .wrap{
+	display: flex;
+	justify-content: space-between;
+	max-width: 520px;
+	width: 100%;
+}
