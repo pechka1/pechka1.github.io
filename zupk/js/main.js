@@ -5,7 +5,7 @@ for(let type of types){
 		if(type.parentNode.querySelector('.list').classList.contains('show')){
 			type.querySelector('span').innerHTML = 'Переглянути спеціалістів';
 		}else{
-			type.querySelector('span').innerHTML = 'Закрити список';
+			type.querySelector('span').innerHTML = 'Сховати список';
 		}
 		type.classList.toggle('show');
 		type.parentNode.querySelector('.list').classList.toggle('show');

@@ -704,6 +704,7 @@ section.news .wrap .inner_wrap .title{
 
 /* %%%%% CONTACT %%%%% */
 section.contact{
+	margin-bottom: 110px;
 	position: relative;
 }
 section.contact .location{
@@ -776,7 +777,6 @@ section.contact form .desrcibe{
 	margin-bottom: 50px;
 }
 section.contact form textarea{
-	max-width: 520px;
 	width: 100%;
 	display: block;
 	border-bottom: 1px solid #F4F2EF;
@@ -787,6 +787,14 @@ section.contact form textarea{
 	font-family: FuturaBookC;
 	font-size: 14px;
 	resize: none;
+	position: relative;
+}
+section.contact form .cover.comment{
+	max-width: 520px;
+	width: 100%;
+}
+section.contact form textarea:hover:before{
+	width: 100%;
 }
 section.contact form label{
 	font-family: FuturaBookC;
@@ -798,6 +806,22 @@ section.contact form .cover{
 	display: flex;
 	width: 50%;
 	flex-direction: column;
+	position: relative;
+}
+section.contact form .cover:hover:before{
+	width: 100%;
+}
+section.contact form .cover:before,
+section.contact form textarea:before{
+	content: '';
+	transition: width .3s ease;
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	width: 0;
+	height: 3px;
+	background-color: #fff;
+	transform: translateX(-50%);
 }
 section.contact form .cover input{
 	border-bottom: 1px solid #F4F2EF;
@@ -828,11 +852,15 @@ section.contact form .wrap{
 	width: 100%;
 	margin-top: 15px;
 }
+
 section.contact form .submit{
 	border: 2px solid #F4F2EF;
-	padding: 19px 45px 14px 29px;
+	padding: 16px 45px 16px 29px;
+	transition: border .3s ease;
 	margin-top: 50px;
 	display: inline-block;
+	cursor: pointer;
+	position: relative;
 }
 section.contact form .submit input{
 	font-family: FuturaDemiC;
@@ -842,4 +870,32 @@ section.contact form .submit input{
 	text-transform: uppercase;
 	color: #F4F2EF;
 	background-color: transparent;
+	cursor: pointer;
+}
+section.contact form .submit:hover:before{
+	right: 15px;
+}
+section.contact form .submit:before{
+	content: url('../image/chevron.png');
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	transition: right .3s ease;
+}
+/* %%%%% MAP %%%%%*/
+section.map{
+	position: relative;
+	height: 380px;
+}
+section.map iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
