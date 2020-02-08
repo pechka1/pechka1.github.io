@@ -332,14 +332,17 @@ section.about_us .type .item button{
 	text-transform: uppercase;
 	color: #949FA3;
 	border: none;
-	background-color: none;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	transition: color .3s ease;
+	transition: color .3s ease , margin .3s ease;
+
 }
 section.about_us .type .item button.show{
 	margin-bottom: 40px;
+}
+section.about_us .type .item button svg{
+	transition: transform .3s ease;
 }
 section.about_us .type .item button.show svg{
 	transform: rotate(180deg);
@@ -363,10 +366,9 @@ section.about_us .type .item .list li{
 	color: #949FA3;
 }
 section.about_us .type .item .list{
-	display: none;
-}
-section.about_us .type .item .list.show{
-	display: block;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
 }
 section.about_us .person{
 	background-image: url('../image/quotes_white_2.png');
@@ -408,10 +410,21 @@ section.about_us .person .main_text{
 	position: relative;
 	transition: height .3s ease;
 }
+section.about_us .person .main_text.show{
+	height: 100%;
+}
 section.about_us .person .full_text{
-	display: none;
+/*	max-height: 0;
 	opacity: 0;
-	overflow: hidden;
+	width: 0;
+	font-size: 0;
+	line-height: 0;
+	position: static;
+	transition: height .3s ease;*/
+	/*margin:0;*/
+	/*padding: 0;*/
+	/*overflow: hidden;*/
+	display: none;
 }
 section.about_us .person .main_text:before{
 	content: '';
@@ -550,6 +563,8 @@ section.about_us .person .email_to_person > form{
 	width: 65%;
 	padding-bottom: 50px;
 	margin:60px auto 0 auto;
+	background-image: url('../image/quotes_black.png');
+	background-position: top left;
 }
 section.about_us .person .email_to_person form .submit{
 	margin-top: 0;
