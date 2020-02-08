@@ -371,11 +371,11 @@ section.about_us .type .item .list.show{
 section.about_us .person{
 	background-image: url('../image/quotes_white_2.png');
 	background-repeat: no-repeat;
-	background-position:30px 3.6%;
+	background-position:57px 1.5%;
 	background-size: auto;
 	position: relative;
 }
-section.about_us .person .name{
+section.about_us .person > .name{
 	font-family: Source Serif Pro;
 	font-weight: 600;
 	font-size: 36px;
@@ -404,8 +404,14 @@ section.about_us .person .main_text{
 	font-size: 23px;
 	line-height: 28px;
 	color: rgba(88, 89, 89, 0.87);
-	padding-bottom: 30px;
+	margin-bottom: 60px;
 	position: relative;
+	transition: height .3s ease;
+}
+section.about_us .person .full_text{
+	display: none;
+	opacity: 0;
+	overflow: hidden;
 }
 section.about_us .person .main_text:before{
 	content: '';
@@ -413,7 +419,7 @@ section.about_us .person .main_text:before{
 	width: 115px;
 	background-color: #949FA3;
 	position: absolute;
-	bottom: 0;
+	bottom: -30px;
 	left: 0;
 }
 section.about_us .person .more{
@@ -427,11 +433,16 @@ section.about_us .person .more{
 	align-items: center;
 	cursor: pointer;
 	transition: color .3s ease;
-	margin-top:30px;
 	margin-bottom: 50px;
 }
 section.about_us .person .more:hover{
 	color: #000;
+}
+section.about_us .person .more svg{
+	transition: .3s ease;
+}
+section.about_us .person .more.show svg{
+	transform: rotate(180deg);
 }
 section.about_us .person .more svg path{
 	transition: stroke .3s ease;
@@ -534,6 +545,19 @@ section.about_us .person .list li{
 	list-style: disc;
 	margin-left: 27px;
 }
+section.about_us .person .email_to_person > form{
+	position: static;
+	width: 65%;
+	padding-bottom: 50px;
+	margin:60px auto 0 auto;
+}
+section.about_us .person .email_to_person form .submit{
+	margin-top: 0;
+}
+section.about_us .person .email_to_person form .wrap{
+	padding-bottom: 80px;
+}
+
  /* %%%%%  Our Services %%%%%%% */
 section.our_services,
 section.news{
@@ -745,6 +769,7 @@ section.contact .location .phone{
 section.contact .location .phone:hover{
 	color: #ccc;
 }
+section.about_us .email_to_person form,
 section.contact form{
 	height: 100%;
 	background-color: #333333;
@@ -758,6 +783,7 @@ section.contact form{
 	background-position:bottom right;
 	background-repeat: no-repeat;
 }
+section.about_us .email_to_person form .title,
 section.contact form .title{
 	font-family: Source Serif Pro;
 	font-weight:500;
@@ -768,6 +794,7 @@ section.contact form .title{
 	color: #F4F2EF;
 	margin-bottom: 20px;
 }
+section.about_us .email_to_person form .desrcibe,
 section.contact form .desrcibe{
 	font-family: FuturaBookC;
 	font-size: 24px;
@@ -776,6 +803,7 @@ section.contact form .desrcibe{
 	width: 720px;
 	margin-bottom: 50px;
 }
+section.about_us .email_to_person form textarea,
 section.contact form textarea{
 	width: 100%;
 	display: block;
@@ -789,28 +817,35 @@ section.contact form textarea{
 	resize: none;
 	position: relative;
 }
+section.about_us .email_to_person form .cover.comment,
 section.contact form .cover.comment{
 	max-width: 520px;
 	width: 100%;
 }
+section.about_us .email_to_person form textarea:hover:before,
 section.contact form textarea:hover:before{
 	width: 100%;
 }
+section.about_us .email_to_person form label,
 section.contact form label{
 	font-family: FuturaBookC;
 	font-size: 14.4px;
 	line-height: 16px;
 	color: #CBCAC8;
 }
+section.about_us .email_to_person form .cover,
 section.contact form .cover{
 	display: flex;
 	width: 50%;
 	flex-direction: column;
 	position: relative;
 }
+section.about_us .email_to_person form .cover:hover:before,
 section.contact form .cover:hover:before{
 	width: 100%;
 }
+section.about_us .email_to_person form .cover:before,
+section.about_us .email_to_person form textarea:before,
 section.contact form .cover:before,
 section.contact form textarea:before{
 	content: '';
@@ -823,6 +858,7 @@ section.contact form textarea:before{
 	background-color: #fff;
 	transform: translateX(-50%);
 }
+section.about_us .email_to_person form .cover input,
 section.contact form .cover input{
 	border-bottom: 1px solid #F4F2EF;
 	background-color: transparent;
@@ -832,11 +868,15 @@ section.contact form .cover input{
 	font-family: FuturaBookC;
 	font-size: 14px;
 }
+section.about_us .email_to_person form .cover.name,
+section.about_us .email_to_person form .cover.name input,
 section.contact form .cover.name,
 section.contact form .cover.name input{
 	width: 100%;
 	max-width: 200px;
 }
+section.about_us .email_to_person form .cover.cont,
+section.about_us .email_to_person form .cover.cont input,
 section.contact form .cover.cont,
 section.contact form .cover.cont input{
 	width: 100%;
@@ -845,6 +885,7 @@ section.contact form .cover.cont input{
 section.contact .location > h3{
 	margin-bottom: 62px;
 }
+section.about_us .email_to_person form .wrap,
 section.contact form .wrap{
 	display: flex;
 	justify-content: space-between;
@@ -852,7 +893,7 @@ section.contact form .wrap{
 	width: 100%;
 	margin-top: 15px;
 }
-
+section.about_us .email_to_person form .submit,
 section.contact form .submit{
 	border: 2px solid #F4F2EF;
 	padding: 16px 45px 16px 29px;
@@ -862,6 +903,7 @@ section.contact form .submit{
 	cursor: pointer;
 	position: relative;
 }
+section.about_us .email_to_person form .submit input,
 section.contact form .submit input{
 	font-family: FuturaDemiC;
 	font-weight: 600;
@@ -872,9 +914,11 @@ section.contact form .submit input{
 	background-color: transparent;
 	cursor: pointer;
 }
+section.about_us .email_to_person form .submit:hover:before,
 section.contact form .submit:hover:before{
 	right: 15px;
 }
+section.about_us .email_to_person form .submit:before,
 section.contact form .submit:before{
 	content: url('../image/chevron.png');
 	position: absolute;
