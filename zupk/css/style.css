@@ -1112,9 +1112,7 @@ section.map iframe{
 	}
 	section.contact form{
 		position: static;
-		margin-left: -15px;
-		margin-right: -15px;
-		width: calc(100% + 30px);
+		width: 100% ;
 		max-width: 1027px;
 		margin:0 auto;
 		padding-bottom: 30px;
@@ -1253,7 +1251,7 @@ section.map iframe{
 	section.contact form{
 		background-position: 98% 98%;
 		background-size: 100px;
-		padding: 20px 30px;
+		padding: 20px 15px;
 	}
 	section.news{
 		margin-bottom: 90px;
@@ -1390,6 +1388,9 @@ section.map iframe{
 	}
 	section.contact .location > .wrap{
 		margin-bottom: 40px;
+		font-size: 16px;
+	}
+	section.contact .location > .wrap span{
 		font-size: 16px;
 	}
 }
