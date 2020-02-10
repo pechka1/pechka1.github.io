@@ -73,6 +73,13 @@ input{
 	border: none;
 	outline: none;
 }
+button:active, 
+button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
 .container{
 	max-width: 1920px;
 	margin:0 auto;
@@ -82,6 +89,54 @@ input{
 	max-width: 1610px;
 	margin:0 auto;
 	padding: 0 15px;
+}
+.burger_menu_right{
+	display: block;
+	z-index: 20;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	padding: 5px 10px;
+	background-color: rgba(0,0,0,.15);
+	border-radius: 3px;
+	width: 40px;
+	height: 36px;
+	border: none;
+	display: none;
+}
+.burger_menu_right span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: rgb(255,255,255);
+  transition: .2s ease;
+  margin: 0;
+  padding: 0;
+}
+.burger_menu_right span:first-child {
+    top: 10px;
+}
+.burger_menu_right span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.burger_menu_right span:last-of-type {
+    bottom: 10px;
+}
+.burger_menu_right.show span:first-child {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+.burger_menu_right.show span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+.burger_menu_right.show span:last-of-type {
+    bottom: 50%;
+    transform: translateY(50%) rotate(45deg);
 }
 header{
 	height: 100vh;
@@ -108,14 +163,19 @@ header .right{
 	background-color: #333333;
 	position: relative;
 }
-header .left .top_logo{
+header .left .top_logo,
+header .right .top_logo{
 	position: absolute;
 	top: 0;
 	left: 50px;
 	display: flex;
 	align-items: center;
 }
-header .left .top_logo span{
+header .right .top_logo{
+	display: none;
+}
+header .left .top_logo span,
+header .right .top_logo span{
 	font-family: 'FuturaDemiC';
 	font-style: normal;
 	font-weight: 600;
@@ -281,15 +341,6 @@ section.about_us .type .item .title{
 section.about_us .type .item .title img{
 	max-height: 77px;
 }
-section.about_us .type .item .title:before{
-	content: '';
-	width: 95px;
-	height: 2px;
-	background-color: #BCC5C9;
-	position: absolute;
-	bottom: 0;
-	left: 143px;
-}
 section.about_us .type .item .title h2{
 	font-family: Source Serif Pro;
 	font-style: normal;
@@ -300,6 +351,16 @@ section.about_us .type .item .title h2{
 	color: #585959;
 	margin-left: 50px;
 	white-space: nowrap;
+	position: relative;
+}
+section.about_us .type .item .title h2:before{
+	content: '';
+	width: 95px;
+	height: 2px;
+	background-color: #BCC5C9;
+	position: absolute;
+	bottom: -15px;
+	left: 0;
 }
 section.about_us .type .item{
 	max-width: 625px;
@@ -377,7 +438,7 @@ section.about_us .person{
 	background-size: auto;
 	position: relative;
 }
-section.about_us .person > .name{
+section.about_us .person .info_person > .name{
 	font-family: Source Serif Pro;
 	font-weight: 600;
 	font-size: 36px;
@@ -386,6 +447,9 @@ section.about_us .person > .name{
 	color: #585959;
 	padding-top: 50px;
 	margin-bottom: 25px;
+}
+section.about_us .person .info_person{
+	width: 50%;
 }
 section.about_us .person .position{
 	font-family: FuturaDemiC;
@@ -560,7 +624,8 @@ section.about_us .person .list li{
 }
 section.about_us .person .email_to_person > form{
 	position: static;
-	width: 65%;
+	max-width:1027px;
+	width: 100%;
 	padding-bottom: 50px;
 	margin:60px auto 0 auto;
 	background-image: url('../image/quotes_black.png');
@@ -616,7 +681,7 @@ section.our_services > ul li:before{
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
-	height: 1px;
+	height: 0;
 	width:  calc(100% - 60px);
 	border: 1px dashed #585959;
 }
@@ -815,7 +880,7 @@ section.contact form .desrcibe{
 	font-size: 24px;
 	line-height: 27px;
 	color: rgba(244, 242, 239, 0.79);
-	width: 720px;
+	max-width: 720px;
 	margin-bottom: 50px;
 }
 section.about_us .email_to_person form textarea,
@@ -957,4 +1022,363 @@ section.map iframe{
 	width: 100%;
 	height: 100%;
 	border: 0;
+}
+
+/* %%%%%%%% MEDIA %%%%%% */
+@media screen and (max-width: 1650px ){
+	header .right nav ul li{
+		margin-left: 30px;
+	}
+	header .right nav ul li:last-of-type{
+		margin-right: 20px;
+	}
+}
+@media screen and (max-width:  1500px){
+	section.about_us .person .info_person{
+		float: left;
+	}
+	section.about_us .person .image_1{
+		float:right;
+		position: static;
+		width: 50%;
+	}
+	section.about_us .person .wrap{
+		clear:both;
+	}
+	section.about_us .person .wrap .cover{
+		width: 70%;
+	}
+	section.about_us .person .wrap .services{
+		width: 30%;
+	}
+}
+@media screen and (max-width:  1400px){
+	header .right .titel h1{
+		font-size: 45px;
+		line-height: 60px;
+	}
+	header .right nav ul li{
+		margin-left: 25px;
+	}
+}
+@media screen and (max-width: 1350px){
+	header{
+		flex-direction: column-reverse;
+		height: auto;
+	}
+	header .left, 
+	header .right{
+		width: 100%;
+		height: 100vh;
+	}
+	section.about_us .describe .left > .wrap p{
+		right: auto;
+	}
+	header .right .top_logo {
+		display: flex;
+	}
+	header .left, header .right{
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 1250px){
+	header .right .top_logo span{
+		display: none;
+	}
+}
+@media screen and (max-width: 1200px){
+	section.contact > .container_small{
+		display: flex;
+		flex-direction: column;
+	}
+	section.contact form{
+		position: static;
+		width: 100%;
+		max-width: 1027px;
+		margin:0 auto;
+	}
+	section.contact .location{
+		margin-bottom: 50px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1300px){
+	section.news .wrap{
+		flex-direction: column;
+	}
+	section.news .wrap .inner_wrap{
+		width: 100%;
+	}
+	section.news .myself:before, 
+	section.news .world:before{
+		display: none;
+	}
+	section.news .item{
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width:  1100px){
+	section.about_us .describe{
+		flex-direction: column-reverse;
+	}
+	section.about_us .describe .left, 
+	section.about_us .describe .right{
+		width: 100%;
+	}
+	section.about_us .describe .right > .wrap{
+		max-width: 100%;
+		align-items: center;
+	}
+	section.about_us .describe .right > .wrap img{
+		transform: none;
+		max-width: 33%;
+	}
+	section.about_us .describe .left > .wrap{
+		background-size: 33%;
+	}
+	section.about_us .describe .left > .wrap p{
+		bottom: auto;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+@media screen and (max-width: 1000px){
+	section.about_us .person > .wrap{
+		flex-direction: column;
+		align-items: center;
+		background-position: 67% 78.6%;
+		background-size: 100px;
+	}
+	section.about_us .person .wrap .cover{
+		width: auto;
+	}
+	section.about_us .person .wrap .services{
+		width: auto;
+		padding: 30px 15px;
+	}
+	section.our_services > ul li span{
+		font-size: 24px;
+		line-height: 25px;
+	}
+}
+@media screen and (max-width: 900px){
+	header .right .top_logo{
+		left: 10px;
+	}
+	section.about_us .type .item > p,
+	section.about_us .type .item .title h2{
+		white-space: normal;
+	}
+	.burger_menu_right{
+		display: block;
+	}
+	header .right nav ul{
+		transform: translateX(100%);
+		flex-direction: column;
+		align-items: flex-end;
+		height: auto;
+		padding-top: 60px;
+		transition: transform .3s ease;
+	}
+	header .right nav.show ul{
+		transform: translateX(0);
+	}
+	header .right nav ul li{
+		margin: 10px 0;
+	}
+	header .right nav ul li:last-of-type{
+		margin-right: 0;
+	}
+	header .right .titel .wrap{
+		padding: 0 15px;
+	}
+	section.about_us .person .info_person{
+		float: none;
+		width: 100%;
+	}
+	section.about_us .person .image_1{
+		float: none;
+		display: block;
+		margin:0 auto;
+	}
+	section.about_us .person .main_text{
+		max-width: 100%;
+	}
+	section.about_us .person{
+		background-size: 100px;
+	}
+	section.about_us .person .list{
+		font-size: 22px;
+		line-height: 30px;
+	}
+	section.about_us .person .wrap{
+		padding-bottom: 20px;
+		background-position: 67% 97.6%;
+	}
+	section.about_us .person .email_to_person > form{
+		padding: 20px 30px;
+		background-position: 2% 2%;
+		background-size: 100px;
+	}
+	section.about_us .email_to_person form .desrcibe, 
+	section.contact form .desrcibe{
+		margin-bottom: 25px;
+	}
+	section.about_us .person .email_to_person form .wrap{
+		padding-bottom: 30px;
+	}
+	section.about_us .type{
+		margin-bottom: 50px;
+	}
+	section.our_services > h3, 
+	section.news > h3, section.contact .location > h3{
+		background-size: 100px;
+		padding-top: 25px;
+	}
+	section.news .world, 
+	section.news .myself{
+		flex-wrap: wrap;
+	}
+	section.contact form{
+		background-position: 98% 98%;
+		background-size: 100px;
+		padding: 20px 30px;
+	}
+	section.news{
+		margin-bottom: 90px;
+	}
+}
+@media screen and (max-width: 750px){
+	section.our_services > ul li span:first-of-type{
+		margin-left: 5px;
+	}
+}
+@media screen and (max-width: 650px){
+	section.about_us .describe .right > .wrap h2{
+		font-size: 44px;
+	}
+  section.about_us .person .email_to_person form .wrap{
+ 		flex-direction: column;	
+  }
+	section.about_us .email_to_person form .cover.name, 
+	section.about_us .email_to_person form .cover.name input, 
+	section.contact form .cover.name, 
+	section.contact form .cover.name input{
+		max-width: 100%;
+	}
+	section.about_us .email_to_person form .cover.cont, 
+	section.about_us .email_to_person form .cover.cont input, 
+	section.contact form .cover.cont, 
+	section.contact form .cover.cont input{
+		max-width: 100%;
+	}
+	section.about_us .person .wrap .cover{
+		margin-bottom: 20px;
+	}
+	section.about_us .email_to_person form .title, 
+	section.contact form .title{
+		font-size: 25px;
+		line-height: 35px;
+	}
+	section.about_us .email_to_person form .desrcibe, 
+	section.contact form .desrcibe{
+		font-size: 16px;
+		line-height: 21px;
+	}
+	section.our_services > h3, 
+	section.news > h3, section.contact .location > h3{
+		font-size: 44px;
+	}
+	section.about_us .person .wrap .services{
+		font-size: 44px;
+	}
+	section.news .wrap .inner_wrap .title{
+		font-size: 44px;
+		line-height: 60px;
+	}
+	section.contact form .wrap{
+		flex-direction: column;
+	}
+	section.contact form .cover.cont,
+	section.contact form .cover.name{
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	section.contact form .submit{
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 600px){
+	header .right .titel h1{
+		font-size: 35px;
+		text-align: center;
+	}
+	header .right .titel .describe{
+		text-align: center;
+	}
+	section.about_us .person .wrap .cover{
+		width: 100%;
+		max-width: 100%;
+	}
+	section.our_services > ul li{
+		padding-bottom: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+	section.our_services > ul li span:first-of-type{
+		margin-left: 0;
+		padding-right: 0;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	section.our_services > ul li span:last-of-type{
+		padding: 10px;
+		text-align: center;
+	}
+	section.our_services > ul li:before{
+		bottom: 0;
+		top: auto;
+		transform: none;
+		width: 100%;
+	}
+	section.news .wrap .inner_wrap .title{
+		font-size: 7vw;
+		line-height: 10vw;
+	}
+}
+@media screen and (max-width: 550px){
+	section.about_us .type .item .title h2{
+		font-size: 25px;
+		margin-left: 25px;
+	}
+	section.about_us .type .item .title img{
+		max-height: 50px;
+	}
+}
+@media screen and (max-width: 450px){
+	header .right .titel h1{
+		font-size: 25px;
+		line-height: 40px;
+		margin-bottom: 20px;
+	}
+	section.about_us .describe .right > .wrap h2{
+		font-size: 31px;
+	}
+	section.our_services > h3, section.news > h3, 
+	section.contact .location > h3{
+		font-size: 41px;
+		line-height: 50px;
+	}
+
+}
+@media screen and (max-width: 400px){
+	section.about_us .type .item .title h2{
+		line-height: 29px;
+		font-size: 17px;
+		margin-left: 20px;
+	}
+	section.contact .location > .wrap{
+		margin-bottom: 40px;
+		font-size: 16px;
+	}
 }

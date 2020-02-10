@@ -15,13 +15,19 @@
 			</div>
 		</div>
 		<div class="right">
+			<div class="top_logo"><div class="image"><img src="image/logo_small.png" alt="zupk"></div><span>Західноукраїнська правнича компанія</span></div>
 			<nav>
-				<ul>
+				<button class="burger_menu_right">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+	     </button>
+				<ul class="anchors">
 					<li><a href="#">головна</a></li>
-					<li><a href="#">Про компанію</a></li>
-					<li><a href="#">Спеціалізація</a></li>
-					<li><a href="#">послуги</a></li>
-					<li><a href="#">контакти</a></li>
+					<li><a href="#about_us">Про компанію</a></li>
+					<li><a href="#our_services">НАШІ ЗАСЛУГИ</a></li>
+					<li><a href="#news">НОВИНИ</a></li>
+					<li><a href="#contacts">контакти</a></li>
 				</ul>
 			</nav>
 			<div class="titel">
@@ -29,11 +35,11 @@
 					<h1>Західноукраїнська правнича компанія</h1>
 					<p class="describe">Створене у 2004 році адвокатське об'єднання «Західноукраїнська правнича компанія» є однією із провідних юридичних фірм на Прикарпатті, яка надає своїм клієнтам повний спектр юридичних послуг і не раз підтверджувало перед клієнтами та партнерами репутацію надійної і високопрофесійної компанії в сфері надання юридичних послуг.</p>
 				</div>
-				<img class="arrow_down" src="image/arrow_down.png" alt="arrow">
+			  <a class="anchors" href="#about_us"><img class="arrow_down" src="image/arrow_down.png" alt="arrow"></a>
 			</div>
 		</div>
 	</header>
-	<section class="about_us">
+	<section class="about_us" id='about_us'>
 		<div class="describe">
 			<div class="left">
 				<div class="wrap">
@@ -131,16 +137,18 @@
 			</div>
 		</div>
 		<div class="person container_small">
-			<h3 class="name">Попадинець Руслан Дмитрович</h3>
-			<p class="position">Головний партнер, адвокат, голова Кваліфікаційно-дисциплінарної комісії адвокатури Івано-Франківської області.</p>
-			<div class="full_text">Досягнення результату і професіоналізм наших юристів – ось основні принципи роботи нашого Обєднання. Однак ми індивідуально підходимо до кожного клієнта, враховуючи всі особливості даної справи. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusantium distinctio consequatur nisi dolorem, nobis, culpa quo voluptatum molestias, iste nam, atque obcaecati. Officia esse perspiciatis, eveniet at impedit quos numquam magnam odio eius modi reprehenderit perferendis culpa, aliquam incidunt fugit eligendi doloribus cumque, illum, possimus commodi! Aliquid doloribus, eveniet incidunt alias placeat quisquam modi inventore? Nesciunt possimus laudantium expedita odit inventore, voluptatem unde neque maiores eos id alias ipsa voluptates deserunt eaque impedit odio delectus quam vel, tempora recusandae nostrum fugit laborum ea veritatis quod! Reprehenderit</div>
-			<div class="main_text"></div>
-			<button class="more"><span>читати</span>
-					<svg width="35" height="17" viewBox="0 0 35 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M28 16.3652L33.5 8.96721L28 1.0001" stroke="#949FA3" stroke-width="2"/>
-					<path d="M33 9H0.5" stroke="#949FA3" stroke-width="2"/>
-					</svg>
-				</button>
+			<div class='info_person'>
+				<h3 class="name">Попадинець Руслан Дмитрович</h3>
+				<p class="position">Головний партнер, адвокат, голова Кваліфікаційно-дисциплінарної комісії адвокатури Івано-Франківської області.</p>
+				<div class="full_text">Досягнення результату і професіоналізм наших юристів – ось основні принципи роботи нашого Обєднання. Однак ми індивідуально підходимо до кожного клієнта, враховуючи всі особливості даної справи. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusantium distinctio consequatur nisi dolorem, nobis, culpa quo voluptatum molestias, iste nam, atque obcaecati. Officia esse perspiciatis, eveniet at impedit quos numquam magnam odio eius modi reprehenderit perferendis culpa, aliquam incidunt fugit eligendi doloribus cumque, illum, possimus commodi! Aliquid doloribus, eveniet incidunt alias placeat quisquam modi inventore? Nesciunt possimus laudantium expedita odit inventore, voluptatem unde neque maiores eos id alias ipsa voluptates deserunt eaque impedit odio delectus quam vel, tempora recusandae nostrum fugit laborum ea veritatis quod! Reprehenderit</div>
+				<div class="main_text"></div>
+				<button class="more"><span>читати</span>
+						<svg width="35" height="17" viewBox="0 0 35 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M28 16.3652L33.5 8.96721L28 1.0001" stroke="#949FA3" stroke-width="2"/>
+						<path d="M33 9H0.5" stroke="#949FA3" stroke-width="2"/>
+						</svg>
+					</button>
+			</div>
 			<img class="image_1" src="image/person1.png" alt="person">
 			<div class="wrap">
 				<div class="cover">
@@ -191,7 +199,7 @@
 		</div>
 	</section>
 	<!-- Our Services -->
-	<section class="our_services container_small">
+	<section class="our_services container_small" id ='our_services'>
 			<h3>наші заслуги</h3>
 			<ul>
 				<li><span>Відкрито проваджень</span><span>23</span></li>
@@ -202,7 +210,7 @@
 			</ul>
 	</section>
 
-	<section class="news container_small">
+	<section class="news container_small" id='news'>
 		<h3>Новини</h3>
 		<div class="wrap">
 			<div class="inner_wrap">
@@ -261,7 +269,7 @@
 		</div>
 	</section>
 	<!-- CONTACT -->
-	<section class="contact container">
+	<section class="contact container" id='contacts'>
 		<div class="container_small">
 			<div class="location">
 			<h3>контакти</h3>

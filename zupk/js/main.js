@@ -1,3 +1,18 @@
+// anchors
+let anchors = document.querySelectorAll('.anchors a , a.anchors');
+
+for(let anchor of anchors){
+	anchor.addEventListener('click', function(e){
+		 e.preventDefault();
+		let href = document.getElementById(anchor.getAttribute('href').replace('#',''));
+		console.log(href);
+  	href.scrollIntoView({block: "start", behavior: "smooth"});
+	})
+}
+document.querySelector('.burger_menu_right').addEventListener('click', function(){
+	document.querySelector('.burger_menu_right').classList.toggle('show');
+	document.querySelector('header .right nav').classList.toggle('show');
+})
 let types = document.querySelectorAll('section.about_us .type .item button');
 
 for(let type of types){
