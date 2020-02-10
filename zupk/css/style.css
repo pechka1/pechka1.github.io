@@ -1225,7 +1225,7 @@ section.map iframe{
 		background-position: 67% 97.6%;
 	}
 	section.about_us .person .email_to_person > form{
-		padding: 20px 30px;
+		padding: 20px 15px;
 		background-position: 2% 2%;
 		background-size: 100px;
 	}
@@ -1255,6 +1255,9 @@ section.map iframe{
 	}
 	section.news{
 		margin-bottom: 90px;
+	}
+	section.contact > .container_small{
+		padding: 0;
 	}
 }
 @media screen and (max-width: 750px){
