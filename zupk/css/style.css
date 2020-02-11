@@ -447,7 +447,7 @@ section.about_us .type .item .list{
 section.about_us .person{
 	background-image: url('../image/quotes_white_2.png');
 	background-repeat: no-repeat;
-	background-position:57px 1.5%;
+	background-position:0 0;
 	background-size: auto;
 	position: relative;
 }
@@ -627,12 +627,11 @@ section.about_us .person .list li{
 }
 section.about_us .person .email_to_person > form{
 	position: static;
-	max-width:1027px;
 	width: 100%;
 	padding-bottom: 50px;
 	margin:60px auto 0 auto;
-	background-image: url('../image/quotes_black.png');
-	background-position: top left;
+	background-image: url('../image/quotes_black_2.png');
+	background-position: bottom right;
 }
 section.about_us .person .email_to_person form .submit{
 	margin-top: 0;
@@ -646,7 +645,10 @@ section.our_services,
 section.news{
 	margin-top: 120px;
 }
-section.our_services > h3,
+section.our_services{
+	position: relative;
+}
+section.our_services h3,
 section.news > h3,
 section.contact .location > h3{
 	font-family: Source Serif Pro;
@@ -661,38 +663,50 @@ section.contact .location > h3{
 	background-repeat: no-repeat;
 	background-position: top left;
 }
-section.our_services > ul li{
+section.news > h3{
+	margin-bottom: 100px;
+}
+section.our_services h3{
+	margin-bottom: 130px;
+}
+section.our_services img{
+	position: absolute;
+	top: 112px;
+	right: 0;
+}
+section.our_services ul{
+	max-width: 1000px;
+}
+section.our_services ul li{
 	margin-bottom: 20px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 }
-section.our_services > ul li span{
+section.our_services ul li span{
 	background-color: #fff;
 	z-index: 1;
 	position: relative;	
 	font-family: Source Serif Pro;
 	font-weight: 600;
-	font-size: 34.392px;
-	line-height: 47px;
+	font-size: 23px;
+	line-height: 30px;
+	color: #949FA3;
 	text-transform: uppercase;
-	color: #585959;
 }
-section.our_services > ul li:before{
+section.our_services ul li:before{
 	content: '';
 	position: absolute;
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
-	height: 0;
 	width:  calc(100% - 60px);
-	border: 1px dashed #585959;
+	border-bottom: 5px dotted #949FA3;
 }
-section.our_services > ul li span:first-of-type{
-	margin-left: 50px;
+section.our_services ul li span:first-of-type{
 	padding-right: 20px;
 }
-section.our_services > ul li span:last-of-type{
+section.our_services ul li span:last-of-type{
 	padding-left: 20px;
 }
 /* %%%%%  News %%%%%*/
@@ -700,7 +714,7 @@ section.news{
 	margin-bottom: 220px;
 }
 section.news .item{
-	max-width: 350px;
+	max-width: 360px;
 	width: 100%;
 	margin: 0 3px;
 }
@@ -733,10 +747,8 @@ section.news .item .describe{
 	color: #585959;
 	padding-bottom: 39px;
 }
-section.news .item .describe:after{
-
-}
-section.news .item > a{
+section.news .item > a,
+section.news .read_more > a{
 	font-family: FuturaDemiC;
 	font-weight: 600;
 	font-size: 15px;
@@ -746,69 +758,83 @@ section.news .item > a{
 	color: #949FA3;
 	display: flex;
 	align-items: center;
+	padding-top: 30px;
+	position: relative;
 }
-section.news .item > a:hover{
+section.news .item > a:before{
+	content: '';
+	width: 110px;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #949FA3;
+}
+section.news .read_more > a{
+	display: inline-block;
+}
+section.news .read_more > a:before{
+	content: '';
+	width: 115px;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #949FA3;
+}
+section.news .read_more{
+	margin-top: 65px;
+}
+section.news .item > a:hover,
+section.news .read_more > a:hover{
 	color: #000;
 }
-section.news .item > a svg path{
+section.news .item > a svg path,
+section.news .read_more > a svg path{
 	transition: stroke .3s ease;
 }
-section.news .item > a:hover svg path{
+section.news .item > a:hover svg path,
+section.news .read_more > a:hover svg path{
 	stroke: #000;
 }
-section.news .item > a span:first-of-type{
+section.news .item > a span:first-of-type,
+section.news .read_more > a span:first-of-type{
 	padding-right: 20px;
 }
 section.news .wrap{
 	display: flex;
+	justify-content: space-between;
 }
 section.news .world,
 section.news .myself{
 	width: 100%;
 	position: relative;
 }
-section.news .myself:before,
-section.news .world:before{
-	content: '';
-	width: 1px;
-	background-color: #DDE0E2;
-	position: absolute;
-	right: 0;
-	top: -50%;
-	bottom: -10%;
-}
-section.news .myself:before{
-	left: 0;
-}
-section.news .world:before{
-	right: 0;
-}
 section.news .world{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 section.news .myself{
 	display: flex;
 	justify-content: space-around;
 }
 section.news .wrap .inner_wrap{
-	width: 50%;
+	max-width: 740px;
+	width: 100%;
 }
 section.news .wrap .inner_wrap .title{
 	font-family: Source Serif Pro;
 	font-weight: bold;
 	font-size: 36px;
-	line-height: 77px;
-	letter-spacing: 0.07em;
+	line-height: 49px;
+	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	color: #585959;
-	padding-left: 15px;
+	color: #949FA3;
+	padding-left: 5px;
 	margin-bottom: 20px;
-	height: 145px;
 	display: flex;
 	align-items: center;
 }
-
 /* %%%%% CONTACT %%%%% */
 section.contact{
 	margin-bottom: 110px;
@@ -900,9 +926,12 @@ section.contact form textarea{
 	resize: none;
 	position: relative;
 }
-section.about_us .email_to_person form .cover.comment,
 section.contact form .cover.comment{
 	max-width: 520px;
+	width: 100%;
+}
+section.about_us .email_to_person form .cover.comment{
+	max-width: 875px;
 	width: 100%;
 }
 section.about_us .email_to_person form textarea:hover:before,
@@ -961,10 +990,12 @@ section.contact form .cover.name input{
 section.about_us .email_to_person form .cover.cont,
 section.about_us .email_to_person form .cover.cont input,
 section.contact form .cover.cont,
-section.contact form .cover.cont input{
+section.contact form .cover.cont input,
+section.about_us .email_to_person form .cover.order{
 	width: 100%;
 	max-width: 270px;
 }
+
 section.contact .location > h3{
 	margin-bottom: 62px;
 }
@@ -972,9 +1003,11 @@ section.about_us .email_to_person form .wrap,
 section.contact form .wrap{
 	display: flex;
 	justify-content: space-between;
-	max-width: 520px;
 	width: 100%;
 	margin-top: 15px;
+}
+section.about_us .email_to_person form .wrap{
+	max-width: 875px;
 }
 section.about_us .email_to_person form .submit,
 section.contact form .submit{
@@ -1145,10 +1178,6 @@ section.map iframe{
 	section.news .wrap .inner_wrap{
 		width: 100%;
 	}
-	section.news .myself:before, 
-	section.news .world:before{
-		display: none;
-	}
 	section.news .item{
 		margin-bottom: 20px;
 	}
@@ -1273,7 +1302,8 @@ section.map iframe{
 		margin-bottom: 50px;
 	}
 	section.our_services > h3, 
-	section.news > h3, section.contact .location > h3{
+	section.news > h3, 
+	section.contact .location > h3{
 		background-size: 100px;
 		padding-top: 25px;
 	}
@@ -1351,7 +1381,8 @@ section.map iframe{
 		line-height: 21px;
 	}
 	section.our_services > h3, 
-	section.news > h3, section.contact .location > h3{
+	section.news > h3, 
+	section.contact .location > h3{
 		font-size: 44px;
 	}
 	section.about_us .person .wrap .services{
@@ -1439,7 +1470,8 @@ section.map iframe{
 	section.about_us .describe .right > .wrap h2{
 		font-size: 31px;
 	}
-	section.our_services > h3, section.news > h3, 
+	section.our_services > h3, 
+	section.news > h3, 
 	section.contact .location > h3{
 		font-size: 41px;
 		line-height: 50px;
