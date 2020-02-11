@@ -11,7 +11,7 @@ for(let anchor of anchors){
 }
 document.querySelector('.burger_menu_right').addEventListener('click', function(){
 	document.querySelector('.burger_menu_right').classList.toggle('show');
-	document.querySelector('header .right nav').classList.toggle('show');
+	document.querySelector('header .left nav').classList.toggle('show');
 })
 let types = document.querySelectorAll('section.about_us .type .item button');
 

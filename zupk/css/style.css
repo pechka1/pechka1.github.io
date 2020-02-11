@@ -96,9 +96,8 @@ button::-moz-focus-inner {
 	cursor: pointer;
 	position: absolute;
 	right: 20px;
-	top: 20px;
+	top: 35px;
 	padding: 5px 10px;
-	background-color: rgba(0,0,0,.15);
 	border-radius: 3px;
 	width: 40px;
 	height: 36px;
@@ -110,10 +109,14 @@ button::-moz-focus-inner {
   display: block;
   width: 20px;
   height: 2px;
-  background-color: rgb(255,255,255);
+  background-color: #585959;
   transition: .2s ease;
   margin: 0;
   padding: 0;
+
+}
+.burger_menu_right.show span{
+	background-color: #fff;
 }
 .burger_menu_right span:first-child {
     top: 10px;
@@ -156,6 +159,9 @@ header .left{
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+header .left nav{
+	display: none;
+}
 header .left .logo_image{
 	margin: auto;
 }
@@ -184,26 +190,32 @@ header .right .top_logo span{
 	text-transform: uppercase;
 	color: #585959;
 }
-header .right nav{
+header .right nav,
+header .left nav{
 	position: relative;
 	z-index: 2;
 }
-header .right nav ul{
+header .right nav ul,
+header .left nav ul{
 	display: flex;
 	justify-content: flex-end;
 	height: 103px;
 	align-items: center;
 }
-header .right nav ul li{
+header .right nav ul li,
+header .left nav ul li{
 	margin-left: 55px;
 }
-header .right nav ul li:first-of-type{
+header .right nav ul li:first-of-type,
+header .left nav ul li:first-of-type{
 	margin-left: 0;
 }
-header .right nav ul li:last-of-type{
+header .right nav ul li:last-of-type,
+header .left nav ul li:last-of-type{
 	margin-right: 60px;
 }
-header .right nav ul li a{
+header .right nav ul li a,
+header .left nav ul li a{
 	padding: 10px;
 	color: rgba(254, 255, 255, 0.75);
 	font-family: FuturaDemiC;
@@ -213,7 +225,8 @@ header .right nav ul li a{
 	line-height: 18px;
 	text-transform: uppercase;
 }
-header .right nav ul li a:hover{
+header .right nav ul li a:hover,
+header .left nav ul li a:hover{
 	color:#fff;
 	transition: color .3s ease;
 }
@@ -478,16 +491,6 @@ section.about_us .person .main_text.show{
 	height: 100%;
 }
 section.about_us .person .full_text{
-/*	max-height: 0;
-	opacity: 0;
-	width: 0;
-	font-size: 0;
-	line-height: 0;
-	position: static;
-	transition: height .3s ease;*/
-	/*margin:0;*/
-	/*padding: 0;*/
-	/*overflow: hidden;*/
 	display: none;
 }
 section.about_us .person .main_text:before{
@@ -1063,13 +1066,20 @@ section.map iframe{
 }
 @media screen and (max-width: 1350px){
 	header{
-		flex-direction: column-reverse;
-		height: auto;
+		flex-direction: column;
+		height: 100vh;
 	}
 	header .left, 
 	header .right{
 		width: 100%;
-		height: 100vh;
+		height: 50%;
+		overflow: hidden;
+	}
+	header .left .logo_image{
+		text-align: center;
+	}
+	header .left .logo_image img{
+		width: 50%;
 	}
 	section.about_us .describe .left > .wrap p{
 		right: auto;
@@ -1077,12 +1087,55 @@ section.map iframe{
 	header .right .top_logo {
 		display: flex;
 	}
-	header .left, header .right{
-		overflow: hidden;
-	}
 	section.about_us .type{
 		flex-direction: column;
 		align-items: center;
+	}
+	header .right nav{
+		display: none;
+	}
+	header .left nav{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.burger_menu_right{
+		display: block;
+	}
+
+	header .right{
+		background-size: contain;
+	}
+	header .right .titel .arrow_down{
+		bottom: 30px;
+	}
+	header .left .top_logo{
+		left: 20px;
+	}
+	header .left nav ul li a{
+		color: rgba(255,255,255,0.75);
+	}
+	header .left nav ul{
+		transform: translateX(100%);
+		flex-direction: column;
+		align-items: flex-end;
+		height: 100vh;
+		justify-content: flex-start;
+		float: right;
+		max-width: 150px;
+		background-color: rgba(0,0,0,.6); 
+		padding-top: 60px;
+		transition: transform .3s ease;
+	}
+	header .left nav.show ul{
+		transform: translateX(0);
+	}
+	header .left nav ul li{
+		margin: 10px 0;
+	}
+	header .left nav ul li:last-of-type{
+		margin-right: 0;
 	}
 }
 @media screen and (max-width: 1300px){
@@ -1174,30 +1227,7 @@ section.map iframe{
 	section.about_us .type .item .title h2{
 		white-space: normal;
 	}
-	.burger_menu_right{
-		display: block;
-	}
-	header .right nav ul{
-		transform: translateX(100%);
-		flex-direction: column;
-		align-items: flex-end;
-		height: 100vh;
-		justify-content: flex-start;
-		float: right;
-		max-width: 150px;
-		background-color: rgba(0,0,0,.6); 
-		padding-top: 60px;
-		transition: transform .3s ease;
-	}
-	header .right nav.show ul{
-		transform: translateX(0);
-	}
-	header .right nav ul li{
-		margin: 10px 0;
-	}
-	header .right nav ul li:last-of-type{
-		margin-right: 0;
-	}
+
 	header .right .titel .wrap{
 		padding: 0 15px;
 	}
@@ -1209,6 +1239,9 @@ section.map iframe{
 		float: none;
 		display: block;
 		margin:0 auto;
+		max-width: 600px;
+		width: 100%;
+		padding-bottom: 15px;
 	}
 	section.about_us .person .main_text{
 		max-width: 100%;
@@ -1263,6 +1296,26 @@ section.map iframe{
 @media screen and (max-width: 750px){
 	section.our_services > ul li span:first-of-type{
 		margin-left: 5px;
+	}
+	header .left .top_logo{
+		top: 15px;
+	}
+	header .left .top_logo span{
+		font-size: 14px;
+	}
+	header .left .top_logo img{
+		width: 55px;
+	}
+	header .right .titel h1{
+		font-size: 30px;
+		line-height: 46px;
+		margin-bottom: 35px;
+		text-align: center;
+	}
+	header .right .titel .describe{
+		text-align: center;
+		font-size: 17px;
+    line-height: 22px;
 	}
 }
 @media screen and (max-width: 650px){
@@ -1321,13 +1374,6 @@ section.map iframe{
 	}
 }
 @media screen and (max-width: 600px){
-	header .right .titel h1{
-		font-size: 35px;
-		text-align: center;
-	}
-	header .right .titel .describe{
-		text-align: center;
-	}
 	section.about_us .person .wrap .cover{
 		width: 100%;
 		max-width: 100%;
@@ -1359,6 +1405,7 @@ section.map iframe{
 	}
 }
 @media screen and (max-width: 550px){
+
 	section.about_us .type .item .title h2{
 		font-size: 25px;
 		margin-left: 25px;
@@ -1367,7 +1414,23 @@ section.map iframe{
 		max-height: 50px;
 	}
 }
+@media screen and (max-width: 500px){
+	header .left .top_logo{
+		top: 25px;
+	}
+	header .left .top_logo span{
+		font-size: 12px;
+		width: 200px;
+		line-height: 16px;
+	}
+	header .left .top_logo img{
+		width: 45px;
+	}
+}
 @media screen and (max-width: 450px){
+	header .left .logo_image img{
+		width: 102px;
+	}
 	header .right .titel h1{
 		font-size: 25px;
 		line-height: 40px;
@@ -1384,6 +1447,38 @@ section.map iframe{
 
 }
 @media screen and (max-width: 400px){
+	header .left .top_logo span{
+		font-size: 9px;
+		width: 150px;
+		line-height: 13px;
+	}
+	header .right .titel .arrow_down{
+		width: 50px;
+		left: 52px;
+		bottom: 27px;
+	}
+	header .right .titel .arrow_down:hover{
+		bottom: 27px;
+		transform: translateY(50%);
+		filter: brightness(0) invert(1);
+	}
+	header .right{
+		background-size: 170px;
+	}
+	header .right .titel h1{
+		text-align: left;
+		font-size: 26px;
+		line-height: 38px;
+	}
+	header .right .titel .describe {
+    text-align: left;
+    font-size: 11px;
+    line-height: 13px;
+	}
+	header .right .titel .wrap{
+		top: 35px;
+		transform: translateY(0);
+	}
 	section.about_us .type .item .title h2{
 		line-height: 29px;
 		font-size: 17px;
@@ -1395,5 +1490,14 @@ section.map iframe{
 	}
 	section.contact .location > .wrap span{
 		font-size: 16px;
+	}
+	section.about_us .describe .right{
+		height: 200px;
+	}
+	section.about_us .describe{
+		padding-bottom: 60px;
+	}
+	section.about_us .type{
+		margin-bottom: 20px;
 	}
 }
