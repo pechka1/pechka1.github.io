@@ -51,3 +51,7 @@ more.addEventListener('click',function(){
 		more.parentElement.querySelector('.main_text').innerHTML = full_text.substring(0,193) + '...';
 	}
 });
+//MAP
+document.querySelector('section.map').addEventListener('click',function(){
+	window.open(document.querySelector("section.map iframe").getAttribute("src"));
+})
