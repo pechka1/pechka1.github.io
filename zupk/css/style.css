@@ -3,10 +3,10 @@
 	font-family: 'FuturaDemiC';
 	src: url('../fonts/FuturaDemiC/FuturaDemiC.eot');
 	src: url('../fonts/FuturaDemiC/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/FuturaDemiC/FuturaDemiC.woff2') format('woff2'),
-		url('../fonts/FuturaDemiC/FuturaDemiC.woff') format('woff'),
-		url('../fonts/FuturaDemiC/FuturaDemiC.ttf') format('truetype'),
-		url('../fonts/FuturaDemiC/FuturaDemiC.svg#FuturaDemiC') format('svg');
+	url('../fonts/FuturaDemiC/FuturaDemiC.woff2') format('woff2'),
+	url('../fonts/FuturaDemiC/FuturaDemiC.woff') format('woff'),
+	url('../fonts/FuturaDemiC/FuturaDemiC.ttf') format('truetype'),
+	url('../fonts/FuturaDemiC/FuturaDemiC.svg#FuturaDemiC') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -15,33 +15,33 @@
 	font-family: 'Source Serif Pro';
 	src: url('../fonts/SourceSerifPro/SourceSerifPro-Regular.eot');
 	src: url('../fonts/SourceSerifPro/SourceSerifPro-Regular.eot?#iefix') format('embedded-opentype'),
-	    url('../fonts/SourceSerifPro/SourceSerifPro-Regular.woff2') format('woff2'),
-	    url('../fonts/SourceSerifPro/SourceSerifPro-Regular.woff') format('woff'),
-	    url('../fonts/SourceSerifPro/SourceSerifPro-Regular.ttf') format('truetype'),
-	    url('../fonts/SourceSerifPro/SourceSerifPro-Regular.svg#SourceSerifPro-Regular') format('svg');
+	url('../fonts/SourceSerifPro/SourceSerifPro-Regular.woff2') format('woff2'),
+	url('../fonts/SourceSerifPro/SourceSerifPro-Regular.woff') format('woff'),
+	url('../fonts/SourceSerifPro/SourceSerifPro-Regular.ttf') format('truetype'),
+	url('../fonts/SourceSerifPro/SourceSerifPro-Regular.svg#SourceSerifPro-Regular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-    font-family: 'Source Serif Pro Bold';
-    src: url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.eot');
-    src: url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.woff2') format('woff2'),
-        url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.woff') format('woff'),
-        url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.ttf') format('truetype'),
-        url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.svg#SourceSerifPro-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+	font-family: 'Source Serif Pro Bold';
+	src: url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.eot');
+	src: url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.woff2') format('woff2'),
+	url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.woff') format('woff'),
+	url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.ttf') format('truetype'),
+	url('../fonts/SourceSerifProBold/SourceSerifPro-Bold.svg#SourceSerifPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
 	font-family: 'FuturaBookC';
 	src: url('../fonts/FuturaBookC/FuturaBookC.eot');
 	src: url('../fonts/FuturaBookC/FuturaBookC.eot?#iefix') format('embedded-opentype'),
-	    url('../fonts/FuturaBookC/FuturaBookC.woff2') format('woff2'),
-	    url('../fonts/FuturaBookC/FuturaBookC.woff') format('woff'),
-	    url('../fonts/FuturaBookC/FuturaBookC.ttf') format('truetype'),
-	    url('../fonts/FuturaBookC/FuturaBookC.svg#FuturaBookC') format('svg');
+	url('../fonts/FuturaBookC/FuturaBookC.woff2') format('woff2'),
+	url('../fonts/FuturaBookC/FuturaBookC.woff') format('woff'),
+	url('../fonts/FuturaBookC/FuturaBookC.ttf') format('truetype'),
+	url('../fonts/FuturaBookC/FuturaBookC.svg#FuturaBookC') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -67,6 +67,7 @@ button{
 	border: none;
 	background-color: transparent;
 	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 textarea,
 input{
@@ -74,11 +75,13 @@ input{
 	outline: none;
 }
 button:active, 
-button:focus {
-  outline: none;
+button:focus,
+button:hover{
+	user-select: none;
+	outline: none;
 }
 button::-moz-focus-inner {
-  border: 0;
+	border: 0;
 }
 .container{
 	max-width: 1920px;
@@ -105,41 +108,41 @@ button::-moz-focus-inner {
 	display: none;
 }
 .burger_menu_right span {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #585959;
-  transition: .2s ease;
-  margin: 0;
-  padding: 0;
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: #585959;
+	transition: .2s ease;
+	margin: 0;
+	padding: 0;
 
 }
 .burger_menu_right.show span{
 	background-color: #fff;
 }
 .burger_menu_right span:first-child {
-    top: 10px;
+	top: 10px;
 }
 .burger_menu_right span:nth-child(2) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 .burger_menu_right span:last-of-type {
-    bottom: 10px;
+	bottom: 10px;
 }
 .burger_menu_right.show span:first-child {
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
 }
 .burger_menu_right.show span:nth-child(2) {
-    opacity: 0;
-    width: 0;
+	opacity: 0;
+	width: 0;
 }
 .burger_menu_right.show span:last-of-type {
-    bottom: 50%;
-    transform: translateY(50%) rotate(45deg);
+	bottom: 50%;
+	transform: translateY(50%) rotate(45deg);
 }
 header{
 	height: 100vh;
@@ -548,7 +551,7 @@ section.about_us .person .wrap{
 	background-position:100% 87.6%;
 	background-size: auto;
 	position: relative;
-	}
+}
 section.about_us .person .wrap .services{
 	width: 100%;
 	font-family: 'Source Serif Pro Bold';
@@ -640,7 +643,7 @@ section.about_us .person .email_to_person form .wrap{
 	padding-bottom: 80px;
 }
 
- /* %%%%%  Our Services %%%%%%% */
+/* %%%%%  Our Services %%%%%%% */
 section.our_services,
 section.news{
 	margin-top: 120px;
@@ -841,8 +844,8 @@ section.contact{
 	position: relative;
 }
 section.contact .location{
-  max-width: 670px;
-  width: 100%;
+	max-width: 670px;
+	width: 100%;
 }
 section.contact .location > .wrap{
 	display: flex;
@@ -1080,6 +1083,14 @@ section.map:before{
 	header .right nav ul li:last-of-type{
 		margin-right: 20px;
 	}
+	section.our_services img{
+		width: 31.39vw;
+		top: auto;
+		bottom: 0;
+	}
+	section.our_services ul{
+		width: 60.60vw;
+	}
 }
 @media screen and (max-width:  1500px){
 	section.about_us .person .info_person{
@@ -1098,6 +1109,19 @@ section.map:before{
 	}
 	section.about_us .person .wrap .services{
 		width: 30%;
+	}
+	section.news .wrap{
+		flex-direction: column;
+		align-items: center;
+	}
+	section.news .wrap .inner_wrap{
+		max-width: 900px;
+	}
+	section.news .myself{
+		justify-content: space-between;
+	}
+	section.news .wrap .item{
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width:  1400px){
@@ -1184,9 +1208,6 @@ section.map:before{
 	}
 }
 @media screen and (max-width: 1300px){
-	section.news .wrap{
-		flex-direction: column;
-	}
 	section.news .wrap .inner_wrap{
 		width: 100%;
 	}
@@ -1233,7 +1254,7 @@ section.map:before{
 		max-width: 33%;
 	}
 	section.about_us .describe .left > .wrap{
-		background-size: 33%;
+		background-size: 20%;
 	}
 	section.about_us .describe .left > .wrap p{
 		bottom: auto;
@@ -1250,6 +1271,7 @@ section.map:before{
 	}
 	section.about_us .person .wrap .cover{
 		width: auto;
+		/*padding-right: 10px;*/
 	}
 	section.about_us .person .wrap .services{
 		width: auto;
@@ -1258,6 +1280,14 @@ section.map:before{
 	section.our_services > ul li span{
 		font-size: 24px;
 		line-height: 25px;
+	}
+}
+@media screen and (max-width: 950px){
+	section.our_services img{
+		display: none;
+	}
+	section.our_services ul{
+		width: 100%;
 	}
 }
 @media screen and (max-width: 900px){
@@ -1334,6 +1364,43 @@ section.map:before{
 	section.contact > .container_small{
 		padding: 0;
 	}
+	section.about_us .describe .right > .wrap img{
+		max-width: 100px;
+	}
+	section.our_services h3,
+	section.news > h3, 
+	section.contact .location > h3{
+		background-size: 100px;
+	}
+	section.our_services h3{
+	  background-position: left 20px;
+	  margin-bottom: 60px;
+	  padding: 35px 0 20px 0;
+	}
+	section.about_us .describe .left > .wrap{
+		background-position: 4.5% 50.8%;
+		background-size: 100px;
+	}
+}
+@media screen and (max-width: 850px){
+	section.about_us .person .email_to_person form .wrap{
+		flex-direction: column;	
+		align-items: unset;
+	}
+	section.about_us  .email_to_person form .wrap .cover input,
+	section.about_us .email_to_person form .wrap .cover{
+		max-width: 100%;
+	}
+	section.about_us .email_to_person form .wrap .cover{
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 800px){
+	section.news .world, 
+	section.news .myself{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 @media screen and (max-width: 750px){
 	section.our_services > ul li span:first-of-type{
@@ -1357,16 +1424,13 @@ section.map:before{
 	header .right .titel .describe{
 		text-align: center;
 		font-size: 17px;
-    line-height: 22px;
+		line-height: 22px;
 	}
 }
 @media screen and (max-width: 650px){
 	section.about_us .describe .right > .wrap h2{
 		font-size: 44px;
 	}
-  section.about_us .person .email_to_person form .wrap{
- 		flex-direction: column;	
-  }
 	section.about_us .email_to_person form .cover.name, 
 	section.about_us .email_to_person form .cover.name input, 
 	section.contact form .cover.name, 
@@ -1414,6 +1478,15 @@ section.map:before{
 	}
 	section.contact form .submit{
 		margin-top: 30px;
+	}
+	section.our_services h3{
+		font-size: 44px;
+	}
+	section.our_services ul li span{
+		font-size: 16px;
+	}
+	section.our_services ul li:before{
+		border-bottom-width: 3px;
 	}
 }
 @media screen and (max-width: 600px){
@@ -1488,7 +1561,18 @@ section.map:before{
 		font-size: 41px;
 		line-height: 50px;
 	}
-
+	section.our_services ul li{
+		margin-bottom: 8px;
+	}
+	section.our_services ul li span{
+		font-size: 12px;
+	}
+	section.our_services ul li span:last-of-type{
+		padding-left: 10px;
+	}
+	section.our_services ul li span:first-of-type{
+		padding-right: 10px;
+	}
 }
 @media screen and (max-width: 400px){
 	header .left .top_logo span{
@@ -1515,9 +1599,9 @@ section.map:before{
 		line-height: 38px;
 	}
 	header .right .titel .describe {
-    text-align: left;
-    font-size: 11px;
-    line-height: 13px;
+		text-align: left;
+		font-size: 11px;
+		line-height: 13px;
 	}
 	header .right .titel .wrap{
 		top: 35px;
@@ -1543,5 +1627,17 @@ section.map:before{
 	}
 	section.about_us .type{
 		margin-bottom: 20px;
+	}
+	section.about_us .person .wrap .cover .info img{
+		max-height: 35px;
+	}
+	section.about_us .person .wrap .cover .info > div{
+		height: 35px;
+		padding-left: 10px;
+		margin-left: 15px;
+	}
+	section.about_us .person .wrap .cover .info > div .phone, 
+	section.about_us .person .wrap .cover .info > div .mail{
+		font-size: 16px;
 	}
 }
