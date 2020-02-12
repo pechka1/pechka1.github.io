@@ -119,7 +119,7 @@ button::-moz-focus-inner {
 
 }
 .burger_menu_right.show span{
-	background-color: #fff;
+	background-color: #585959;
 }
 .burger_menu_right span:first-child {
 	top: 10px;
@@ -1183,7 +1183,7 @@ section.map:before{
 		left: 20px;
 	}
 	header .left nav ul li a{
-		color: rgba(255,255,255,0.75);
+		color: rgba(0,0,0,1);
 	}
 	header .left nav ul{
 		transform: translateX(100%);
@@ -1192,9 +1192,9 @@ section.map:before{
 		height: 100vh;
 		justify-content: flex-start;
 		float: right;
-		max-width: 150px;
-		background-color: rgba(0,0,0,.6); 
-		padding-top: 60px;
+		width: 160px;
+		/*background-color: rgba(0,0,0,.6); */
+		padding-top: 75px;
 		transition: transform .3s ease;
 	}
 	header .left nav.show ul{
